@@ -1,0 +1,90 @@
+[
+  {
+    "where": "slide 2 coronal",
+    "image": "ppt/media/image3.jpg",
+    "autoType": "lines",
+    "expected": "lines",
+    "confidence": 0.55,
+    "note": ""
+  },
+  {
+    "where": "slide 4 sagittal",
+    "image": "ppt/media/image9.jpg",
+    "autoType": "lines",
+    "expected": "lines",
+    "confidence": 0.55,
+    "note": ""
+  },
+  {
+    "where": "slide 5 coronal",
+    "image": "ppt/media/image13.jpg",
+    "autoType": "fov",
+    "expected": "lines",
+    "confidence": 0.426,
+    "note": ""
+  },
+  {
+    "where": "slide 6 sagittal",
+    "image": "ppt/media/image15.jpg",
+    "autoType": "fov",
+    "expected": "lines",
+    "confidence": 0.449,
+    "note": ""
+  },
+  {
+    "where": "slide 7 axial",
+    "image": "ppt/media/image20.jpg",
+    "autoType": "fov",
+    "expected": "lines",
+    "confidence": 0.452,
+    "note": ""
+  },
+  {
+    "where": "slide 10 sagittal",
+    "image": "ppt/media/image28.jpg",
+    "autoType": "fov",
+    "expected": "lines",
+    "confidence": 0.462,
+    "note": ""
+  },
+  {
+    "where": "slide 10 coronal",
+    "image": "ppt/media/image27.jpg",
+    "autoType": "fov",
+    "expected": "lines",
+    "confidence": 0.477,
+    "note": ""
+  },
+  {
+    "where": "slide 11 sagittal",
+    "image": "ppt/media/image29.jpg",
+    "autoType": "lines",
+    "expected": "lines",
+    "confidence": 0.55,
+    "note": ""
+  },
+  {
+    "where": "slide 12 sagittal",
+    "image": "ppt/media/image34.jpg",
+    "autoType": "fov",
+    "expected": "lines",
+    "confidence": 0.446,
+    "note": ""
+  },
+  {
+    "where": "slide 13 sagittal",
+    "image": "ppt/media/image35.jpg",
+    "autoType": "lines",
+    "expected": "lines",
+    "confidence": 0.55,
+    "note": ""
+  },
+  {
+    "where": "slide 13 coronal",
+    "image": "ppt/media/image36.jpg",
+    "autoType": "lines",
+    "expected": "lines",
+    "confidence": 0.55,
+    "note": ""
+  }
+]

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+pipeline/.venv/
+pipeline/pptx_raw/
+.DS_Store
+*.local
+__pycache__/

@@ -1,0 +1,1101 @@
+[
+  {
+    "slide": 2,
+    "title": "BRAIN-CENTER TO GLABELLA",
+    "targetPlane": "sagittal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image5.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 3199,
+        "lines": {
+          "cx": 0.499,
+          "cy": 0.5486,
+          "angleDeg": 0.0,
+          "extent": 0.8988
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.937,
+        "nHoughSegments": 7,
+        "fov": {
+          "cx": 0.499,
+          "cy": 0.5486,
+          "w": 0.9979,
+          "h": 0.8988,
+          "angleDeg": 0.0
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image3.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 10284,
+        "lines": {
+          "cx": 0.4969,
+          "cy": 0.5486,
+          "angleDeg": 90.0,
+          "extent": 0.5269
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.55,
+        "nHoughSegments": 35,
+        "fov": {
+          "cx": 0.4969,
+          "cy": 0.5486,
+          "w": 0.8988,
+          "h": 0.5269,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image4.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 5036,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.498,
+          "angleDeg": -89.97,
+          "extent": 0.5977
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.75,
+        "nHoughSegments": 32,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.498,
+          "w": 0.9961,
+          "h": 0.5977,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 3,
+    "title": "BRAIN",
+    "targetPlane": "axial",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image8.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 11633,
+        "lines": {
+          "cx": 0.5033,
+          "cy": 0.4962,
+          "angleDeg": 1.71,
+          "extent": 0.6071
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.75,
+        "nHoughSegments": 36,
+        "fov": {
+          "cx": 0.5033,
+          "cy": 0.4962,
+          "w": 0.9379,
+          "h": 0.6071,
+          "angleDeg": 0.85
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image6.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 10455,
+        "lines": {
+          "cx": 0.499,
+          "cy": 0.4948,
+          "angleDeg": 0.0,
+          "extent": 0.593
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.95,
+        "nHoughSegments": 38,
+        "fov": {
+          "cx": 0.499,
+          "cy": 0.4948,
+          "w": 0.9979,
+          "h": 0.593,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image7.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 2039,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5137,
+          "angleDeg": 0.0,
+          "extent": 0.9648
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.953,
+        "nHoughSegments": 7,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5137,
+          "w": 0.9961,
+          "h": 0.9648,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 4,
+    "title": "BRAIN",
+    "targetPlane": "coronal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image9.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 10792,
+        "lines": {
+          "cx": 0.4886,
+          "cy": 0.5258,
+          "angleDeg": -89.98,
+          "extent": 0.6384
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.55,
+        "nHoughSegments": 37,
+        "fov": {
+          "cx": 0.4886,
+          "cy": 0.5258,
+          "w": 0.9442,
+          "h": 0.6384,
+          "angleDeg": -90.0
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image11.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 3487,
+        "lines": {
+          "cx": 0.499,
+          "cy": 0.53,
+          "angleDeg": -90.0,
+          "extent": 0.9979
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.901,
+        "nHoughSegments": 9,
+        "fov": {
+          "cx": 0.499,
+          "cy": 0.53,
+          "w": 0.9979,
+          "h": 0.936,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image10.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 5752,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.4883,
+          "angleDeg": 0.0,
+          "extent": 0.7031
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.9,
+        "nHoughSegments": 39,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.4883,
+          "w": 0.9961,
+          "h": 0.7031,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 5,
+    "title": "BRAIN & IAC\u2019S",
+    "targetPlane": "axial",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image12.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 10330,
+        "lines": {
+          "cx": 0.5154,
+          "cy": 0.6722,
+          "angleDeg": -6.53,
+          "extent": 0.2673
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.75,
+        "nHoughSegments": 38,
+        "fov": {
+          "cx": 0.5154,
+          "cy": 0.6722,
+          "w": 0.7473,
+          "h": 0.2673,
+          "angleDeg": -7.71
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image13.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 4810,
+        "lines": {
+          "cx": 0.5004,
+          "cy": 0.6474,
+          "angleDeg": 0.64,
+          "extent": 0.3258
+        },
+        "type": "lines",
+        "autoType": "fov",
+        "expectedType": "lines",
+        "confidence": 0.426,
+        "nHoughSegments": 27,
+        "fov": {
+          "cx": 0.5004,
+          "cy": 0.6474,
+          "w": 1.0136,
+          "h": 0.3258,
+          "angleDeg": 3.69
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image14.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 2602,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5293,
+          "angleDeg": -90.0,
+          "extent": 0.9961
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.908,
+        "nHoughSegments": 14,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5293,
+          "w": 0.9961,
+          "h": 0.8086,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 6,
+    "title": "BRAIN & IAC\u2019S",
+    "targetPlane": "coronal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image15.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 9632,
+        "lines": {
+          "cx": 0.4868,
+          "cy": 0.5393,
+          "angleDeg": 79.13,
+          "extent": 0.2602
+        },
+        "type": "lines",
+        "autoType": "fov",
+        "expectedType": "lines",
+        "confidence": 0.449,
+        "nHoughSegments": 34,
+        "fov": {
+          "cx": 0.4868,
+          "cy": 0.5393,
+          "w": 0.7445,
+          "h": 0.2602,
+          "angleDeg": 76.67
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image16.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 2164,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5547,
+          "angleDeg": -90.0,
+          "extent": 0.7461
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.96,
+        "nHoughSegments": 14,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5547,
+          "w": 0.7969,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image17.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 4244,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5137,
+          "angleDeg": 1.05,
+          "extent": 0.2773
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.9,
+        "nHoughSegments": 26,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5137,
+          "w": 0.7461,
+          "h": 0.2773,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 7,
+    "title": "BRAIN & PITUITARY",
+    "targetPlane": "sagittal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image18.jpg",
+        "width": 484,
+        "height": 484,
+        "yellowPixels": 8527,
+        "lines": {
+          "cx": 0.4504,
+          "cy": 0.5444,
+          "angleDeg": 89.84,
+          "extent": 0.8719
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.966,
+        "nHoughSegments": 43,
+        "fov": {
+          "cx": 0.4504,
+          "cy": 0.5444,
+          "w": 0.8719,
+          "h": 0.7252,
+          "angleDeg": 0.0
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image19.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 5815,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5293,
+          "angleDeg": 89.85,
+          "extent": 0.2383
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.85,
+        "nHoughSegments": 34,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5293,
+          "w": 0.6836,
+          "h": 0.2383,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image20.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 6829,
+        "lines": {
+          "cx": 0.5049,
+          "cy": 0.4448,
+          "angleDeg": 89.86,
+          "extent": 0.2797
+        },
+        "type": "lines",
+        "autoType": "fov",
+        "expectedType": "lines",
+        "confidence": 0.452,
+        "nHoughSegments": 42,
+        "fov": {
+          "cx": 0.5049,
+          "cy": 0.4448,
+          "w": 0.9022,
+          "h": 0.2797,
+          "angleDeg": 86.53
+        }
+      }
+    }
+  },
+  {
+    "slide": 8,
+    "title": "BRAIN & PITUITARY",
+    "targetPlane": "coronal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image21.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 6124,
+        "lines": {
+          "cx": 0.4336,
+          "cy": 0.498,
+          "angleDeg": 86.38,
+          "extent": 0.375
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.8,
+        "nHoughSegments": 28,
+        "fov": {
+          "cx": 0.4336,
+          "cy": 0.498,
+          "w": 0.9961,
+          "h": 0.375,
+          "angleDeg": -90.0
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image22.png",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 1719,
+        "lines": {
+          "cx": 0.466,
+          "cy": 0.429,
+          "angleDeg": -1.71,
+          "extent": 0.7222
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.923,
+        "nHoughSegments": 8,
+        "fov": {
+          "cx": 0.466,
+          "cy": 0.429,
+          "w": 0.9321,
+          "h": 0.7222,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image23.png",
+        "width": 320,
+        "height": 320,
+        "yellowPixels": 4934,
+        "lines": {
+          "cx": 0.4985,
+          "cy": 0.47,
+          "angleDeg": 0.0,
+          "extent": 0.2494
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.8,
+        "nHoughSegments": 26,
+        "fov": {
+          "cx": 0.4985,
+          "cy": 0.47,
+          "w": 0.8978,
+          "h": 0.2494,
+          "angleDeg": 0.29
+        }
+      }
+    }
+  },
+  {
+    "slide": 9,
+    "title": "BRAIN & ORBITS",
+    "targetPlane": "coronal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image25.jpg",
+        "width": 640,
+        "height": 640,
+        "yellowPixels": 13172,
+        "lines": {
+          "cx": 0.3099,
+          "cy": 0.5279,
+          "angleDeg": -72.01,
+          "extent": 0.4196
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.8,
+        "nHoughSegments": 31,
+        "fov": {
+          "cx": 0.3099,
+          "cy": 0.5279,
+          "w": 0.8322,
+          "h": 0.4196,
+          "angleDeg": -72.4
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image16.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 2164,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5547,
+          "angleDeg": -90.0,
+          "extent": 0.7461
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.96,
+        "nHoughSegments": 14,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5547,
+          "w": 0.7969,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image24.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 4508,
+        "lines": {
+          "cx": 0.4982,
+          "cy": 0.3098,
+          "angleDeg": 0.51,
+          "extent": 0.3543
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.85,
+        "nHoughSegments": 24,
+        "fov": {
+          "cx": 0.4982,
+          "cy": 0.3098,
+          "w": 1.0039,
+          "h": 0.3543,
+          "angleDeg": 1.29
+        }
+      }
+    }
+  },
+  {
+    "slide": 10,
+    "title": "BRAIN & ORBITS",
+    "targetPlane": "axial",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image28.jpg",
+        "width": 640,
+        "height": 640,
+        "yellowPixels": 12998,
+        "lines": {
+          "cx": 0.4171,
+          "cy": 0.5604,
+          "angleDeg": 15.01,
+          "extent": 0.3287
+        },
+        "type": "lines",
+        "autoType": "fov",
+        "expectedType": "lines",
+        "confidence": 0.462,
+        "nHoughSegments": 29,
+        "fov": {
+          "cx": 0.4171,
+          "cy": 0.5604,
+          "w": 0.8324,
+          "h": 0.3287,
+          "angleDeg": 16.66
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image27.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 3740,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5977,
+          "angleDeg": -0.46,
+          "extent": 0.3047
+        },
+        "type": "lines",
+        "autoType": "fov",
+        "expectedType": "lines",
+        "confidence": 0.477,
+        "nHoughSegments": 29,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5977,
+          "w": 0.7461,
+          "h": 0.3047,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image26.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 1892,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.4824,
+          "angleDeg": 0.52,
+          "extent": 0.7773
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.966,
+        "nHoughSegments": 13,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.4824,
+          "w": 0.7773,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 11,
+    "title": "BRAIN FOR SIEZURE",
+    "targetPlane": "coronal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image29.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 4701,
+        "lines": {
+          "cx": 0.5148,
+          "cy": 0.4916,
+          "angleDeg": 70.26,
+          "extent": 0.6421
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.55,
+        "nHoughSegments": 22,
+        "fov": {
+          "cx": 0.5148,
+          "cy": 0.4916,
+          "w": 0.8911,
+          "h": 0.6421,
+          "angleDeg": 68.88
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image30.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 2423,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5137,
+          "angleDeg": -90.0,
+          "extent": 0.9961
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.865,
+        "nHoughSegments": 14,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5137,
+          "w": 0.9961,
+          "h": 0.9648,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image31.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 4609,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5605,
+          "angleDeg": -1.96,
+          "extent": 0.6211
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.75,
+        "nHoughSegments": 27,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5605,
+          "w": 0.9961,
+          "h": 0.6211,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 12,
+    "title": "MRA HEAD-CENTER AT GLABELLA",
+    "targetPlane": "axial",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image34.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 8319,
+        "lines": {
+          "cx": 0.5081,
+          "cy": 0.5539,
+          "angleDeg": -7.46,
+          "extent": 0.5593
+        },
+        "type": "lines",
+        "autoType": "fov",
+        "expectedType": "lines",
+        "confidence": 0.446,
+        "nHoughSegments": 48,
+        "fov": {
+          "cx": 0.5081,
+          "cy": 0.5539,
+          "w": 0.8206,
+          "h": 0.5593,
+          "angleDeg": -5.86
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image33.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 5968,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5898,
+          "angleDeg": 0.53,
+          "extent": 0.5625
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 1.0,
+        "nHoughSegments": 37,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5898,
+          "w": 0.7461,
+          "h": 0.5625,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image32.jpg",
+        "width": 256,
+        "height": 256,
+        "yellowPixels": 2872,
+        "lines": {
+          "cx": 0.498,
+          "cy": 0.5059,
+          "angleDeg": 0.0,
+          "extent": 0.8555
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.954,
+        "nHoughSegments": 17,
+        "fov": {
+          "cx": 0.498,
+          "cy": 0.5059,
+          "w": 0.8555,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 13,
+    "title": "MRV HEAD",
+    "targetPlane": "axial",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image35.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 3124,
+        "lines": {
+          "cx": 0.4969,
+          "cy": 0.4475,
+          "angleDeg": -1.44,
+          "extent": 0.7963
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.55,
+        "nHoughSegments": 15,
+        "fov": {
+          "cx": 0.4969,
+          "cy": 0.4475,
+          "w": 0.9938,
+          "h": 0.7963,
+          "angleDeg": 0.0
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image36.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 2412,
+        "lines": {
+          "cx": 0.5093,
+          "cy": 0.4506,
+          "angleDeg": -2.13,
+          "extent": 0.8025
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.55,
+        "nHoughSegments": 15,
+        "fov": {
+          "cx": 0.5093,
+          "cy": 0.4506,
+          "w": 0.8025,
+          "h": 0.7469,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image37.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 2061,
+        "lines": {
+          "cx": 0.5,
+          "cy": 0.4784,
+          "angleDeg": -89.95,
+          "extent": 0.7654
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.953,
+        "nHoughSegments": 15,
+        "fov": {
+          "cx": 0.5,
+          "cy": 0.4784,
+          "w": 0.9568,
+          "h": 0.7654,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 14,
+    "title": "MRV HEAD",
+    "targetPlane": "coronal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image38.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 465,
+        "lines": {
+          "cx": 0.7581,
+          "cy": 0.4201,
+          "angleDeg": -85.75,
+          "extent": 0.445
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.75,
+        "nHoughSegments": 4,
+        "fov": {
+          "cx": 0.7581,
+          "cy": 0.4201,
+          "w": 0.8714,
+          "h": 0.445,
+          "angleDeg": -85.96
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image39.jpg",
+        "width": 162,
+        "height": 162,
+        "type": "fov",
+        "autoType": "manual",
+        "expectedType": "fov",
+        "confidence": 1.0,
+        "fov": {
+          "cx": 0.494,
+          "cy": 0.49,
+          "w": 0.833,
+          "h": 0.875,
+          "angleDeg": 0.0
+        },
+        "note": "manual geometry from overrides.json"
+      },
+      "axial": {
+        "image": "ppt/media/image40.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 502,
+        "lines": {
+          "cx": 0.4722,
+          "cy": 0.5062,
+          "angleDeg": 0.0,
+          "extent": 0.8519
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.8,
+        "nHoughSegments": 4,
+        "fov": {
+          "cx": 0.4722,
+          "cy": 0.5062,
+          "w": 0.8704,
+          "h": 0.8519,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "slide": 15,
+    "title": "MRV HEAD",
+    "targetPlane": "sagittal",
+    "views": {
+      "sagittal": {
+        "image": "ppt/media/image41.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 2084,
+        "lines": {
+          "cx": 0.4969,
+          "cy": 0.4969,
+          "angleDeg": 0.62,
+          "extent": 0.9938
+        },
+        "type": "fov",
+        "autoType": "fov",
+        "expectedType": "fov",
+        "confidence": 0.962,
+        "nHoughSegments": 13,
+        "fov": {
+          "cx": 0.4969,
+          "cy": 0.4969,
+          "w": 0.9938,
+          "h": 0.9938,
+          "angleDeg": -90.0
+        }
+      },
+      "coronal": {
+        "image": "ppt/media/image42.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 828,
+        "lines": {
+          "cx": 0.537,
+          "cy": 0.4444,
+          "angleDeg": 89.38,
+          "extent": 0.0988
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.8,
+        "nHoughSegments": 4,
+        "fov": {
+          "cx": 0.537,
+          "cy": 0.4444,
+          "w": 0.8889,
+          "h": 0.0988,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "ppt/media/image43.jpg",
+        "width": 162,
+        "height": 162,
+        "yellowPixels": 850,
+        "lines": {
+          "cx": 0.537,
+          "cy": 0.466,
+          "angleDeg": -90.0,
+          "extent": 0.0988
+        },
+        "type": "lines",
+        "autoType": "lines",
+        "expectedType": "lines",
+        "confidence": 0.7,
+        "nHoughSegments": 6,
+        "fov": {
+          "cx": 0.537,
+          "cy": 0.466,
+          "w": 0.9321,
+          "h": 0.0988,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  }
+]

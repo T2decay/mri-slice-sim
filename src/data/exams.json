@@ -1,0 +1,646 @@
+[
+  {
+    "id": "brain-sagittal",
+    "exam": "Brain",
+    "region": "Neuro",
+    "landmark": "Center to glabella",
+    "targetPlane": "sagittal",
+    "sequenceNote": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover from just above the head to the second vertebral body and entire brain from P to A",
+      "coronal": "align parallel with the longitudinal fissure to cover entire brain L to R",
+      "axial": "align parallel with the longitudinal fissure to cover entire brain L to R"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-sagittal/sagittal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.499,
+          "cy": 0.5486,
+          "w": 0.9979,
+          "h": 0.8988,
+          "angleDeg": 0.0
+        }
+      },
+      "coronal": {
+        "image": "images/brain-sagittal/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4969,
+          "cy": 0.5486,
+          "angleDeg": 90.0,
+          "extent": 0.5269
+        }
+      },
+      "axial": {
+        "image": "images/brain-sagittal/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.498,
+          "cy": 0.498,
+          "angleDeg": -89.97,
+          "extent": 0.5977
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-axial",
+    "exam": "Brain",
+    "region": "Neuro",
+    "landmark": "Center to glabella",
+    "targetPlane": "axial",
+    "sequenceNote": "Axial",
+    "coverage": {
+      "sagittal": "align using the inferior aspect of the Genu and Splenium for reference and cover the brain from the top of the skull through the foramen magnum",
+      "coronal": "align perpendicular to longitudinal fissure",
+      "axial": "The FOV will cover the entire brain from L to R and P to A"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-axial/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.5033,
+          "cy": 0.4962,
+          "angleDeg": 1.71,
+          "extent": 0.6071
+        }
+      },
+      "coronal": {
+        "image": "images/brain-axial/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.499,
+          "cy": 0.4948,
+          "angleDeg": 0.0,
+          "extent": 0.593
+        }
+      },
+      "axial": {
+        "image": "images/brain-axial/axial.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.498,
+          "cy": 0.5137,
+          "w": 0.9961,
+          "h": 0.9648,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-coronal",
+    "exam": "Brain",
+    "region": "Neuro",
+    "landmark": "Center to glabella",
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to the midbrain and cover entire brain P to A",
+      "coronal": "The FOV will cover from just above the head to the second vertebral body and entire brain from L to R",
+      "axial": "align perpendicular to longitudinal fissure"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-coronal/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4886,
+          "cy": 0.5258,
+          "angleDeg": -89.98,
+          "extent": 0.6384
+        }
+      },
+      "coronal": {
+        "image": "images/brain-coronal/coronal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.499,
+          "cy": 0.53,
+          "w": 0.9979,
+          "h": 0.936,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "images/brain-coronal/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.498,
+          "cy": 0.4883,
+          "angleDeg": 0.0,
+          "extent": 0.7031
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-iacs-axial",
+    "exam": "Brain & IAC's",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "axial",
+    "sequenceNote": "Axial",
+    "coverage": {
+      "sagittal": "align perpendicular to the midbrain and cover entire brain P to A",
+      "coronal": "align parallel with the IAC\u2019s and cover from above the IAC\u2019s to the foramen magnum",
+      "axial": "The FOV will cover the entire brain from L to R and P to A"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-iacs-axial/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.5154,
+          "cy": 0.6722,
+          "angleDeg": -6.53,
+          "extent": 0.2673
+        }
+      },
+      "coronal": {
+        "image": "images/brain-iacs-axial/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.5004,
+          "cy": 0.6474,
+          "angleDeg": 0.64,
+          "extent": 0.3258
+        }
+      },
+      "axial": {
+        "image": "images/brain-iacs-axial/axial.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.498,
+          "cy": 0.5293,
+          "w": 0.9961,
+          "h": 0.8086,
+          "angleDeg": 0.0
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-iacs-coronal",
+    "exam": "Brain & IAC's",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to the midbrain",
+      "coronal": "The FOV will cover the entire brain from L to R and S to I",
+      "axial": "align parallel with the IAC\u2019s and cover from the sella to the fourth ventricle"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-iacs-coronal/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4868,
+          "cy": 0.5393,
+          "angleDeg": 79.13,
+          "extent": 0.2602
+        }
+      },
+      "coronal": {
+        "image": "images/brain-iacs-coronal/coronal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.498,
+          "cy": 0.5547,
+          "w": 0.7969,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "images/brain-iacs-coronal/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.498,
+          "cy": 0.5137,
+          "angleDeg": 1.05,
+          "extent": 0.2773
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-pituitary-sagittal",
+    "exam": "Brain & Pituitary",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "sagittal",
+    "sequenceNote": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover entire pituitary gland",
+      "coronal": "align parallel with the longitudinal fissure and cover medial portion of temporal lobes",
+      "axial": "align parallel with the longitudinal fissure"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-pituitary-sagittal/sagittal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.4504,
+          "cy": 0.5444,
+          "w": 0.8719,
+          "h": 0.7252,
+          "angleDeg": 0.0
+        }
+      },
+      "coronal": {
+        "image": "images/brain-pituitary-sagittal/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.498,
+          "cy": 0.5293,
+          "angleDeg": 89.85,
+          "extent": 0.2383
+        }
+      },
+      "axial": {
+        "image": "images/brain-pituitary-sagittal/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.5049,
+          "cy": 0.4448,
+          "angleDeg": 89.86,
+          "extent": 0.2797
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-pituitary-coronal",
+    "exam": "Brain & Pituitary",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to the midbrain and cover from the sphenoid sinus through the infundibulum",
+      "coronal": "The FOV will cover the entire pituitary gland",
+      "axial": "align perpendicular to longitudinal fissure"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-pituitary-coronal/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4336,
+          "cy": 0.498,
+          "angleDeg": 86.38,
+          "extent": 0.375
+        }
+      },
+      "coronal": {
+        "image": "images/brain-pituitary-coronal/coronal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.466,
+          "cy": 0.429,
+          "w": 0.9321,
+          "h": 0.7222,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "images/brain-pituitary-coronal/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4985,
+          "cy": 0.47,
+          "angleDeg": 0.0,
+          "extent": 0.2494
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-orbits-coronal",
+    "exam": "Brain & Orbits",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align perpendicular with optic nerves",
+      "coronal": "The FOV will cover bilateral optic nerves",
+      "axial": "align perpendicular with optic nerves and cover from the cornea through the optic chiasm"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-orbits-coronal/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.3099,
+          "cy": 0.5279,
+          "angleDeg": -72.01,
+          "extent": 0.4196
+        }
+      },
+      "coronal": {
+        "image": "images/brain-orbits-coronal/coronal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.498,
+          "cy": 0.5547,
+          "w": 0.7969,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      },
+      "axial": {
+        "image": "images/brain-orbits-coronal/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4982,
+          "cy": 0.3098,
+          "angleDeg": 0.51,
+          "extent": 0.3543
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-orbits-axial",
+    "exam": "Brain & Orbits",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "axial",
+    "sequenceNote": "Axial",
+    "coverage": {
+      "sagittal": "align parallel with optic nerve and cover from the floor of the orbits to the roof",
+      "coronal": "align parallel to bilateral optic nerves",
+      "axial": "The FOV will cover from the cornea through the optic chiasm"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-orbits-axial/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4171,
+          "cy": 0.5604,
+          "angleDeg": 15.01,
+          "extent": 0.3287
+        }
+      },
+      "coronal": {
+        "image": "images/brain-orbits-axial/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.498,
+          "cy": 0.5977,
+          "angleDeg": -0.46,
+          "extent": 0.3047
+        }
+      },
+      "axial": {
+        "image": "images/brain-orbits-axial/axial.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.498,
+          "cy": 0.4824,
+          "w": 0.7773,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  },
+  {
+    "id": "brain-seizure-coronal",
+    "exam": "Brain for Seizure",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align perpendicular to the temporal lobes covering through the brain",
+      "coronal": "The FOV will cover from just above the head to the second vertebral body and entire brain from L to R",
+      "axial": "align perpendicular to the temporal lobes covering from through the brain"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/brain-seizure-coronal/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.5148,
+          "cy": 0.4916,
+          "angleDeg": 70.26,
+          "extent": 0.6421
+        }
+      },
+      "coronal": {
+        "image": "images/brain-seizure-coronal/coronal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.498,
+          "cy": 0.5137,
+          "w": 0.9961,
+          "h": 0.9648,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "images/brain-seizure-coronal/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.498,
+          "cy": 0.5605,
+          "angleDeg": -1.96,
+          "extent": 0.6211
+        }
+      }
+    }
+  },
+  {
+    "id": "mra-head-axial-3dtof",
+    "exam": "MRA Head",
+    "region": "Neuro",
+    "landmark": "Center at glabella",
+    "targetPlane": "axial",
+    "sequenceNote": "Axial 3D TOF",
+    "coverage": {
+      "sagittal": "align perpendicular to brain stem and cover from foramen magnum to just above corpus callosum",
+      "coronal": "align perpendicular to the longitudinal fissure",
+      "axial": "The FOV will cover the entire brain from L to R and P to A"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/mra-head-axial-3dtof/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.5081,
+          "cy": 0.5539,
+          "angleDeg": -7.46,
+          "extent": 0.5593
+        }
+      },
+      "coronal": {
+        "image": "images/mra-head-axial-3dtof/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.498,
+          "cy": 0.5898,
+          "angleDeg": 0.53,
+          "extent": 0.5625
+        }
+      },
+      "axial": {
+        "image": "images/mra-head-axial-3dtof/axial.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.498,
+          "cy": 0.5059,
+          "w": 0.8555,
+          "h": 0.7461,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  },
+  {
+    "id": "mrv-head-axial-2dtof",
+    "exam": "MRV Head",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "axial",
+    "sequenceNote": "Axial 2D TOF",
+    "coverage": {
+      "sagittal": "align perpendicular to the head and cover from foramen magnum to just above scalp",
+      "coronal": "align perpendicular to the longitudinal fissure",
+      "axial": "The FOV will cover the entire head from L to R and P to A"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/mrv-head-axial-2dtof/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4969,
+          "cy": 0.4475,
+          "angleDeg": -1.44,
+          "extent": 0.7963
+        }
+      },
+      "coronal": {
+        "image": "images/mrv-head-axial-2dtof/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.5093,
+          "cy": 0.4506,
+          "angleDeg": -2.13,
+          "extent": 0.8025
+        }
+      },
+      "axial": {
+        "image": "images/mrv-head-axial-2dtof/axial.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.5,
+          "cy": 0.4784,
+          "w": 0.9568,
+          "h": 0.7654,
+          "angleDeg": -90.0
+        }
+      }
+    }
+  },
+  {
+    "id": "mrv-head-coronal-2dtof",
+    "exam": "MRV Head",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal 2D TOF",
+    "coverage": {
+      "sagittal": "align parallel to the brain stem and cover entire head P to A",
+      "coronal": "The FOV will cover the entire head from L to R and P to A",
+      "axial": "align perpendicular to the longitudinal fissure"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/mrv-head-coronal-2dtof/sagittal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.7581,
+          "cy": 0.4201,
+          "angleDeg": -85.75,
+          "extent": 0.445
+        }
+      },
+      "coronal": {
+        "image": "images/mrv-head-coronal-2dtof/coronal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.494,
+          "cy": 0.49,
+          "w": 0.833,
+          "h": 0.875,
+          "angleDeg": 0.0
+        }
+      },
+      "axial": {
+        "image": "images/mrv-head-coronal-2dtof/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.4722,
+          "cy": 0.5062,
+          "angleDeg": 0.0,
+          "extent": 0.8519
+        }
+      }
+    }
+  },
+  {
+    "id": "mrv-head-sagittal-pc",
+    "exam": "MRV Head",
+    "region": "Neuro",
+    "landmark": null,
+    "targetPlane": "sagittal",
+    "sequenceNote": "Sagittal PC",
+    "coverage": {
+      "sagittal": "The FOV will cover from just above the head to the second vertebral body and entire brain from P to A",
+      "coronal": "align parallel with the longitudinal fissure",
+      "axial": "align parallel with the longitudinal fissure"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/mrv-head-sagittal-pc/sagittal.png",
+        "answer": {
+          "type": "fov",
+          "cx": 0.4969,
+          "cy": 0.4969,
+          "w": 0.9938,
+          "h": 0.9938,
+          "angleDeg": -90.0
+        }
+      },
+      "coronal": {
+        "image": "images/mrv-head-sagittal-pc/coronal.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.537,
+          "cy": 0.4444,
+          "angleDeg": 89.38,
+          "extent": 0.0988
+        }
+      },
+      "axial": {
+        "image": "images/mrv-head-sagittal-pc/axial.png",
+        "answer": {
+          "type": "lines",
+          "cx": 0.537,
+          "cy": 0.466,
+          "angleDeg": -90.0,
+          "extent": 0.0988
+        }
+      }
+    }
+  }
+]

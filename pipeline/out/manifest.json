@@ -1,0 +1,212 @@
+[
+  {
+    "slide": 2,
+    "title": "BRAIN-CENTER TO GLABELLA",
+    "subtitle": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover from just above the head to the second vertebral body and entire brain from P to A",
+      "coronal": "align parallel with the longitudinal fissure to cover entire brain L to R",
+      "axial": "align parallel with the longitudinal fissure to cover entire brain L to R"
+    },
+    "images": {
+      "sagittal": "ppt/media/image5.jpg",
+      "coronal": "ppt/media/image3.jpg",
+      "axial": "ppt/media/image4.jpg"
+    }
+  },
+  {
+    "slide": 3,
+    "title": "BRAIN",
+    "subtitle": "Axial",
+    "coverage": {
+      "sagittal": "align using the inferior aspect of the Genu and Splenium for reference and cover the brain from the top of the skull through the foramen magnum",
+      "coronal": "align perpendicular to longitudinal fissure",
+      "axial": "The FOV will cover the entire brain from L to R and P to A"
+    },
+    "images": {
+      "sagittal": "ppt/media/image8.jpg",
+      "coronal": "ppt/media/image6.jpg",
+      "axial": "ppt/media/image7.jpg"
+    }
+  },
+  {
+    "slide": 4,
+    "title": "BRAIN",
+    "subtitle": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to the midbrain and cover entire brain P to A",
+      "coronal": "The FOV will cover from just above the head to the second vertebral body and entire brain from L to R",
+      "axial": "align perpendicular to longitudinal fissure"
+    },
+    "images": {
+      "sagittal": "ppt/media/image9.jpg",
+      "coronal": "ppt/media/image11.jpg",
+      "axial": "ppt/media/image10.jpg"
+    }
+  },
+  {
+    "slide": 5,
+    "title": "BRAIN & IAC\u2019S",
+    "subtitle": "Axial",
+    "coverage": {
+      "sagittal": "align perpendicular to the midbrain and cover entire brain P to A",
+      "coronal": "align parallel with the IAC\u2019s and cover from above the IAC\u2019s to the foramen magnum",
+      "axial": "The FOV will cover the entire brain from L to R and P to A"
+    },
+    "images": {
+      "sagittal": "ppt/media/image12.jpg",
+      "coronal": "ppt/media/image13.jpg",
+      "axial": "ppt/media/image14.jpg"
+    }
+  },
+  {
+    "slide": 6,
+    "title": "BRAIN & IAC\u2019S",
+    "subtitle": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to the midbrain",
+      "coronal": "The FOV will cover the entire brain from L to R and S to I",
+      "axial": "align parallel with the IAC\u2019s and cover from the sella to the fourth ventricle"
+    },
+    "images": {
+      "sagittal": "ppt/media/image15.jpg",
+      "coronal": "ppt/media/image16.jpg",
+      "axial": "ppt/media/image17.jpg"
+    }
+  },
+  {
+    "slide": 7,
+    "title": "BRAIN & PITUITARY",
+    "subtitle": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover entire pituitary gland",
+      "coronal": "align parallel with the longitudinal fissure and cover medial portion of temporal lobes",
+      "axial": "align parallel with the longitudinal fissure"
+    },
+    "images": {
+      "sagittal": "ppt/media/image18.jpg",
+      "coronal": "ppt/media/image19.jpg",
+      "axial": "ppt/media/image20.jpg"
+    }
+  },
+  {
+    "slide": 8,
+    "title": "BRAIN & PITUITARY",
+    "subtitle": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to the midbrain and cover from the sphenoid sinus through the infundibulum",
+      "coronal": "The FOV will cover the entire pituitary gland",
+      "axial": "align perpendicular to longitudinal fissure"
+    },
+    "images": {
+      "sagittal": "ppt/media/image21.jpg",
+      "coronal": "ppt/media/image22.png",
+      "axial": "ppt/media/image23.png"
+    }
+  },
+  {
+    "slide": 9,
+    "title": "BRAIN & ORBITS",
+    "subtitle": "Coronal",
+    "coverage": {
+      "sagittal": "align perpendicular with optic nerves",
+      "coronal": "The FOV will cover bilateral optic nerves",
+      "axial": "align perpendicular with optic nerves and cover from the cornea through the optic chiasm"
+    },
+    "images": {
+      "sagittal": "ppt/media/image25.jpg",
+      "coronal": "ppt/media/image16.jpg",
+      "axial": "ppt/media/image24.jpg"
+    }
+  },
+  {
+    "slide": 10,
+    "title": "BRAIN & ORBITS",
+    "subtitle": "Axial",
+    "coverage": {
+      "sagittal": "align parallel with optic nerve and cover from the floor of the orbits to the roof",
+      "coronal": "align parallel to bilateral optic nerves",
+      "axial": "The FOV will cover from the cornea through the optic chiasm"
+    },
+    "images": {
+      "sagittal": "ppt/media/image28.jpg",
+      "coronal": "ppt/media/image27.jpg",
+      "axial": "ppt/media/image26.jpg"
+    }
+  },
+  {
+    "slide": 11,
+    "title": "BRAIN FOR SIEZURE",
+    "subtitle": "Coronal",
+    "coverage": {
+      "sagittal": "align perpendicular to the temporal lobes covering through the brain",
+      "coronal": "The FOV will cover from just above the head to the second vertebral body and entire brain from L to R",
+      "axial": "align perpendicular to the temporal lobes covering from through the brain"
+    },
+    "images": {
+      "sagittal": "ppt/media/image29.jpg",
+      "coronal": "ppt/media/image30.jpg",
+      "axial": "ppt/media/image31.jpg"
+    }
+  },
+  {
+    "slide": 12,
+    "title": "MRA HEAD-CENTER AT GLABELLA",
+    "subtitle": "Axial 3D TOF",
+    "coverage": {
+      "sagittal": "align perpendicular to brain stem and cover from foramen magnum to just above corpus callosum",
+      "coronal": "align perpendicular to the longitudinal fissure",
+      "axial": "The FOV will cover the entire brain from L to R and P to A"
+    },
+    "images": {
+      "sagittal": "ppt/media/image34.jpg",
+      "coronal": "ppt/media/image33.jpg",
+      "axial": "ppt/media/image32.jpg"
+    }
+  },
+  {
+    "slide": 13,
+    "title": "MRV HEAD",
+    "subtitle": "Axial 2D TOF",
+    "coverage": {
+      "sagittal": "align perpendicular to the head and cover from foramen magnum to just above scalp",
+      "coronal": "align perpendicular to the longitudinal fissure",
+      "axial": "The FOV will cover the entire head from L to R and P to A"
+    },
+    "images": {
+      "sagittal": "ppt/media/image35.jpg",
+      "coronal": "ppt/media/image36.jpg",
+      "axial": "ppt/media/image37.jpg"
+    }
+  },
+  {
+    "slide": 14,
+    "title": "MRV HEAD",
+    "subtitle": "Coronal 2D TOF",
+    "coverage": {
+      "sagittal": "align parallel to the brain stem and cover entire head P to A",
+      "coronal": "The FOV will cover the entire head from L to R and P to A",
+      "axial": "align perpendicular to the longitudinal fissure"
+    },
+    "images": {
+      "sagittal": "ppt/media/image38.jpg",
+      "coronal": "ppt/media/image39.jpg",
+      "axial": "ppt/media/image40.jpg"
+    }
+  },
+  {
+    "slide": 15,
+    "title": "MRV HEAD",
+    "subtitle": "Sagittal PC",
+    "coverage": {
+      "sagittal": "The FOV will cover from just above the head to the second vertebral body and entire brain from P to A",
+      "coronal": "align parallel with the longitudinal fissure",
+      "axial": "align parallel with the longitudinal fissure"
+    },
+    "images": {
+      "sagittal": "ppt/media/image41.jpg",
+      "coronal": "ppt/media/image42.jpg",
+      "axial": "ppt/media/image43.jpg"
+    }
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "ppt/media/image38.jpg": {"mask": "white", "clipBottom": 0.85, "substitute": "slide15_sagittal.png"},
+  "ppt/media/image39.jpg": {"answer": {"type": "fov", "cx": 0.494, "cy": 0.49, "w": 0.833, "h": 0.875, "angleDeg": 0.0}, "substitute": "slide15_coronal.png"},
+  "ppt/media/image40.jpg": {"mask": "white", "substitute": "slide15_axial.png"}
+}

@@ -1,0 +1,536 @@
+[
+  {
+    "method": "telea",
+    "yellowPixels": 3199,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 12.2,
+      "telea": 3.6
+    },
+    "slide": 2,
+    "plane": "sagittal",
+    "source": "ppt/media/image5.jpg",
+    "out": "slide02_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 10284,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 197.0,
+      "telea": 7.1
+    },
+    "slide": 2,
+    "plane": "coronal",
+    "source": "ppt/media/image3.jpg",
+    "out": "slide02_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 5036,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 78.3,
+      "telea": 8.0
+    },
+    "slide": 2,
+    "plane": "axial",
+    "source": "ppt/media/image4.jpg",
+    "out": "slide02_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 11633,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 166.7,
+      "telea": 7.2
+    },
+    "slide": 3,
+    "plane": "sagittal",
+    "source": "ppt/media/image8.jpg",
+    "out": "slide03_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 10455,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 436.2,
+      "telea": 6.5
+    },
+    "slide": 3,
+    "plane": "coronal",
+    "source": "ppt/media/image6.jpg",
+    "out": "slide03_coronal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 2039,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 1.3,
+      "telea": 2.6
+    },
+    "slide": 3,
+    "plane": "axial",
+    "source": "ppt/media/image7.jpg",
+    "out": "slide03_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 10792,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 55.1,
+      "telea": 5.6
+    },
+    "slide": 4,
+    "plane": "sagittal",
+    "source": "ppt/media/image9.jpg",
+    "out": "slide04_sagittal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 3487,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 1.6,
+      "telea": 2.5
+    },
+    "slide": 4,
+    "plane": "coronal",
+    "source": "ppt/media/image11.jpg",
+    "out": "slide04_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 5752,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 16.9,
+      "telea": 7.4
+    },
+    "slide": 4,
+    "plane": "axial",
+    "source": "ppt/media/image10.jpg",
+    "out": "slide04_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 10330,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 118.0,
+      "telea": 8.5
+    },
+    "slide": 5,
+    "plane": "sagittal",
+    "source": "ppt/media/image12.jpg",
+    "out": "slide05_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 4810,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 37.5,
+      "telea": 7.8
+    },
+    "slide": 5,
+    "plane": "coronal",
+    "source": "ppt/media/image13.jpg",
+    "out": "slide05_coronal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 2602,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 3.9,
+      "telea": 5.1
+    },
+    "slide": 5,
+    "plane": "axial",
+    "source": "ppt/media/image14.jpg",
+    "out": "slide05_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 9632,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 65.8,
+      "telea": 6.6
+    },
+    "slide": 6,
+    "plane": "sagittal",
+    "source": "ppt/media/image15.jpg",
+    "out": "slide06_sagittal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 2164,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 3.2,
+      "telea": 3.9
+    },
+    "slide": 6,
+    "plane": "coronal",
+    "source": "ppt/media/image16.jpg",
+    "out": "slide06_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 4244,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 20.5,
+      "telea": 10.5
+    },
+    "slide": 6,
+    "plane": "axial",
+    "source": "ppt/media/image17.jpg",
+    "out": "slide06_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 8527,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 186.6,
+      "telea": 7.2
+    },
+    "slide": 7,
+    "plane": "sagittal",
+    "source": "ppt/media/image18.jpg",
+    "out": "slide07_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 5815,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 38.8,
+      "telea": 8.3
+    },
+    "slide": 7,
+    "plane": "coronal",
+    "source": "ppt/media/image19.jpg",
+    "out": "slide07_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 6829,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 479.4,
+      "telea": 8.9
+    },
+    "slide": 7,
+    "plane": "axial",
+    "source": "ppt/media/image20.jpg",
+    "out": "slide07_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 6124,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 15.8,
+      "telea": 6.0
+    },
+    "slide": 8,
+    "plane": "sagittal",
+    "source": "ppt/media/image21.jpg",
+    "out": "slide08_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 1719,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 44.9,
+      "telea": 5.7
+    },
+    "slide": 8,
+    "plane": "coronal",
+    "source": "ppt/media/image22.png",
+    "out": "slide08_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 4934,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 79.6,
+      "telea": 10.1
+    },
+    "slide": 8,
+    "plane": "axial",
+    "source": "ppt/media/image23.png",
+    "out": "slide08_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 13172,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 54.3,
+      "telea": 5.4
+    },
+    "slide": 9,
+    "plane": "sagittal",
+    "source": "ppt/media/image25.jpg",
+    "out": "slide09_sagittal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 2164,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 3.2,
+      "telea": 3.9
+    },
+    "slide": 9,
+    "plane": "coronal",
+    "source": "ppt/media/image16.jpg",
+    "out": "slide09_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 4508,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 88.2,
+      "telea": 8.5
+    },
+    "slide": 9,
+    "plane": "axial",
+    "source": "ppt/media/image24.jpg",
+    "out": "slide09_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 12998,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 44.3,
+      "telea": 5.4
+    },
+    "slide": 10,
+    "plane": "sagittal",
+    "source": "ppt/media/image28.jpg",
+    "out": "slide10_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 3740,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 67.5,
+      "telea": 8.0
+    },
+    "slide": 10,
+    "plane": "coronal",
+    "source": "ppt/media/image27.jpg",
+    "out": "slide10_coronal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 1892,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 7.0,
+      "telea": 7.6
+    },
+    "slide": 10,
+    "plane": "axial",
+    "source": "ppt/media/image26.jpg",
+    "out": "slide10_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 4701,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 38.1,
+      "telea": 9.2
+    },
+    "slide": 11,
+    "plane": "sagittal",
+    "source": "ppt/media/image29.jpg",
+    "out": "slide11_sagittal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 2423,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 2.6,
+      "telea": 3.4
+    },
+    "slide": 11,
+    "plane": "coronal",
+    "source": "ppt/media/image30.jpg",
+    "out": "slide11_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 4609,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 46.2,
+      "telea": 6.6
+    },
+    "slide": 11,
+    "plane": "axial",
+    "source": "ppt/media/image31.jpg",
+    "out": "slide11_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 8319,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 129.3,
+      "telea": 9.7
+    },
+    "slide": 12,
+    "plane": "sagittal",
+    "source": "ppt/media/image34.jpg",
+    "out": "slide12_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 5968,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 28.5,
+      "telea": 8.8
+    },
+    "slide": 12,
+    "plane": "coronal",
+    "source": "ppt/media/image33.jpg",
+    "out": "slide12_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 2872,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 46.0,
+      "telea": 6.4
+    },
+    "slide": 12,
+    "plane": "axial",
+    "source": "ppt/media/image32.jpg",
+    "out": "slide12_axial.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 3124,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 6.1,
+      "telea": 6.8
+    },
+    "slide": 13,
+    "plane": "sagittal",
+    "source": "ppt/media/image35.jpg",
+    "out": "slide13_sagittal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 2412,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 6.3,
+      "telea": 6.4
+    },
+    "slide": 13,
+    "plane": "coronal",
+    "source": "ppt/media/image36.jpg",
+    "out": "slide13_coronal.png"
+  },
+  {
+    "method": "ns",
+    "yellowPixels": 2061,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 3.9,
+      "telea": 4.5
+    },
+    "slide": 13,
+    "plane": "axial",
+    "source": "ppt/media/image37.jpg",
+    "out": "slide13_axial.png"
+  },
+  {
+    "method": "substitute",
+    "yellowPixels": 0,
+    "slide": 14,
+    "plane": "sagittal",
+    "source": "ppt/media/image38.jpg",
+    "out": "slide14_sagittal.png",
+    "substituteOf": "slide15_sagittal.png"
+  },
+  {
+    "method": "substitute",
+    "yellowPixels": 0,
+    "slide": 14,
+    "plane": "coronal",
+    "source": "ppt/media/image39.jpg",
+    "out": "slide14_coronal.png",
+    "substituteOf": "slide15_coronal.png"
+  },
+  {
+    "method": "substitute",
+    "yellowPixels": 0,
+    "slide": 14,
+    "plane": "axial",
+    "source": "ppt/media/image40.jpg",
+    "out": "slide14_axial.png",
+    "substituteOf": "slide15_axial.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 2084,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 35.5,
+      "telea": 5.6
+    },
+    "slide": 15,
+    "plane": "sagittal",
+    "source": "ppt/media/image41.jpg",
+    "out": "slide15_sagittal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 828,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 6.5,
+      "telea": 6.0
+    },
+    "slide": 15,
+    "plane": "coronal",
+    "source": "ppt/media/image42.jpg",
+    "out": "slide15_coronal.png"
+  },
+  {
+    "method": "telea",
+    "yellowPixels": 850,
+    "residualYellow": 0,
+    "scores": {
+      "ns": 14.8,
+      "telea": 5.4
+    },
+    "slide": 15,
+    "plane": "axial",
+    "source": "ppt/media/image43.jpg",
+    "out": "slide15_axial.png"
+  }
+]
