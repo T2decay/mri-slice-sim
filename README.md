@@ -5,7 +5,7 @@ touched a scanner. Students pick an exam (e.g. *Brain — Axial*), see three
 clean localizer images (sagittal, coronal, axial), and prescribe the slice
 group themselves — position, rotate, and size an FOV box on the target plane
 and slice-group lines on the cross-planes, just like at the console. The app
-grades their placement against the instructor's reference geometry and gives
+compares their placement with the instructor's reference geometry and gives
 feedback using the same coverage language as the teaching deck.
 
 **Pilot scope:** the Neuro / Brain family (14 exams: Brain, Brain & IAC's,
@@ -13,17 +13,31 @@ Brain & Pituitary, Brain & Orbits, Brain for Seizure, MRA Head, MRV Head).
 
 ## For instructors
 
-Each exam opens in **Learn mode**: the correct placement is shown as a green
-ghost the whole time, with a live readout of the student's offset, angle, and
-size error, so the first rep is always guided. Switching to **Practice mode**
-hides the reference; the student places all three views from the written
-coverage instructions alone, then presses **Scan** for a scored result
-(center within 4% of the image diagonal, angle within 4°, size within 10% for
-full credit — tunable in `src/lib/scoring.ts` `TOLERANCES`). Feedback quotes
-the exact coverage sentence from your deck, so the app reinforces the same
-language you teach with. Nothing is stored: no accounts, no student data —
-students can retry freely, and a first-run walkthrough (reopenable via the
-`?` button) covers the controls in four steps.
+The console opens on **Brain — Sagittal**. An exam dropdown at the top lists
+the exam families; the **Sag / Cor / Ax** buttons (hotkeys S, C, A) switch
+between the planes that family actually has. **Add Slice Group** drops a
+starting prescription on all three localizers; the student moves, rotates,
+and resizes it to match the written coverage instructions.
+
+One **prescription** (FOV readout × phase, slice count, thickness, gap) is
+shared by all three views, exactly as at the console: resizing the FOV box on
+the target plane changes the slice-line length on the cross-planes, and
+stretching a slice stack changes the slice count everywhere. The
+**Parameters** block under the coverage text is two-way bound to the same
+numbers for fine-tuning. Position and angle stay independent per view, so
+students still align each localizer themselves.
+
+There is no grading. Under every viewport a live readout shows the offset,
+angle, and size difference from the reference, color-coded green / amber /
+red (thresholds in `src/lib/scoring.ts` `TOLERANCES`). **Scan** reveals the
+green reference placement and gives feedback that quotes the exact coverage
+sentence from your deck; the **Key** button shows or hides that reference at
+any time. Nothing is stored: no accounts, no student data, no results —
+students can retry freely, and a first-run walkthrough (reopenable via `?`)
+covers the flow in four steps.
+
+The nominal physical scale of the localizers (250 mm image width) lives in
+`src/data/scale.ts` and can be tuned per exam family.
 
 ## Run locally
 
@@ -37,7 +51,9 @@ npm run build      # type-check + production build in dist/
 
 - `src/` — Vite + React + TypeScript app (SVG overlays on `<img>`, no backend)
 - `src/data/exams.json` — generated content: one entry per exam with coverage
-  text and normalized answer geometry
+  text and normalized answer geometry (do not hand-edit)
+- `src/data/scale.ts` — hand-tuned nominal image scale (mm) used to derive
+  every overlay size from the shared prescription
 - `public/images/{examId}/{plane}.png` — cleaned localizers
 - `pipeline/` — one-time Python asset pipeline (pptx → clean images + answer
   keys); see `pipeline/*.py` headers. Re-run order: `01_extract` →
