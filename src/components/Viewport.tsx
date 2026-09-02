@@ -1,7 +1,7 @@
 import { useId, useRef } from 'react'
-import type { Placement, Plane } from '../types'
+import type { Placement, Plane, RenderView } from '../types'
 import type { Deltas } from '../lib/scoring'
-import { TOLERANCES } from '../lib/scoring'
+import { TOLERANCES, band } from '../lib/scoring'
 import { VIEW, clamp } from '../lib/svg'
 import FovBox from './FovBox'
 import SliceLines from './SliceLines'
@@ -9,21 +9,26 @@ import SliceLines from './SliceLines'
 interface Props {
   plane: Plane
   image: string
-  answer: Placement
-  placement?: Placement | null
-  showGhost: boolean
+  /** green reference overlay (null = hidden) */
+  ghost: RenderView | null
+  /** the student's yellow overlay (null = no slice group yet) */
+  student?: RenderView | null
   interactive?: boolean
   mini?: boolean
+  /** highlighted as the plane the student is working on */
+  active?: boolean
+  onActivate?: () => void
   onChange?: (p: Placement) => void
   onInteract?: () => void
+  /** live offset/angle/size readout; null shows placeholders */
   deltas?: Deltas | null
 }
 
 /** keyboard nudge: 1 px on a typical 256-px localizer */
 const NUDGE = 1 / 256
 
-function renderPlacement(
-  p: Placement,
+function renderView(
+  v: RenderView,
   opts: {
     ghost?: boolean
     interactive?: boolean
@@ -33,6 +38,7 @@ function renderPlacement(
     onInteract?: () => void
   },
 ) {
+  const p = v.placement
   if (p.type === 'fov') {
     return (
       <FovBox
@@ -48,6 +54,7 @@ function renderPlacement(
   return (
     <SliceLines
       p={p}
+      lines={v.lines ?? { offsets: [0], lineLen: 0.75 }}
       ghost={opts.ghost}
       interactive={opts.interactive}
       svgRef={opts.svgRef}
@@ -58,19 +65,16 @@ function renderPlacement(
   )
 }
 
-function band(v: number, tol: { full: number; partial: number }): string {
-  return v <= tol.full ? 'good' : v <= tol.partial ? 'close' : 'off'
-}
-
-/** One localizer image plus its SVG overlay layer. */
+/** One localizer image plus its SVG overlay layer and readout. */
 export default function Viewport({
   plane,
   image,
-  answer,
-  placement,
-  showGhost,
+  ghost,
+  student,
   interactive,
   mini,
+  active,
+  onActivate,
   onChange,
   onInteract,
   deltas,
@@ -79,7 +83,8 @@ export default function Viewport({
   const clipId = useId()
 
   const onKeyDown = (e: React.KeyboardEvent) => {
-    if (!placement || !interactive || !onChange) return
+    if (!student || !interactive || !onChange) return
+    const placement = student.placement
     let dx = 0
     let dy = 0
     let dAng = 0
@@ -109,12 +114,16 @@ export default function Viewport({
     onInteract?.()
   }
 
+  const frameCls = ['viewport-frame', active ? 'active' : ''].join(' ').trim()
+
   return (
     <div className={mini ? 'viewport mini' : 'viewport'}>
       <div
-        className="viewport-frame"
+        className={frameCls}
         tabIndex={interactive ? 0 : undefined}
         onKeyDown={onKeyDown}
+        onPointerDown={onActivate}
+        onFocus={onActivate}
         aria-label={`${plane} localizer`}
       >
         <img src={import.meta.env.BASE_URL + image} alt={`${plane} localizer`} draggable={false} />
@@ -128,9 +137,9 @@ export default function Viewport({
               <rect x={0} y={0} width={VIEW} height={VIEW} />
             </clipPath>
           </defs>
-          {showGhost && renderPlacement(answer, { ghost: true, clipId })}
-          {placement &&
-            renderPlacement(placement, {
+          {ghost && renderView(ghost, { ghost: true, clipId })}
+          {student &&
+            renderView(student, {
               interactive,
               svgRef,
               clipId,
@@ -140,17 +149,27 @@ export default function Viewport({
         </svg>
         <span className="plane-label">{plane}</span>
       </div>
-      {!mini && deltas && (
-        <div className="readout">
-          <span className={band(deltas.offsetFrac, TOLERANCES.center)}>
-            offset {(deltas.offsetFrac * 100).toFixed(1)}%
-          </span>
-          <span className={band(deltas.angleDeg, TOLERANCES.angle)}>
-            angle Δ {deltas.angleDeg.toFixed(1)}°
-          </span>
-          <span className={band(deltas.sizeFrac, TOLERANCES.size)}>
-            size Δ {(deltas.sizeFrac * 100).toFixed(0)}%
-          </span>
+      {!mini && (
+        <div className="readout" aria-live="off">
+          {deltas ? (
+            <>
+              <span className={band(deltas.offsetFrac, TOLERANCES.center)}>
+                offset {(deltas.offsetFrac * 100).toFixed(1)}%
+              </span>
+              <span className={band(deltas.angleDeg, TOLERANCES.angle)}>
+                angle Δ {deltas.angleDeg.toFixed(1)}°
+              </span>
+              <span className={band(deltas.sizeFrac, TOLERANCES.size)}>
+                size Δ {(deltas.sizeFrac * 100).toFixed(0)}%
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="idle">offset —</span>
+              <span className="idle">angle Δ —</span>
+              <span className="idle">size Δ —</span>
+            </>
+          )}
         </div>
       )}
     </div>

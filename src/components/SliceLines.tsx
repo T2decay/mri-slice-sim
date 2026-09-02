@@ -1,9 +1,11 @@
 import { useRef } from 'react'
-import type { LinesPlacement } from '../types'
+import type { LinesGeometry, LinesPlacement } from '../types'
 import { VIEW, clientToSvg, clamp, toLocal } from '../lib/svg'
 
 interface Props {
   p: LinesPlacement
+  /** slice offsets + line length, derived from the shared prescription */
+  lines: LinesGeometry
   ghost?: boolean
   interactive?: boolean
   svgRef?: React.RefObject<SVGSVGElement | null>
@@ -21,14 +23,17 @@ interface DragState {
   py: number
 }
 
-/** Fixed cosmetic 5-line group (plan §7.3): grading uses center/angle/extent. */
-const LINE_OFFSETS = [-0.5, -0.25, 0, 0.25, 0.5]
-const LINE_LEN = 75
 const ROT_STEM = 9
+/** never let the grab area collapse on a tiny FOV or a single slice */
+const MIN_HIT_LEN = 30
 
-/** A slice-line group: drag to move, top handle rotates, end handles stretch extent. */
+/**
+ * A slice-line set: one line per real slice. Drag to move, top handle rotates,
+ * end handles stretch coverage (the shell turns that into a slice count).
+ */
 export default function SliceLines({
   p,
+  lines,
   ghost,
   interactive,
   svgRef,
@@ -41,6 +46,7 @@ export default function SliceLines({
   const cx = p.cx * VIEW
   const cy = p.cy * VIEW
   const ext = p.extent * VIEW
+  const half = (lines.lineLen * VIEW) / 2
 
   const down = (mode: DragMode) => (e: React.PointerEvent) => {
     if (!interactive || !svgRef?.current) return
@@ -67,7 +73,7 @@ export default function SliceLines({
       onChange?.({ ...start, angleDeg: ((ang + 180) % 360) - 180 })
     } else {
       const local = toLocal(pt.x - start.cx * VIEW, pt.y - start.cy * VIEW, start.angleDeg)
-      onChange?.({ ...start, extent: clamp((Math.abs(local.y) * 2) / VIEW, 0.04, 1.05) })
+      onChange?.({ ...start, extent: clamp((Math.abs(local.y) * 2) / VIEW, 0.01, 1.05) })
     }
   }
 
@@ -76,20 +82,24 @@ export default function SliceLines({
   }
 
   const cls = ghost ? 'overlay ghost' : 'overlay student'
+  const hitHalf = Math.max(half, MIN_HIT_LEN / 2)
 
   return (
     <g className={cls} transform={`translate(${cx} ${cy}) rotate(${p.angleDeg})`}>
       {/* the lines themselves, clipped to the image like a real console */}
-      <g clipPath={clipId ? `url(#${clipId})` : undefined} transform={`rotate(${-p.angleDeg}) translate(${-cx} ${-cy})`}>
+      <g
+        clipPath={clipId ? `url(#${clipId})` : undefined}
+        transform={`rotate(${-p.angleDeg}) translate(${-cx} ${-cy})`}
+      >
         <g transform={`translate(${cx} ${cy}) rotate(${p.angleDeg})`}>
-          {LINE_OFFSETS.map((k) => (
+          {lines.offsets.map((off, i) => (
             <line
-              key={k}
-              className={k === 0 ? 'shape center-line' : 'shape'}
-              x1={-LINE_LEN}
-              y1={k * ext}
-              x2={LINE_LEN}
-              y2={k * ext}
+              key={i}
+              className="shape slice"
+              x1={-half}
+              y1={off * VIEW}
+              x2={half}
+              y2={off * VIEW}
             />
           ))}
         </g>
@@ -98,9 +108,9 @@ export default function SliceLines({
         <>
           <rect
             className="hit"
-            x={-LINE_LEN * 0.6}
+            x={-hitHalf}
             y={-ext / 2 - 3}
-            width={LINE_LEN * 1.2}
+            width={hitHalf * 2}
             height={ext + 6}
             style={{ cursor: 'move' }}
             onPointerDown={down('move')}
@@ -143,7 +153,7 @@ export default function SliceLines({
                 onPointerMove={move}
                 onPointerUp={up}
               >
-                <title>Stretch coverage</title>
+                <title>Stretch coverage (changes slice count)</title>
               </rect>
             </g>
           ))}

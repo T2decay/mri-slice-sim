@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { KEY_LABEL } from '../lib/labels'
 
 interface Props {
   onClose: () => void
@@ -6,10 +7,11 @@ interface Props {
 
 const STEPS: { title: string; body: string }[] = [
   {
-    title: 'Your localizer images',
+    title: 'Pick an exam and a plane',
     body:
-      'These three images are localizers (quick scout scans you plan on): ' +
-      'sagittal on the left, coronal in the middle, axial on the right.',
+      'Choose an exam from the dropdown at the top, then a target plane with the ' +
+      'Sag / Cor / Ax buttons (or press S, C, A). The three localizers — quick ' +
+      'scout scans you plan on — show sagittal, coronal, and axial.',
   },
   {
     title: 'Add a slice group',
@@ -21,17 +23,19 @@ const STEPS: { title: string; body: string }[] = [
   {
     title: 'Move · rotate · resize',
     body:
-      'Drag anywhere inside a shape to move it. The small handle above it rotates. ' +
-      'On the FOV (field of view — the box that sets what gets scanned), corner ' +
-      'handles resize; on slice lines, the end handles stretch coverage. ' +
-      'Arrow keys nudge 1 px; hold Shift to rotate 1°.',
+      'Drag inside a shape to move it; the small handle above it rotates. Corner ' +
+      'handles resize the FOV (field of view — the box that sets what gets ' +
+      'scanned); line-end handles stretch coverage. One prescription is shared by ' +
+      'all three views, so resizing on one view updates the others, and the ' +
+      'Parameters numbers let you fine-tune it exactly. Arrow keys nudge 1 px; ' +
+      'Shift + arrows rotate 1°.',
   },
   {
     title: 'Scan to check',
     body:
-      'Match the coverage instructions in the panel, then press “Scan”. ' +
-      'Learn mode shows the green reference the whole time; Practice mode ' +
-      'scores you and then reveals it.',
+      'Click a view to highlight its coverage instruction, match it, then press ' +
+      '“Scan” to reveal the green reference placement and read the feedback. ' +
+      `The “${KEY_LABEL}” button shows or hides that reference any time.`,
   },
 ]
 
