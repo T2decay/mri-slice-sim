@@ -1,10 +1,50 @@
-# Handoff — v1 revisions (branch `v1-revisions`)
+# Handoff — v1 revisions, Brain image swap, and first deploy
 
 All eight revision items are implemented, type-checked (`npm run build`
-passes clean), and verified in the in-app Chrome pane. Nothing was pushed, no
-remote exists, and `pipeline/`, `public/images/`, and `src/data/exams.json`
-are untouched (`git diff main --stat` confirms). The dev server is still
-running at **http://localhost:5173/**.
+passes clean), verified in the in-app Chrome pane, merged to `main`, and
+**deployed**. The Brain family's cross-plane localizers were then swapped
+for the clean target-plane images (§0). `pipeline/` and `src/data/exams.json`
+are untouched throughout.
+
+- **Live site:** https://t2decay.github.io/mri-slice-sim/
+- **Repo:** https://github.com/T2decay/mri-slice-sim (public; `main` only)
+- **Pages:** enabled with the GitHub Actions source via the API; every push
+  to `main` redeploys (`.github/workflows/deploy.yml`, ~2 min)
+- Local branches `v1-revisions` and `brain-image-swap` were merged
+  fast-forward and deleted; `main` is the only branch.
+
+## 0. Brain image swap (commit `359ef8a`)
+
+The three Brain exams (`brain-sagittal`, `brain-coronal`, `brain-axial`)
+share the same three scout images, but each exam's *cross-plane* images had
+inpainting smear bands where dense slice lines were removed, while its
+*target-plane* image (a thin FOV box over background) was clean.
+
+**Verified first** against the pre-inpaint originals in
+`pipeline/pptx_raw/ppt/media/`: same-plane pairs across slides 2/3/4 have
+identical dimensions (484×484 sagittal/coronal, 256×256 axial) and a mean
+absolute difference under 0.35 gray levels outside the yellow overlay masks
+— i.e. the same scouts, JPEG noise only.
+
+**Then replaced** by a one-off file copy in `public/images/` (no pipeline
+step; do **not** re-run `05_assemble.py` without redoing this, it would
+copy the smeared versions back from `pipeline/out/clean/`):
+
+| Copied from | To |
+|---|---|
+| `brain-axial/axial.png` | `brain-sagittal/axial.png`, `brain-coronal/axial.png` |
+| `brain-sagittal/sagittal.png` | `brain-coronal/sagittal.png`, `brain-axial/sagittal.png` |
+| `brain-coronal/coronal.png` | `brain-sagittal/coronal.png`, `brain-axial/coronal.png` |
+
+A nine-viewport contact sheet with the green answer overlays was reviewed
+and approved before merging; because the images are the same scouts at the
+same size, the answer geometry in `exams.json` still lands correctly. The
+live site was checksum-verified to serve the new files.
+
+The other families (IAC's, Pituitary, Orbits, Seizure, MRA, MRV) still use
+their pipeline-cleaned cross-plane images; the same swap could apply to any
+family whose slides share scouts — run the same outside-the-mask comparison
+first.
 
 ## 1. What changed
 
@@ -97,12 +137,16 @@ finds only the two first-run flags in `ConsoleShell.tsx`
 (`mri-sim-walkthrough-seen`, `mri-sim-handle-hint-seen`). No results,
 placements, or parameters are written anywhere; a reload starts clean.
 
-## 5. Skipped
+## 5. Skipped / open
 
 - **README screenshots** — still not added (same reason as before: didn't
   want to invent a `docs/` image convention without you).
 - **Real-glass touch test** — handles and hit targets are unchanged from the
   version you approved; the new stepper buttons are 32 px squares.
+- **PHI position re-check** — the earlier plan said to keep the repo private
+  until the patient-information position on the localizers was re-verified.
+  The repo is public at your request; if that check is still pending, flip
+  visibility in Settings → General → Danger Zone.
 - Nothing else. All eight items are in.
 
 ## 6. Test checklist
@@ -162,4 +206,7 @@ cd ~/Projects/mri-slice-sim
 npm run dev
 ```
 
-Open **http://localhost:5173/** (the server should already be running).
+Open **http://localhost:5173/** locally, or use the live site at
+https://t2decay.github.io/mri-slice-sim/. To ship a change: commit on
+`main` and `git push` — Pages redeploys in about two minutes
+(`gh run watch` to follow it).
