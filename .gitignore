@@ -5,3 +5,4 @@ pipeline/pptx_raw/
 .DS_Store
 *.local
 __pycache__/
+review/

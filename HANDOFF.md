@@ -1,3 +1,73 @@
+# September 7 local organization and expansion checkpoint
+
+Current work is local only. The earlier release handoff below is historical.
+
+- Added ROADMAP.md, docs/EXPANSION_INVENTORY.md, and a read-only
+  `npm run check:content` command.
+- Added 22 regression checks: `npm test`. Production build passes.
+- Prepared region grouping and sequence selection for multiple sequences in
+  the same target plane. The approved pilot still contains 14 variants.
+- Improved walkthrough keyboard focus, Tab containment, Escape dismissal,
+  optional storage fallback, accessible icon labels, and coarse-pointer controls.
+- Added sticky active-plane coverage on tablet/mobile. Browser checks at
+  820 x 1180 verified scrolling guidance and active-plane updates; keyboard
+  nudging and parameter edits clear Scan feedback. No browser console errors
+  were observed. Real-device touch testing remains for Wes.
+- Preserved pipeline/, public/images/, and src/data/exams.json byte-for-byte
+  relative to the committed baseline (git diff is empty for these paths).
+
+## Expansion review
+
+`review/expansion/index.html` contains the source inventory and first Body
+candidate batch: 39 slides, 117 localizers, 10 contact sheets. Originals remain
+available separately at full resolution, including all corners. Region labels
+are organizational proposals; Soft Tissue Neck and Brachial Plexus are under
+Body, TMJ under MSK. Source text is unchanged.
+
+All candidates need human QA. White overlays remain and are flagged; saturation
+bands remain by prior instruction. Automated geometry is provisional, with
+known incorrect directions visible in some views (for example slide 25 sagittal).
+The other regions are inventoried only. Slides with missing images, additional
+images, non-square dimensions, or crop/transform metadata are held for mapping.
+No PHI clearance is claimed for this new batch.
+
+The staging script writes only ignored review/expansion output. It imports the
+existing pipeline functions read-only, with Python bytecode writing disabled.
+Run `pipeline/.venv/bin/python -B scripts/stage-expansion.py` for the inventory.
+Candidate generation additionally needs the five-slide visual order evidence
+in review/expansion/order-check.json, then `--candidates`. That record currently
+covers Body only. Do not run the old assembly script on approved Brain assets.
+
+## Local commands
+
+```sh
+npm install
+npm test
+npm run check:content
+npm run build
+npm run dev -- --host 127.0.0.1 --port 5174 --strictPort
+# Separate terminal for review material:
+python3 -m http.server 5175 --bind 127.0.0.1 --directory review/expansion
+```
+
+App: http://127.0.0.1:5174/ . Review: http://127.0.0.1:5175/ .
+No push, remote changes, or deployment performed in this checkpoint.
+
+## Review next
+
+1. Review all ten Body contact sheets and original corners.
+2. Flag mismatched green geometry and white overlays for correction.
+3. Confirm or revise the proposed region assignments.
+4. Trial sticky guidance on a physical tablet while dragging each view.
+5. Check coarse-pointer steppers and walkthrough keyboard focus.
+6. Approve corrected images before content assembly; then advance to the next region.
+
+README screenshots remain open; this checkpoint prioritizes functional checks
+and source expansion review. Scale calibration and classroom feedback thresholds
+still require instructor judgment.
+
+---
+
 # Handoff — v1 revisions, Brain image swap, and first deploy
 
 All eight revision items are implemented, type-checked (`npm run build`

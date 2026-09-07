@@ -49,6 +49,10 @@ npm run build      # type-check + production build in dist/
 
 ## Project layout
 
+See [ROADMAP.md](ROADMAP.md) for remaining work and review gates, and
+[HANDOFF.md](HANDOFF.md) for the current design and approved Brain image swaps.
+Run `npm run check:content` to validate exam structure and local image paths.
+
 - `src/` — Vite + React + TypeScript app (SVG overlays on `<img>`, no backend)
 - `src/data/exams.json` — generated content: one entry per exam with coverage
   text and normalized answer geometry (do not hand-edit)
@@ -58,5 +62,9 @@ npm run build      # type-check + production build in dist/
 - `pipeline/` — one-time Python asset pipeline (pptx → clean images + answer
   keys); see `pipeline/*.py` headers. Re-run order: `01_extract` →
   `02_geometry` → `03_clean` → `04_contact_sheet` (QA) → `05_assemble`
-- `.github/workflows/deploy.yml` — GitHub Pages deploy on push to `main`
-  (inactive until the repo is on GitHub)
+- `.github/workflows/deploy.yml` — GitHub Pages deploy on push to `main`.
+  Push only when publishing is explicitly authorized.
+
+**Asset warning:** do not rerun `05_assemble.py` on the current output without
+preserving the approved Brain image replacements described in HANDOFF.md;
+the old generated images would overwrite them.
