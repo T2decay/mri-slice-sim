@@ -10,6 +10,7 @@ import {
 } from '../lib/prescription'
 import { deltas, feedbackForView } from '../lib/scoring'
 import { examForPlane } from '../lib/exams'
+import { hasSeen, markSeen } from '../lib/preferences'
 import { KEY_LABEL } from '../lib/labels'
 import Viewport from './Viewport'
 import InstructionsPanel from './InstructionsPanel'
@@ -23,6 +24,7 @@ interface Props {
   plane: Plane
   onSelectFamily: (name: string) => void
   onSelectPlane: (plane: Plane) => void
+  onSelectSequence: (id: string) => void
   rx: Prescription
   onRxChange: (rx: Prescription) => void
   imageWidthMm: number
@@ -46,6 +48,7 @@ export default function ConsoleShell({
   plane,
   onSelectFamily,
   onSelectPlane,
+  onSelectSequence,
   rx,
   onRxChange,
   imageWidthMm: W,
@@ -57,19 +60,19 @@ export default function ConsoleShell({
   const [activePlane, setActivePlane] = useState<Plane | null>(exam.targetPlane)
   const [instructionsOpen, setInstructionsOpen] = useState(true)
   const [walkthrough, setWalkthrough] = useState(
-    () => !localStorage.getItem(WALKTHROUGH_KEY),
+    () => !hasSeen(WALKTHROUGH_KEY),
   )
   const [hint, setHint] = useState(false)
 
   const closeWalkthrough = () => {
-    localStorage.setItem(WALKTHROUGH_KEY, '1')
+    markSeen(WALKTHROUGH_KEY)
     setWalkthrough(false)
   }
 
   const addGroup = () => {
     setPoses({ sagittal: DEFAULT_POSE, coronal: DEFAULT_POSE, axial: DEFAULT_POSE })
     setScanned(false)
-    if (!localStorage.getItem(HINT_KEY)) setHint(true)
+    if (!hasSeen(HINT_KEY)) setHint(true)
   }
 
   const reset = () => {
@@ -79,7 +82,7 @@ export default function ConsoleShell({
 
   const dismissHint = () => {
     if (hint) {
-      localStorage.setItem(HINT_KEY, '1')
+      markSeen(HINT_KEY)
       setHint(false)
     }
   }
@@ -117,6 +120,7 @@ export default function ConsoleShell({
   }
 
   const showGhost = keyOn || scanned
+  const regions = [...new Set(families.map((entry) => entry.exams[0].region))]
 
   const student = (p: Plane) => (poses ? studentRender(exam, p, poses[p], rx, W) : null)
   const viewDeltas = (p: Plane) => {
@@ -142,10 +146,14 @@ export default function ConsoleShell({
           value={family.name}
           onChange={(e) => onSelectFamily(e.target.value)}
         >
-          {families.map((f) => (
-            <option key={f.name} value={f.name}>
-              {f.name}
-            </option>
+          {regions.length > 1 ? regions.map((region) => (
+            <optgroup key={region} label={region}>
+              {families.filter((entry) => entry.exams[0].region === region).map((entry) => (
+                <option key={entry.name} value={entry.name}>{entry.name}</option>
+              ))}
+            </optgroup>
+          )) : families.map((entry) => (
+            <option key={entry.name} value={entry.name}>{entry.name}</option>
           ))}
         </select>
         <div className="plane-buttons" role="group" aria-label="Target plane">
@@ -162,7 +170,14 @@ export default function ConsoleShell({
           ))}
         </div>
         <div className="shell-title">
-          <span className="seq">{exam.sequenceNote}</span>
+          {family.exams.filter((entry) => entry.targetPlane === plane).length > 1 ? (
+            <select className="exam-select" aria-label="Sequence" value={exam.id}
+              onChange={(event) => onSelectSequence(event.target.value)}>
+              {family.exams.filter((entry) => entry.targetPlane === plane).map((entry) => (
+                <option key={entry.id} value={entry.id}>{entry.sequenceNote}</option>
+              ))}
+            </select>
+          ) : <span className="seq">{exam.sequenceNote}</span>}
           {exam.landmark && <span className="landmark">{exam.landmark}</span>}
         </div>
         <button
@@ -176,6 +191,7 @@ export default function ConsoleShell({
         <button
           className="btn subtle help"
           title="Show the walkthrough again"
+          aria-label="Show walkthrough"
           onClick={() => setWalkthrough(true)}
         >
           ?
@@ -184,6 +200,7 @@ export default function ConsoleShell({
 
       <div className="shell-body">
         <div className="work-area">
+          {instructionsOpen && <div className="mobile-coverage"><strong>{activePlane ?? plane} coverage</strong><p>{exam.coverage[activePlane ?? plane]}</p></div>}
           <div className="viewports">
             {PLANES.map((p) => (
               <Viewport
@@ -221,7 +238,7 @@ export default function ConsoleShell({
               <div className="handle-hint" onPointerDown={dismissHint}>
                 Drag to move · top handle rotates · corners resize the FOV ·
                 line ends stretch coverage
-                <button className="hint-close" onClick={dismissHint}>
+                <button className="hint-close" aria-label="Dismiss handle hint" onClick={dismissHint}>
                   ×
                 </button>
               </div>

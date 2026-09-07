@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { KEY_LABEL } from '../lib/labels'
 
 interface Props {
@@ -42,15 +42,31 @@ const STEPS: { title: string; body: string }[] = [
 /** Skippable 4-step first-run overlay; reopen anytime from the ? icon. */
 export default function Walkthrough({ onClose }: Props) {
   const [step, setStep] = useState(0)
+  const dialog = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const previous = document.activeElement as HTMLElement | null
+    dialog.current?.querySelector<HTMLButtonElement>('button')?.focus()
+    return () => previous?.focus()
+  }, [])
   const last = step === STEPS.length - 1
 
   return (
-    <div className="walkthrough-backdrop" role="dialog" aria-modal="true">
+    <div ref={dialog} className="walkthrough-backdrop" role="dialog" aria-modal="true" aria-labelledby="walkthrough-title"
+      onKeyDown={(event) => {
+        event.stopPropagation()
+        if (event.key === 'Escape') { event.preventDefault(); onClose() }
+        if (event.key !== 'Tab') return
+        const buttons = dialog.current?.querySelectorAll<HTMLButtonElement>('button')
+        if (!buttons?.length) return
+        const first = buttons[0], lastButton = buttons[buttons.length - 1]
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); lastButton.focus() }
+        if (!event.shiftKey && document.activeElement === lastButton) { event.preventDefault(); first.focus() }
+      }}>
       <div className="walkthrough-card">
         <button className="walkthrough-skip" onClick={onClose}>
           Skip
         </button>
-        <h3>{STEPS[step].title}</h3>
+        <h3 id="walkthrough-title">{STEPS[step].title}</h3>
         <p>{STEPS[step].body}</p>
         <div className="walkthrough-footer">
           <div className="dots">

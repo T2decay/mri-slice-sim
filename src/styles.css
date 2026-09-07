@@ -363,3 +363,20 @@ button { font: inherit; }
   .shell-title { flex-basis: 100%; }
   .reference-thumbs { max-width: 360px; }
 }
+
+/* Keep active guidance visible beside the tablet's stacked localizers. */
+.mobile-coverage { display: none; }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.walkthrough-card { max-height: calc(100dvh - 32px); overflow-y: auto; }
+.walkthrough-card h3 { padding-right: 40px; }
+@media (max-width: 900px) {
+  .work-area { width: 100%; }
+  .mobile-coverage { display: block; position: sticky; top: 0; z-index: 10; padding: 10px 14px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; max-height: 28dvh; overflow-y: auto; }
+  .mobile-coverage strong { text-transform: capitalize; color: var(--accent); }
+  .mobile-coverage p { margin: 4px 0 0; font-size: 13px; line-height: 1.4; }
+}
+@media (pointer: coarse) {
+  .param-step, .param-control input, .btn.help { min-width: 44px; min-height: 44px; }
+  .btn, .exam-select, .instructions-toggle { min-height: 44px; }
+  .param-row { grid-template-columns: minmax(0, 1fr) auto; gap: 4px; }
+}

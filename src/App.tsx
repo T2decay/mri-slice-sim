@@ -19,8 +19,8 @@ const PLANE_HOTKEYS: Record<string, Plane> = { s: 'sagittal', c: 'coronal', a: '
 export default function App() {
   const [familyName, setFamilyName] = useState(families[0].name)
   const family = families.find((f) => f.name === familyName) ?? families[0]
-  const [plane, setPlane] = useState<Plane>(() => defaultPlane(family))
-  const exam = examForPlane(family, plane) ?? family.exams[0]
+  const [examId, setExamId] = useState(() => (examForPlane(family, defaultPlane(family)) ?? family.exams[0]).id)
+  const exam = family.exams.find((entry) => entry.id === examId) ?? family.exams[0]
   const W = imageWidthMm(family.name)
   const [rx, setRx] = useState<Prescription>(() => defaultPrescription(exam, W))
   const [keyOn, setKeyOn] = useState(false)
@@ -31,12 +31,13 @@ export default function App() {
     const p = defaultPlane(f)
     const e = examForPlane(f, p) ?? f.exams[0]
     setFamilyName(name)
-    setPlane(p)
+    setExamId(e.id)
     setRx(defaultPrescription(e, imageWidthMm(f.name)))
   }
 
   const selectPlane = (p: Plane) => {
-    if (examForPlane(family, p)) setPlane(p)
+    const next = examForPlane(family, p)
+    if (next) setExamId(next.id)
   }
 
   // S / C / A hotkeys (ignored while typing in a field)
@@ -46,7 +47,8 @@ export default function App() {
       const tag = (e.target as HTMLElement | null)?.tagName
       if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return
       const p = PLANE_HOTKEYS[e.key.toLowerCase()]
-      if (p && examForPlane(family, p)) setPlane(p)
+      const next = p && examForPlane(family, p)
+      if (next) setExamId(next.id)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -62,6 +64,7 @@ export default function App() {
       plane={exam.targetPlane}
       onSelectFamily={selectFamily}
       onSelectPlane={selectPlane}
+      onSelectSequence={setExamId}
       rx={rx}
       onRxChange={setRx}
       imageWidthMm={W}
