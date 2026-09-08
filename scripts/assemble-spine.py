@@ -6,6 +6,7 @@ import hashlib, json
 from pathlib import Path
 import cv2
 import numpy as np
+from spine_keys import apply_spine_keys
 ROOT=Path(__file__).resolve().parents[1]
 REVIEW=ROOT/'review/expansion/spine'
 slides=json.loads((REVIEW/'manifest.json').read_text())['slides']
@@ -64,6 +65,7 @@ for target_id, plane, donor_id in substitutions:
                                'imageSha256': hashlib.sha256((ROOT/'public'/image).read_bytes()).hexdigest(),
                                'referenceTransferred': False})
 (ROOT/'docs/spine-substitutions.json').write_text(json.dumps(substitution_report,indent=2)+'\n')
+apply_spine_keys(exams)
 (ROOT/'src/data/spine.json').write_text(json.dumps(exams,indent=2)+'\n')
 (ROOT/'docs/spine-provenance.json').write_text(json.dumps(provenance,indent=2)+'\n')
 print(f'Assembled {len(exams)} Spine exercises; {len(provenance)} preserved source images, {sum(v["image"] is not None for e in exams for v in e["views"].values())} usable views.')

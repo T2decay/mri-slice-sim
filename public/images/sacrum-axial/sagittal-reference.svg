@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<title>Sacrum axial planning reference on sagittal localizer</title>
+<desc>Visual tracing of slide 40; simplified planning geometry pending instructor review.</desc>
+<g fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(271.5 290) rotate(-42.4)">
+<line x1="-147.5" x2="147.5" y1="-108.0" y2="-108.0"/>
+<line x1="-147.5" x2="147.5" y1="-54.0" y2="-54.0"/>
+<line x1="-147.5" x2="147.5" y1="0.0" y2="0.0"/>
+<line x1="-147.5" x2="147.5" y1="54.0" y2="54.0"/>
+<line x1="-147.5" x2="147.5" y1="108.0" y2="108.0"/>
+</g>
+</svg>

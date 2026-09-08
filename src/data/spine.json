@@ -15,12 +15,12 @@
       "sagittal": {
         "image": "images/cervical-spine-sagittal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-sagittal/sagittal-reference.png"
+        "referenceImage": "images/cervical-spine-sagittal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/cervical-spine-sagittal/coronal.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-sagittal/coronal-reference.png"
+        "referenceImage": "images/cervical-spine-sagittal/coronal-reference.svg"
       },
       "axial": {
         "image": "images/cervical-spine-axial/axial.png",
@@ -51,17 +51,17 @@
       "sagittal": {
         "image": "images/cervical-spine-coronal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-coronal/sagittal-reference.png"
+        "referenceImage": "images/cervical-spine-coronal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/cervical-spine-coronal/coronal.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-coronal/coronal-reference.png"
+        "referenceImage": "images/cervical-spine-coronal/coronal-reference.svg"
       },
       "axial": {
         "image": "images/cervical-spine-coronal/axial.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-coronal/axial-reference.png"
+        "referenceImage": "images/cervical-spine-coronal/axial-reference.svg"
       }
     },
     "referenceMode": "source",
@@ -83,17 +83,17 @@
       "sagittal": {
         "image": "images/cervical-spine-axial/sagittal.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-axial/sagittal-reference.png"
+        "referenceImage": "images/cervical-spine-axial/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/cervical-spine-axial/coronal.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-axial/coronal-reference.png"
+        "referenceImage": "images/cervical-spine-axial/coronal-reference.svg"
       },
       "axial": {
         "image": "images/cervical-spine-axial/axial.png",
         "answer": null,
-        "referenceImage": "images/cervical-spine-axial/axial-reference.png"
+        "referenceImage": "images/cervical-spine-axial/axial-reference.svg"
       }
     },
     "referenceMode": "source",
@@ -115,12 +115,12 @@
       "sagittal": {
         "image": "images/thoracic-spine-sagittal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/thoracic-spine-sagittal/sagittal-reference.png"
+        "referenceImage": "images/thoracic-spine-sagittal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/thoracic-spine-sagittal/coronal.png",
         "answer": null,
-        "referenceImage": "images/thoracic-spine-sagittal/coronal-reference.png"
+        "referenceImage": "images/thoracic-spine-sagittal/coronal-reference.svg"
       },
       "axial": {
         "image": "images/thoracic-spine-coronal/axial.png",
@@ -151,17 +151,17 @@
       "sagittal": {
         "image": "images/thoracic-spine-coronal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/thoracic-spine-coronal/sagittal-reference.png"
+        "referenceImage": "images/thoracic-spine-coronal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/thoracic-spine-coronal/coronal.png",
         "answer": null,
-        "referenceImage": "images/thoracic-spine-coronal/coronal-reference.png"
+        "referenceImage": "images/thoracic-spine-coronal/coronal-reference.svg"
       },
       "axial": {
         "image": "images/thoracic-spine-coronal/axial.png",
         "answer": null,
-        "referenceImage": "images/thoracic-spine-coronal/axial-reference.png"
+        "referenceImage": "images/thoracic-spine-coronal/axial-reference.svg"
       }
     },
     "referenceMode": "source",
@@ -183,12 +183,12 @@
       "sagittal": {
         "image": "images/thoracic-spine-axial/sagittal.png",
         "answer": null,
-        "referenceImage": "images/thoracic-spine-axial/sagittal-reference.png"
+        "referenceImage": "images/thoracic-spine-axial/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/thoracic-spine-axial/coronal.png",
         "answer": null,
-        "referenceImage": "images/thoracic-spine-axial/coronal-reference.png"
+        "referenceImage": "images/thoracic-spine-axial/coronal-reference.svg"
       },
       "axial": {
         "image": "images/thoracic-spine-coronal/axial.png",
@@ -219,12 +219,12 @@
       "sagittal": {
         "image": "images/lumbar-spine-sagittal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/lumbar-spine-sagittal/sagittal-reference.png"
+        "referenceImage": "images/lumbar-spine-sagittal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/lumbar-spine-sagittal/coronal.png",
         "answer": null,
-        "referenceImage": "images/lumbar-spine-sagittal/coronal-reference.png"
+        "referenceImage": "images/lumbar-spine-sagittal/coronal-reference.svg"
       },
       "axial": {
         "image": "images/lumbar-spine-coronal/axial.png",
@@ -255,17 +255,17 @@
       "sagittal": {
         "image": "images/lumbar-spine-coronal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/lumbar-spine-coronal/sagittal-reference.png"
+        "referenceImage": "images/lumbar-spine-coronal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/lumbar-spine-coronal/coronal.png",
         "answer": null,
-        "referenceImage": "images/lumbar-spine-coronal/coronal-reference.png"
+        "referenceImage": "images/lumbar-spine-coronal/coronal-reference.svg"
       },
       "axial": {
         "image": "images/lumbar-spine-coronal/axial.png",
         "answer": null,
-        "referenceImage": "images/lumbar-spine-coronal/axial-reference.png"
+        "referenceImage": "images/lumbar-spine-coronal/axial-reference.svg"
       }
     },
     "referenceMode": "source",
@@ -287,12 +287,12 @@
       "sagittal": {
         "image": "images/lumbar-spine-axial/sagittal.png",
         "answer": null,
-        "referenceImage": "images/lumbar-spine-axial/sagittal-reference.png"
+        "referenceImage": "images/lumbar-spine-axial/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/lumbar-spine-axial/coronal.png",
         "answer": null,
-        "referenceImage": "images/lumbar-spine-axial/coronal-reference.png"
+        "referenceImage": "images/lumbar-spine-axial/coronal-reference.svg"
       },
       "axial": {
         "image": "images/lumbar-spine-coronal/axial.png",
@@ -323,7 +323,7 @@
       "sagittal": {
         "image": "images/sacrum-sagittal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/sacrum-sagittal/sagittal-reference.png"
+        "referenceImage": "images/sacrum-sagittal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/sacrum-coronal/coronal.png",
@@ -337,7 +337,7 @@
       "axial": {
         "image": "images/sacrum-sagittal/axial.png",
         "answer": null,
-        "referenceImage": "images/sacrum-sagittal/axial-reference.png"
+        "referenceImage": "images/sacrum-sagittal/axial-reference.svg"
       }
     },
     "referenceMode": "source",
@@ -359,17 +359,17 @@
       "sagittal": {
         "image": "images/sacrum-coronal/sagittal.png",
         "answer": null,
-        "referenceImage": "images/sacrum-coronal/sagittal-reference.png"
+        "referenceImage": "images/sacrum-coronal/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/sacrum-coronal/coronal.png",
         "answer": null,
-        "referenceImage": "images/sacrum-coronal/coronal-reference.png"
+        "referenceImage": "images/sacrum-coronal/coronal-reference.svg"
       },
       "axial": {
         "image": "images/sacrum-coronal/axial.png",
         "answer": null,
-        "referenceImage": "images/sacrum-coronal/axial-reference.png"
+        "referenceImage": "images/sacrum-coronal/axial-reference.svg"
       }
     },
     "referenceMode": "source",
@@ -391,17 +391,17 @@
       "sagittal": {
         "image": "images/sacrum-axial/sagittal.png",
         "answer": null,
-        "referenceImage": "images/sacrum-axial/sagittal-reference.png"
+        "referenceImage": "images/sacrum-axial/sagittal-reference.svg"
       },
       "coronal": {
         "image": "images/sacrum-axial/coronal.png",
         "answer": null,
-        "referenceImage": "images/sacrum-axial/coronal-reference.png"
+        "referenceImage": "images/sacrum-axial/coronal-reference.svg"
       },
       "axial": {
         "image": "images/sacrum-axial/axial.png",
         "answer": null,
-        "referenceImage": "images/sacrum-axial/axial-reference.png"
+        "referenceImage": "images/sacrum-axial/axial-reference.svg"
       }
     },
     "referenceMode": "source",

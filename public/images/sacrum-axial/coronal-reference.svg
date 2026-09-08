@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<title>Sacrum axial planning reference on coronal localizer</title>
+<desc>Visual tracing of slide 40; simplified planning geometry pending instructor review.</desc>
+<g fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(256.5 285.5) rotate(-1.4)">
+<line x1="-147.5" x2="147.5" y1="-105.5" y2="-105.5"/>
+<line x1="-147.5" x2="147.5" y1="-52.75" y2="-52.75"/>
+<line x1="-147.5" x2="147.5" y1="0.0" y2="0.0"/>
+<line x1="-147.5" x2="147.5" y1="52.75" y2="52.75"/>
+<line x1="-147.5" x2="147.5" y1="105.5" y2="105.5"/>
+</g>
+</svg>

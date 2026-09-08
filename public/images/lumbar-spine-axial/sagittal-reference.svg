@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<title>Lumbar axial planning reference on sagittal localizer</title>
+<desc>Visual tracing of slide 37; simplified planning geometry pending instructor review.</desc>
+<g fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(252 300) rotate(-2.8)">
+<line x1="-197.0" x2="197.0" y1="-184.5" y2="-184.5"/>
+<line x1="-197.0" x2="197.0" y1="-92.25" y2="-92.25"/>
+<line x1="-197.0" x2="197.0" y1="0.0" y2="0.0"/>
+<line x1="-197.0" x2="197.0" y1="92.25" y2="92.25"/>
+<line x1="-197.0" x2="197.0" y1="184.5" y2="184.5"/>
+</g>
+</svg>

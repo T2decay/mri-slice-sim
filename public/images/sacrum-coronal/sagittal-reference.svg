@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<title>Sacrum coronal planning reference on sagittal localizer</title>
+<desc>Visual tracing of slide 39; simplified planning geometry pending instructor review.</desc>
+<g fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(278.5 290.5) rotate(38.7)">
+<line x1="-152.5" x2="152.5" y1="-64.5" y2="-64.5"/>
+<line x1="-152.5" x2="152.5" y1="-32.25" y2="-32.25"/>
+<line x1="-152.5" x2="152.5" y1="0.0" y2="0.0"/>
+<line x1="-152.5" x2="152.5" y1="32.25" y2="32.25"/>
+<line x1="-152.5" x2="152.5" y1="64.5" y2="64.5"/>
+</g>
+</svg>
