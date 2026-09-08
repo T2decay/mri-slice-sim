@@ -6,7 +6,11 @@ import { defaultPlane, examForPlane, groupFamilies } from './lib/exams'
 import { defaultPrescription, type Prescription } from './lib/prescription'
 import ConsoleShell from './components/ConsoleShell'
 
-const exams = examsJson as unknown as Exam[]
+// RadBun publishes the standard Brain exercises; the full build retains all exams.
+const allExams = examsJson as unknown as Exam[]
+const exams = import.meta.env.MODE === 'radbun'
+  ? allExams.filter((exam) => exam.exam === 'Brain')
+  : allExams
 const families = groupFamilies(exams)
 
 const PLANE_HOTKEYS: Record<string, Plane> = { s: 'sagittal', c: 'coronal', a: 'axial' }

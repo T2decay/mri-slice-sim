@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "check:content": "node scripts/check-content.mjs",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build:radbun": "tsc -b && vite build --mode radbun --outDir dist-radbun"
   },
   "dependencies": {
     "react": "^19.2.0",
