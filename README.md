@@ -14,8 +14,9 @@ Brain & Pituitary, Brain & Orbits, Brain for Seizure, MRA Head, MRV Head).
 **Spine:** 12 additional exercises cover Cervical Spine, Thoracic Spine,
 Lumbar Spine, and Sacrum. Choose them in the Spine section of the dropdown.
 These exercises use the reviewed source markings as a green visual reference,
-with coverage text instead of numerical match feedback. Missing localizers are
-labeled explicitly. The RadBun build remains restricted to standard Brain.
+with coverage text instead of numerical match feedback. Missing localizers are filled from the matching plane in the same Spine
+family. Substituted views use written coverage instructions without donor
+reference lines. The RadBun build remains restricted to standard Brain.
 
 ## For instructors
 
@@ -83,7 +84,13 @@ without running the Brain assembly script. `docs/spine-provenance.json` records
 source hashes, output paths, and padding. Source markers are isolated into
 transparent green reference images; they are not estimated geometric answers.
 
-Five slides lack axial scouts (29, 32, 34, 35, 37). Slide 38's middle-image
-plane is unresolved, so that view is unavailable in the exercise. Its reviewed
-image is retained as an asset. The tall slide-32 sagittal image is padded to a
-square without stretching or cropping. Physical dimensions remain nominal.
+All 12 Spine exercises now have three localizers. Five missing axial views
+use the axial scout from another exercise in the same family. Sacrum sagittal
+uses the confirmed coronal image from Sacrum coronal. The approved image files
+are reused without changing pixels. See `docs/spine-substitutions.json` for
+exact donors and hashes. Donor sequence markings are intentionally not reused
+as answer keys: the substitute views remain interactive practice images with
+written coverage instructions.
+
+The tall slide-32 sagittal image is padded to a square without stretching or
+cropping. Physical dimensions remain nominal.

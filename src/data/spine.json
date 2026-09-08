@@ -23,9 +23,13 @@
         "referenceImage": "images/cervical-spine-sagittal/coronal-reference.png"
       },
       "axial": {
-        "image": null,
+        "image": "images/cervical-spine-axial/axial.png",
         "answer": null,
-        "unavailableReason": "This source slide does not include this localizer."
+        "substitution": {
+          "donorExamId": "cervical-spine-axial",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
       }
     },
     "referenceMode": "source",
@@ -119,9 +123,13 @@
         "referenceImage": "images/thoracic-spine-sagittal/coronal-reference.png"
       },
       "axial": {
-        "image": null,
+        "image": "images/thoracic-spine-coronal/axial.png",
         "answer": null,
-        "unavailableReason": "This source slide does not include this localizer."
+        "substitution": {
+          "donorExamId": "thoracic-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
       }
     },
     "referenceMode": "source",
@@ -183,9 +191,13 @@
         "referenceImage": "images/thoracic-spine-axial/coronal-reference.png"
       },
       "axial": {
-        "image": null,
+        "image": "images/thoracic-spine-coronal/axial.png",
         "answer": null,
-        "unavailableReason": "This source slide does not include this localizer."
+        "substitution": {
+          "donorExamId": "thoracic-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
       }
     },
     "referenceMode": "source",
@@ -215,9 +227,13 @@
         "referenceImage": "images/lumbar-spine-sagittal/coronal-reference.png"
       },
       "axial": {
-        "image": null,
+        "image": "images/lumbar-spine-coronal/axial.png",
         "answer": null,
-        "unavailableReason": "This source slide does not include this localizer."
+        "substitution": {
+          "donorExamId": "lumbar-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
       }
     },
     "referenceMode": "source",
@@ -279,9 +295,13 @@
         "referenceImage": "images/lumbar-spine-axial/coronal-reference.png"
       },
       "axial": {
-        "image": null,
+        "image": "images/lumbar-spine-coronal/axial.png",
         "answer": null,
-        "unavailableReason": "This source slide does not include this localizer."
+        "substitution": {
+          "donorExamId": "lumbar-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
       }
     },
     "referenceMode": "source",
@@ -306,9 +326,13 @@
         "referenceImage": "images/sacrum-sagittal/sagittal-reference.png"
       },
       "coronal": {
-        "image": null,
+        "image": "images/sacrum-coronal/coronal.png",
         "answer": null,
-        "unavailableReason": "The plane of the middle source image needs instructor confirmation."
+        "substitution": {
+          "donorExamId": "sacrum-coronal",
+          "plane": "coronal"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
       },
       "axial": {
         "image": "images/sacrum-sagittal/axial.png",

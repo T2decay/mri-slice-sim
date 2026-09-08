@@ -133,7 +133,7 @@ export default function ConsoleShell({
     scanned && poses
       ? PLANES.filter((p) => exam.views[p].image).map((p) => ({
           plane: p,
-          feedback: viewDeltas(p) ? feedbackForView(viewDeltas(p)!, exam.coverage[p]) : [exam.coverage[p]],
+          feedback: viewDeltas(p) ? feedbackForView(viewDeltas(p)!, exam.coverage[p]) : [exam.coverage[p], ...(exam.views[p].referenceUnavailableReason ? [exam.views[p].referenceUnavailableReason!] : [])],
         }))
       : null
 
@@ -211,6 +211,7 @@ export default function ConsoleShell({
                 image={exam.views[p].image}
                 unavailableReason={exam.views[p].unavailableReason}
                 sourceReference={exam.referenceMode === 'source'}
+                referenceUnavailableReason={exam.views[p].referenceUnavailableReason}
                 referenceImage={showGhost ? exam.views[p].referenceImage : undefined}
                 ghost={showGhost ? ghostRender(exam, p, rx, W) : null}
                 student={student(p)}

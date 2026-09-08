@@ -54,6 +54,8 @@ export interface ExamView {
   answer: Placement | null
   referenceImage?: string
   unavailableReason?: string
+  substitution?: { donorExamId: string; plane: Plane }
+  referenceUnavailableReason?: string
 }
 
 export interface Exam {

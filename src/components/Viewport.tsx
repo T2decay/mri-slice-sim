@@ -12,6 +12,7 @@ interface Props {
   referenceImage?: string
   unavailableReason?: string
   sourceReference?: boolean
+  referenceUnavailableReason?: string
   /** green reference overlay (null = hidden) */
   ghost: RenderView | null
   /** the student's yellow overlay (null = no slice group yet) */
@@ -75,6 +76,7 @@ export default function Viewport({
   referenceImage,
   unavailableReason,
   sourceReference,
+  referenceUnavailableReason,
   ghost,
   student,
   interactive,
@@ -174,7 +176,7 @@ export default function Viewport({
                 size Δ {(deltas.sizeFrac * 100).toFixed(0)}%
               </span>
             </>
-          ) : sourceReference ? <span className="idle">Compare with the source reference</span> : (
+          ) : sourceReference ? <span className="idle">{referenceUnavailableReason ?? 'Compare with the source reference'}</span> : (
             <>
               <span className="idle">offset —</span>
               <span className="idle">angle Δ —</span>

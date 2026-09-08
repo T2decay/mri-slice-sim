@@ -2,7 +2,7 @@
 """Promote the reviewed Spine candidates without rerunning the Brain pipeline.
 Creates source-reference exercises, not numerical keys inferred from uncertain geometry.
 """
-import hashlib, json, shutil
+import hashlib, json
 from pathlib import Path
 import cv2
 import numpy as np
@@ -36,6 +36,34 @@ for slide in slides:
         else: views[plane]=entry
         provenance.append({'slide':slide['slide'],'plane':plane,'source':view['source'],'sourceSha256':view['sourceSha256'],'reviewedCandidate':view['clean'],'candidateSha256':hashlib.sha256((REVIEW/view['clean']).read_bytes()).hexdigest(),'output':entry['image'],'padding':{'left':left,'top':top,'squareSize':side},'usedInExercise':not(slide['slide']==38 and plane=='coronal')})
     exams.append({'id':ident,'exam':family,'region':'Spine','landmark':{'Cervical':'Center at C4','Thoracic':None,'Lumbar':'Center at L3','Sacrum':'Center at ASIS'}[slide['family']], 'targetPlane':slide['target'],'sequenceNote':slide['target'].capitalize(),'coverage':slide['coverage'],'views':views,'referenceMode':'source','sourceSlide':slide['slide']})
+# Approved request: fill gaps with the correct plane from the same region.
+# Reuse the exact approved donor image. Donor sequence markings do not transfer.
+substitutions = [
+    ('cervical-spine-sagittal', 'axial', 'cervical-spine-axial'),
+    ('thoracic-spine-sagittal', 'axial', 'thoracic-spine-coronal'),
+    ('thoracic-spine-axial', 'axial', 'thoracic-spine-coronal'),
+    ('lumbar-spine-sagittal', 'axial', 'lumbar-spine-coronal'),
+    ('lumbar-spine-axial', 'axial', 'lumbar-spine-coronal'),
+    ('sacrum-sagittal', 'coronal', 'sacrum-coronal'),
+]
+by_id = {exam['id']: exam for exam in exams}
+substitution_report = []
+for target_id, plane, donor_id in substitutions:
+    target, donor = by_id[target_id], by_id[donor_id]
+    assert target['exam'] == donor['exam']
+    assert target['views'][plane]['image'] is None
+    image = donor['views'][plane]['image']
+    assert image
+    target['views'][plane] = {
+        'image': image, 'answer': None,
+        'substitution': {'donorExamId': donor_id, 'plane': plane},
+        'referenceUnavailableReason': 'Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view.'
+    }
+    substitution_report.append({'examId': target_id, 'plane': plane,
+                               'donorExamId': donor_id, 'image': image,
+                               'imageSha256': hashlib.sha256((ROOT/'public'/image).read_bytes()).hexdigest(),
+                               'referenceTransferred': False})
+(ROOT/'docs/spine-substitutions.json').write_text(json.dumps(substitution_report,indent=2)+'\n')
 (ROOT/'src/data/spine.json').write_text(json.dumps(exams,indent=2)+'\n')
 (ROOT/'docs/spine-provenance.json').write_text(json.dumps(provenance,indent=2)+'\n')
 print(f'Assembled {len(exams)} Spine exercises; {len(provenance)} preserved source images, {sum(v["image"] is not None for e in exams for v in e["views"].values())} usable views.')

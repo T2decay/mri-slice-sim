@@ -1,3 +1,8 @@
+> Latest September 8: All six Spine gaps are filled with same-family,
+> same-plane approved images at Wes's request. All 12 exercises have three
+> localizers. Substitute views have written guidance but no borrowed answer
+> lines. See docs/spine-substitutions.json for provenance.
+
 > September 8 approval update: Spine images approved and integrated as 12
 > source-reference exercises. GitHub delivery is branch/PR only; radbun.com
 > is excluded. Missing views and uncertain source plane remain explicit.

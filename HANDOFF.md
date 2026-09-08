@@ -1,3 +1,30 @@
+# September 8 follow-up: same-region substitutions
+
+Wes requested filling the missing Spine views with the appropriate plane from
+the same body region. All 12 Spine exercises now have three localizers (36
+Spine views; 78 total including Neuro). No existing image pixels changed.
+
+Donors:
+- Cervical sagittal axial view: Cervical axial's axial image (slide 31).
+- Thoracic sagittal and axial targets: Thoracic coronal's axial image (slide 33).
+- Lumbar sagittal and axial targets: Lumbar coronal's axial image (slide 36).
+- Sacrum sagittal coronal view: Sacrum coronal's coronal image (slide 39).
+
+All four donors were visually inspected for region and plane. They are not
+asserted to share a calibrated patient frame with their destination exercise.
+They remain interactive but have no copied donor reference markings or numeric
+keys. The UI identifies the substitute and directs students to source coverage
+text. Data validation and tests require same-family, same-plane donors and
+explicit absence of transplanted reference lines. Provenance and image hashes
+are in docs/spine-substitutions.json. The assembly script reapplies substitutions
+on reruns, preserving the original reviewed images.
+
+47 tests pass; content validation and build pass. Browser verification covers
+Sacrum's filled coronal view and Thoracic's filled axial target with FOV handles.
+GitHub delivery continues on the existing unmerged PR. No RadBun deployment.
+
+---
+
 # September 8: Spine integration approved; GitHub branch update
 
 Wes approved the focused Spine images and requested project/GitHub updates,

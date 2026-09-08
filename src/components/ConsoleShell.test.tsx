@@ -38,8 +38,28 @@ for (const entry of spineJson) it(`${entry.id}: source references and missing vi
     expect(ghostRender(exam, plane, rx, 250)).toBeNull()
     if (!exam.views[plane].image) expect(markup).toContain(`${plane} localizer unavailable`)
     else {
-      expect(markup).toContain(exam.views[plane].referenceImage)
+      if (exam.views[plane].referenceImage) expect(markup).toContain(exam.views[plane].referenceImage)
+      else expect(markup).toContain(exam.views[plane].referenceUnavailableReason)
       expect(studentRender(exam, plane, { cx: .5, cy: .5, angleDeg: 0 }, rx, 250).placement).toBeDefined()
     }
   }
+})
+
+it('fills all Spine gaps with same-family, same-plane images without donor answer keys', () => {
+  const exams = spineJson as Exam[]
+  let substitutions = 0
+  for (const exam of exams) for (const plane of PLANES) {
+    const view = exam.views[plane]
+    expect(view.image).toBeTruthy()
+    if (!view.substitution) continue
+    substitutions++
+    const donor = exams.find((entry) => entry.id === view.substitution!.donorExamId)!
+    expect(donor.exam).toBe(exam.exam)
+    expect(view.substitution.plane).toBe(plane)
+    expect(view.image).toBe(donor.views[plane].image)
+    expect(view.referenceImage).toBeUndefined()
+    expect(view.answer).toBeNull()
+    expect(view.referenceUnavailableReason).toBeTruthy()
+  }
+  expect(substitutions).toBe(6)
 })

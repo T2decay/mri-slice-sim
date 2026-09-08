@@ -1,0 +1,50 @@
+[
+  {
+    "examId": "cervical-spine-sagittal",
+    "plane": "axial",
+    "donorExamId": "cervical-spine-axial",
+    "image": "images/cervical-spine-axial/axial.png",
+    "imageSha256": "59008c9202f3dc51e7a53079422bfdebe629589ca187a43aa1d06840f675344c",
+    "referenceTransferred": false
+  },
+  {
+    "examId": "thoracic-spine-sagittal",
+    "plane": "axial",
+    "donorExamId": "thoracic-spine-coronal",
+    "image": "images/thoracic-spine-coronal/axial.png",
+    "imageSha256": "c565f49fe220d85144d2209922f4ce70e46243e81cb7b273dbcb53be6761f1ca",
+    "referenceTransferred": false
+  },
+  {
+    "examId": "thoracic-spine-axial",
+    "plane": "axial",
+    "donorExamId": "thoracic-spine-coronal",
+    "image": "images/thoracic-spine-coronal/axial.png",
+    "imageSha256": "c565f49fe220d85144d2209922f4ce70e46243e81cb7b273dbcb53be6761f1ca",
+    "referenceTransferred": false
+  },
+  {
+    "examId": "lumbar-spine-sagittal",
+    "plane": "axial",
+    "donorExamId": "lumbar-spine-coronal",
+    "image": "images/lumbar-spine-coronal/axial.png",
+    "imageSha256": "930bf72306b731e24c71f555a3fe085f940910aab7f3788063d68c616ca3c00c",
+    "referenceTransferred": false
+  },
+  {
+    "examId": "lumbar-spine-axial",
+    "plane": "axial",
+    "donorExamId": "lumbar-spine-coronal",
+    "image": "images/lumbar-spine-coronal/axial.png",
+    "imageSha256": "930bf72306b731e24c71f555a3fe085f940910aab7f3788063d68c616ca3c00c",
+    "referenceTransferred": false
+  },
+  {
+    "examId": "sacrum-sagittal",
+    "plane": "coronal",
+    "donorExamId": "sacrum-coronal",
+    "image": "images/sacrum-coronal/coronal.png",
+    "imageSha256": "f6b66c98d817b945a84972759c6f03fe2e333f2972b1ebfda2790c1ff1a59c8d",
+    "referenceTransferred": false
+  }
+]

@@ -45,6 +45,7 @@ export default function InstructionsPanel({
                   {plane === exam.targetPlane ? ' · FOV' : ' · slice lines'}
                 </strong>
                 <span>{exam.coverage[plane]}</span>
+                {exam.views[plane].substitution && <small>Practice image from the same region; use the written coverage instructions.</small>}
               </li>
             ))}
           </ul>

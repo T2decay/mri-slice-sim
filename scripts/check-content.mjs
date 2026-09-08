@@ -31,10 +31,17 @@ for (const exam of exams) {
         requireValue(nonempty(view?.unavailableReason), `${label}: missing view needs an explanation`)
         requireValue(!view?.referenceImage, `${label}: missing view cannot have a reference`)
       } else {
-        for (const key of ['image', 'referenceImage']) {
+        for (const key of view?.substitution ? ['image'] : ['image', 'referenceImage']) {
           const value = view?.[key]
           if (!nonempty(value) || !value.startsWith('images/') || value.split('/').includes('..')) errors.push(`${label}: invalid ${key}`)
           else { try { await access(path.join(root, 'public', value)) } catch { errors.push(`${label}: missing ${key}: ${value}`) } }
+        }
+        if (view?.substitution) {
+          const donor = exams.find((entry) => entry.id === view.substitution.donorExamId)
+          requireValue(donor && donor.exam === exam.exam && donor.id !== exam.id, `${label}: donor must be a different exercise in the same family`)
+          requireValue(view.substitution.plane === plane && donor?.views?.[plane]?.image === view.image, `${label}: donor plane/image mismatch`)
+          requireValue(!donor?.views?.[plane]?.substitution, `${label}: chained substitution is unsupported`)
+          requireValue(!view.referenceImage && nonempty(view.referenceUnavailableReason), `${label}: substitution must disclose absent reference lines`)
         }
         localizers++
       }
