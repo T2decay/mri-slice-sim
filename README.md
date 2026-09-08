@@ -8,8 +8,14 @@ and slice-group lines on the cross-planes, just like at the console. The app
 compares their placement with the instructor's reference geometry and gives
 feedback using the same coverage language as the teaching deck.
 
-**Pilot scope:** the Neuro / Brain family (14 exams: Brain, Brain & IAC's,
+**Neuro scope:** the Brain family (14 exams: Brain, Brain & IAC's,
 Brain & Pituitary, Brain & Orbits, Brain for Seizure, MRA Head, MRV Head).
+
+**Spine:** 12 additional exercises cover Cervical Spine, Thoracic Spine,
+Lumbar Spine, and Sacrum. Choose them in the Spine section of the dropdown.
+These exercises use the reviewed source markings as a green visual reference,
+with coverage text instead of numerical match feedback. Missing localizers are
+labeled explicitly. The RadBun build remains restricted to standard Brain.
 
 ## For instructors
 
@@ -68,3 +74,16 @@ Run `npm run check:content` to validate exam structure and local image paths.
 **Asset warning:** do not rerun `05_assemble.py` on the current output without
 preserving the approved Brain image replacements described in HANDOFF.md;
 the old generated images would overwrite them.
+
+## Spine content and provenance
+
+`src/data/spine.json` holds the new exercises separately from the approved
+Brain dataset. `scripts/assemble-spine.py` promotes the reviewed candidates
+without running the Brain assembly script. `docs/spine-provenance.json` records
+source hashes, output paths, and padding. Source markers are isolated into
+transparent green reference images; they are not estimated geometric answers.
+
+Five slides lack axial scouts (29, 32, 34, 35, 37). Slide 38's middle-image
+plane is unresolved, so that view is unavailable in the exercise. Its reviewed
+image is retained as an asset. The tall slide-32 sagittal image is padded to a
+square without stretching or cropping. Physical dimensions remain nominal.

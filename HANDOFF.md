@@ -1,3 +1,30 @@
+# September 8: Spine integration approved; GitHub branch update
+
+Wes approved the focused Spine images and requested project/GitHub updates,
+explicitly excluding radbun.com. This checkpoint integrates 12 exercises in
+four families using 30 usable localizers, retaining all 31 reviewed source
+images as assets. No approved Brain image or exams.json entry was changed.
+
+Spine uses source-reference mode: transparent green images preserve the actual
+source markings, while numeric answer geometry is null. Key/Scan reveals the
+markings alongside the student's yellow placement. Feedback uses source coverage
+text, not uncertain numerical deltas. Missing views remain explicit (five absent
+axial scouts plus slide 38's uncertain middle-image plane). The tall thoracic
+scout is padded to square without resizing its anatomy. Its reference receives
+identical padding. Nominal parameter scale has not been clinically calibrated.
+
+Validation: 46 tests pass, content validation passes (26 exercises / 72 usable
+localizers), production build passes. Browser checks cover all four Spine
+families, Cervical Add/Scan, Thoracic missing target view, and Sacrum's available
+and unresolved views. No browser errors observed. Source-reference image pixels
+and padded candidate pixels were verified against the reviewed files.
+
+GitHub delivery is on codex/organize-expand with a pull request; no main-branch
+push or merge, no workflow dispatch, no Cloudflare/RadBun deployment. Existing
+RadBun filtering remains Brain-only. Local app: http://127.0.0.1:5174/ .
+
+---
+
 # September 7 local organization and expansion checkpoint
 
 Current work is local only. The earlier release handoff below is historical.

@@ -81,7 +81,7 @@ export function defaultPrescription(exam: Exam, imageWidthMm: number): Prescript
   const answer = exam.views[exam.targetPlane].answer
   let fovReadout = 240
   let fovPhase = 240
-  if (answer.type === 'fov') {
+  if (answer?.type === 'fov') {
     const v = answerFovVisual(answer)
     fovReadout = Math.round((v.w * imageWidthMm) / 5) * 5
     fovPhase = Math.round((v.h * imageWidthMm) / 5) * 5
@@ -151,12 +151,13 @@ export function studentRender(
  * The green reference overlay for one view: the answer key's geometry, drawn
  * with the student's current thickness/gap so it reads like a real stack.
  */
-export function ghostRender(exam: Exam, plane: Plane, rx: Prescription, W: number): RenderView {
-  const answer: Placement = exam.views[plane].answer
-  if (answer.type === 'fov') return { placement: answer }
+export function ghostRender(exam: Exam, plane: Plane, rx: Prescription, W: number): RenderView | null {
+  const answer: Placement | null = exam.views[plane].answer
+  if (!answer) return null
+  if (answer?.type === 'fov') return { placement: answer }
   const target = exam.views[exam.targetPlane].answer
   let lineLen = 0.75
-  if (target.type === 'fov') {
+  if (target?.type === 'fov') {
     const v = answerFovVisual(target)
     lineLen = lineLengthDim(exam.targetPlane, plane) === 'readout' ? v.w : v.h
   }

@@ -8,7 +8,10 @@ import SliceLines from './SliceLines'
 
 interface Props {
   plane: Plane
-  image: string
+  image: string | null
+  referenceImage?: string
+  unavailableReason?: string
+  sourceReference?: boolean
   /** green reference overlay (null = hidden) */
   ghost: RenderView | null
   /** the student's yellow overlay (null = no slice group yet) */
@@ -69,6 +72,9 @@ function renderView(
 export default function Viewport({
   plane,
   image,
+  referenceImage,
+  unavailableReason,
+  sourceReference,
   ghost,
   student,
   interactive,
@@ -116,6 +122,10 @@ export default function Viewport({
 
   const frameCls = ['viewport-frame', active ? 'active' : ''].join(' ').trim()
 
+  if (!image) return <div className={mini ? 'viewport mini' : 'viewport'}>
+    <div className="viewport-frame unavailable"><strong>{plane} localizer unavailable</strong><p>{unavailableReason}</p></div>
+  </div>
+
   return (
     <div className={mini ? 'viewport mini' : 'viewport'}>
       <div
@@ -127,6 +137,7 @@ export default function Viewport({
         aria-label={`${plane} localizer`}
       >
         <img src={import.meta.env.BASE_URL + image} alt={`${plane} localizer`} draggable={false} />
+        {referenceImage && <img className="source-reference" src={import.meta.env.BASE_URL + referenceImage} alt="Source planning reference" draggable={false} />}
         <svg
           ref={svgRef}
           viewBox={`0 0 ${VIEW} ${VIEW}`}
@@ -163,7 +174,7 @@ export default function Viewport({
                 size Δ {(deltas.sizeFrac * 100).toFixed(0)}%
               </span>
             </>
-          ) : (
+          ) : sourceReference ? <span className="idle">Compare with the source reference</span> : (
             <>
               <span className="idle">offset —</span>
               <span className="idle">angle Δ —</span>

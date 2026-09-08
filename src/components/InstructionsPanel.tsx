@@ -57,6 +57,8 @@ export default function InstructionsPanel({
                 key={plane}
                 plane={plane}
                 image={exam.views[plane].image}
+                unavailableReason={exam.views[plane].unavailableReason}
+                referenceImage={exam.views[plane].referenceImage}
                 ghost={ghostRender(exam, plane, rx, imageWidthMm)}
                 mini
               />

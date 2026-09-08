@@ -380,3 +380,10 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   .btn, .exam-select, .instructions-toggle { min-height: 44px; }
   .param-row { grid-template-columns: minmax(0, 1fr) auto; gap: 4px; }
 }
+
+.source-reference { pointer-events: none; }
+.source-guidance { color: var(--dim); line-height: 1.5; margin: 0 0 16px; }
+.unavailable { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 16px; color: var(--dim); }
+.unavailable strong { text-transform: capitalize; }
+.viewport.mini .unavailable { font-size: 9px; padding: 4px; }
+.viewport.mini .unavailable p { display: none; }

@@ -3,7 +3,9 @@ import { fileURLToPath } from 'node:url'
 import path from 'node:path'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
-const exams = JSON.parse(await readFile(path.join(root, 'src/data/exams.json'), 'utf8'))
+const exams = []
+for (const file of ['exams.json', 'spine.json']) exams.push(...JSON.parse(await readFile(path.join(root, 'src/data', file), 'utf8')))
+let localizers = 0
 const planes = ['sagittal', 'coronal', 'axial']
 const errors = []
 const ids = new Set()
@@ -23,6 +25,22 @@ for (const exam of exams) {
     const label = `${id}/${plane}`
     requireValue(nonempty(exam?.coverage?.[plane]), `${label}: missing coverage`)
     const view = exam?.views?.[plane]
+    if (exam.referenceMode === 'source') {
+      requireValue(view?.answer === null, `${label}: source-reference exercise must not carry an unverified numeric key`)
+      if (view?.image === null) {
+        requireValue(nonempty(view?.unavailableReason), `${label}: missing view needs an explanation`)
+        requireValue(!view?.referenceImage, `${label}: missing view cannot have a reference`)
+      } else {
+        for (const key of ['image', 'referenceImage']) {
+          const value = view?.[key]
+          if (!nonempty(value) || !value.startsWith('images/') || value.split('/').includes('..')) errors.push(`${label}: invalid ${key}`)
+          else { try { await access(path.join(root, 'public', value)) } catch { errors.push(`${label}: missing ${key}: ${value}`) } }
+        }
+        localizers++
+      }
+      continue
+    }
+    localizers++
     const answer = view?.answer
     const type = plane === exam?.targetPlane ? 'fov' : 'lines'
     requireValue(answer?.type === type, `${label}: expected ${type} answer`)
@@ -48,5 +66,5 @@ if (errors.length) {
   console.error(errors.join('\n'))
   process.exitCode = 1
 } else {
-  console.log(`Content valid: ${exams.length} exams, ${exams.length * planes.length} localizers. No files modified.`)
+  console.log(`Content valid: ${exams.length} exams, ${localizers} localizers. No files modified.`)
 }

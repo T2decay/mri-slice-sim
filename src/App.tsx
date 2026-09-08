@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 import type { Exam, Plane } from './types'
 import examsJson from './data/exams.json'
+import spineJson from './data/spine.json'
 import { imageWidthMm } from './data/scale'
 import { defaultPlane, examForPlane, groupFamilies } from './lib/exams'
 import { defaultPrescription, type Prescription } from './lib/prescription'
 import ConsoleShell from './components/ConsoleShell'
 
 // RadBun publishes the standard Brain exercises; the full build retains all exams.
-const allExams = examsJson as unknown as Exam[]
+const allExams = [...examsJson, ...spineJson] as unknown as Exam[]
 const exams = import.meta.env.MODE === 'radbun'
   ? allExams.filter((exam) => exam.exam === 'Brain')
   : allExams

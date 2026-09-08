@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import examsJson from '../data/exams.json'
+import spineJson from '../data/spine.json'
 import type { Exam, FovPlacement } from '../types'
 import { PLANES } from '../types'
 import { defaultPlane, examForPlane, groupFamilies } from './exams'
@@ -7,7 +8,7 @@ import { angleDiffDeg, deltas, feedbackForView } from './scoring'
 import { coverageMm, defaultPrescription, slicesForCoverage, studentRender } from './prescription'
 import { hasSeen, markSeen } from './preferences'
 
-const exams = examsJson as Exam[]
+const exams = [...examsJson, ...spineJson] as Exam[]
 describe('approved content and prescription coupling', () => {
   for (const exam of exams) it(`${exam.id}: every view shares coverage and slice count`, () => {
     const rx = { ...defaultPrescription(exam, 250), nSlices: 35, thickness_mm: 5, gap_mm: 1 }

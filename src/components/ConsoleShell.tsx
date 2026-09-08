@@ -122,17 +122,18 @@ export default function ConsoleShell({
   const showGhost = keyOn || scanned
   const regions = [...new Set(families.map((entry) => entry.exams[0].region))]
 
-  const student = (p: Plane) => (poses ? studentRender(exam, p, poses[p], rx, W) : null)
+  const student = (p: Plane) => (poses && exam.views[p].image ? studentRender(exam, p, poses[p], rx, W) : null)
   const viewDeltas = (p: Plane) => {
     const s = student(p)
-    return s ? deltas(s.placement, exam.views[p].answer) : null
+    const answer = exam.views[p].answer
+    return s && answer ? deltas(s.placement, answer) : null
   }
 
   const feedback =
     scanned && poses
-      ? PLANES.map((p) => ({
+      ? PLANES.filter((p) => exam.views[p].image).map((p) => ({
           plane: p,
-          feedback: feedbackForView(viewDeltas(p)!, exam.coverage[p]),
+          feedback: viewDeltas(p) ? feedbackForView(viewDeltas(p)!, exam.coverage[p]) : [exam.coverage[p]],
         }))
       : null
 
@@ -200,6 +201,7 @@ export default function ConsoleShell({
 
       <div className="shell-body">
         <div className="work-area">
+          {exam.referenceMode === 'source' && <p className="source-guidance">Plan on the available localizers. Key or Scan shows the source planning lines in green. Use the coverage instructions to compare your placement; numerical match feedback is not available for this exercise.</p>}
           {instructionsOpen && <div className="mobile-coverage"><strong>{activePlane ?? plane} coverage</strong><p>{exam.coverage[activePlane ?? plane]}</p></div>}
           <div className="viewports">
             {PLANES.map((p) => (
@@ -207,6 +209,9 @@ export default function ConsoleShell({
                 key={p}
                 plane={p}
                 image={exam.views[p].image}
+                unavailableReason={exam.views[p].unavailableReason}
+                sourceReference={exam.referenceMode === 'source'}
+                referenceImage={showGhost ? exam.views[p].referenceImage : undefined}
                 ghost={showGhost ? ghostRender(exam, p, rx, W) : null}
                 student={student(p)}
                 interactive
