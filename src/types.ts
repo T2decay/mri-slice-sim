@@ -50,12 +50,18 @@ export interface RenderView {
 }
 
 export interface ExamView {
-  image: string
-  answer: Placement
+  image: string | null
+  answer: Placement | null
+  referenceImage?: string
+  unavailableReason?: string
+  substitution?: { donorExamId: string; plane: Plane }
+  referenceUnavailableReason?: string
 }
 
 export interface Exam {
   id: string
+  referenceMode?: 'source'
+  sourceSlide?: number
   exam: string
   region: string
   landmark: string | null

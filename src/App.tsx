@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react'
 import type { Exam, Plane } from './types'
 import examsJson from './data/exams.json'
+import spineJson from './data/spine.json'
 import { imageWidthMm } from './data/scale'
 import { defaultPlane, examForPlane, groupFamilies } from './lib/exams'
 import { defaultPrescription, type Prescription } from './lib/prescription'
 import ConsoleShell from './components/ConsoleShell'
 
-const exams = examsJson as unknown as Exam[]
+// RadBun publishes the standard Brain exercises; the full build retains all exams.
+const allExams = [...examsJson, ...spineJson] as unknown as Exam[]
+const exams = import.meta.env.MODE === 'radbun'
+  ? allExams.filter((exam) => exam.exam === 'Brain')
+  : allExams
 const families = groupFamilies(exams)
 
 const PLANE_HOTKEYS: Record<string, Plane> = { s: 'sagittal', c: 'coronal', a: 'axial' }
@@ -19,8 +24,8 @@ const PLANE_HOTKEYS: Record<string, Plane> = { s: 'sagittal', c: 'coronal', a: '
 export default function App() {
   const [familyName, setFamilyName] = useState(families[0].name)
   const family = families.find((f) => f.name === familyName) ?? families[0]
-  const [plane, setPlane] = useState<Plane>(() => defaultPlane(family))
-  const exam = examForPlane(family, plane) ?? family.exams[0]
+  const [examId, setExamId] = useState(() => (examForPlane(family, defaultPlane(family)) ?? family.exams[0]).id)
+  const exam = family.exams.find((entry) => entry.id === examId) ?? family.exams[0]
   const W = imageWidthMm(family.name)
   const [rx, setRx] = useState<Prescription>(() => defaultPrescription(exam, W))
   const [keyOn, setKeyOn] = useState(false)
@@ -31,12 +36,13 @@ export default function App() {
     const p = defaultPlane(f)
     const e = examForPlane(f, p) ?? f.exams[0]
     setFamilyName(name)
-    setPlane(p)
+    setExamId(e.id)
     setRx(defaultPrescription(e, imageWidthMm(f.name)))
   }
 
   const selectPlane = (p: Plane) => {
-    if (examForPlane(family, p)) setPlane(p)
+    const next = examForPlane(family, p)
+    if (next) setExamId(next.id)
   }
 
   // S / C / A hotkeys (ignored while typing in a field)
@@ -46,7 +52,8 @@ export default function App() {
       const tag = (e.target as HTMLElement | null)?.tagName
       if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return
       const p = PLANE_HOTKEYS[e.key.toLowerCase()]
-      if (p && examForPlane(family, p)) setPlane(p)
+      const next = p && examForPlane(family, p)
+      if (next) setExamId(next.id)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -62,6 +69,7 @@ export default function App() {
       plane={exam.targetPlane}
       onSelectFamily={selectFamily}
       onSelectPlane={selectPlane}
+      onSelectSequence={setExamId}
       rx={rx}
       onRxChange={setRx}
       imageWidthMm={W}

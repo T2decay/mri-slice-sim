@@ -8,8 +8,15 @@ and slice-group lines on the cross-planes, just like at the console. The app
 compares their placement with the instructor's reference geometry and gives
 feedback using the same coverage language as the teaching deck.
 
-**Pilot scope:** the Neuro / Brain family (14 exams: Brain, Brain & IAC's,
+**Neuro scope:** the Brain family (14 exams: Brain, Brain & IAC's,
 Brain & Pituitary, Brain & Orbits, Brain for Seizure, MRA Head, MRV Head).
+
+**Spine:** 12 additional exercises cover Cervical Spine, Thoracic Spine,
+Lumbar Spine, and Sacrum. Choose them in the Spine section of the dropdown.
+These exercises use the reviewed source markings as a green visual reference,
+with coverage text instead of numerical match feedback. Missing localizers are filled from the matching plane in the same Spine
+family. Substituted views use written coverage instructions without donor
+reference lines. The RadBun build remains restricted to standard Brain.
 
 ## For instructors
 
@@ -49,6 +56,10 @@ npm run build      # type-check + production build in dist/
 
 ## Project layout
 
+See [ROADMAP.md](ROADMAP.md) for remaining work and review gates, and
+[HANDOFF.md](HANDOFF.md) for the current design and approved Brain image swaps.
+Run `npm run check:content` to validate exam structure and local image paths.
+
 - `src/` — Vite + React + TypeScript app (SVG overlays on `<img>`, no backend)
 - `src/data/exams.json` — generated content: one entry per exam with coverage
   text and normalized answer geometry (do not hand-edit)
@@ -58,5 +69,28 @@ npm run build      # type-check + production build in dist/
 - `pipeline/` — one-time Python asset pipeline (pptx → clean images + answer
   keys); see `pipeline/*.py` headers. Re-run order: `01_extract` →
   `02_geometry` → `03_clean` → `04_contact_sheet` (QA) → `05_assemble`
-- `.github/workflows/deploy.yml` — GitHub Pages deploy on push to `main`
-  (inactive until the repo is on GitHub)
+- `.github/workflows/deploy.yml` — GitHub Pages deploy on push to `main`.
+  Push only when publishing is explicitly authorized.
+
+**Asset warning:** do not rerun `05_assemble.py` on the current output without
+preserving the approved Brain image replacements described in HANDOFF.md;
+the old generated images would overwrite them.
+
+## Spine content and provenance
+
+`src/data/spine.json` holds the new exercises separately from the approved
+Brain dataset. `scripts/assemble-spine.py` promotes the reviewed candidates
+without running the Brain assembly script. `docs/spine-provenance.json` records
+source hashes, output paths, and padding. Source markers are isolated into
+transparent green reference images; they are not estimated geometric answers.
+
+All 12 Spine exercises now have three localizers. Five missing axial views
+use the axial scout from another exercise in the same family. Sacrum sagittal
+uses the confirmed coronal image from Sacrum coronal. The approved image files
+are reused without changing pixels. See `docs/spine-substitutions.json` for
+exact donors and hashes. Donor sequence markings are intentionally not reused
+as answer keys: the substitute views remain interactive practice images with
+written coverage instructions.
+
+The tall slide-32 sagittal image is padded to a square without stretching or
+cropping. Physical dimensions remain nominal.

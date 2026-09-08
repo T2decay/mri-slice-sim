@@ -1,3 +1,127 @@
+# September 8 follow-up: same-region substitutions
+
+Wes requested filling the missing Spine views with the appropriate plane from
+the same body region. All 12 Spine exercises now have three localizers (36
+Spine views; 78 total including Neuro). No existing image pixels changed.
+
+Donors:
+- Cervical sagittal axial view: Cervical axial's axial image (slide 31).
+- Thoracic sagittal and axial targets: Thoracic coronal's axial image (slide 33).
+- Lumbar sagittal and axial targets: Lumbar coronal's axial image (slide 36).
+- Sacrum sagittal coronal view: Sacrum coronal's coronal image (slide 39).
+
+All four donors were visually inspected for region and plane. They are not
+asserted to share a calibrated patient frame with their destination exercise.
+They remain interactive but have no copied donor reference markings or numeric
+keys. The UI identifies the substitute and directs students to source coverage
+text. Data validation and tests require same-family, same-plane donors and
+explicit absence of transplanted reference lines. Provenance and image hashes
+are in docs/spine-substitutions.json. The assembly script reapplies substitutions
+on reruns, preserving the original reviewed images.
+
+47 tests pass; content validation and build pass. Browser verification covers
+Sacrum's filled coronal view and Thoracic's filled axial target with FOV handles.
+GitHub delivery continues on the existing unmerged PR. No RadBun deployment.
+
+---
+
+# September 8: Spine integration approved; GitHub branch update
+
+Wes approved the focused Spine images and requested project/GitHub updates,
+explicitly excluding radbun.com. This checkpoint integrates 12 exercises in
+four families using 30 usable localizers, retaining all 31 reviewed source
+images as assets. No approved Brain image or exams.json entry was changed.
+
+Spine uses source-reference mode: transparent green images preserve the actual
+source markings, while numeric answer geometry is null. Key/Scan reveals the
+markings alongside the student's yellow placement. Feedback uses source coverage
+text, not uncertain numerical deltas. Missing views remain explicit (five absent
+axial scouts plus slide 38's uncertain middle-image plane). The tall thoracic
+scout is padded to square without resizing its anatomy. Its reference receives
+identical padding. Nominal parameter scale has not been clinically calibrated.
+
+Validation: 46 tests pass, content validation passes (26 exercises / 72 usable
+localizers), production build passes. Browser checks cover all four Spine
+families, Cervical Add/Scan, Thoracic missing target view, and Sacrum's available
+and unresolved views. No browser errors observed. Source-reference image pixels
+and padded candidate pixels were verified against the reviewed files.
+
+GitHub delivery is on codex/organize-expand with a pull request; no main-branch
+push or merge, no workflow dispatch, no Cloudflare/RadBun deployment. Existing
+RadBun filtering remains Brain-only. Local app: http://127.0.0.1:5174/ .
+
+---
+
+# September 7 local organization and expansion checkpoint
+
+Current work is local only. The earlier release handoff below is historical.
+
+- Added ROADMAP.md, docs/EXPANSION_INVENTORY.md, and a read-only
+  `npm run check:content` command.
+- Added 22 regression checks: `npm test`. Production build passes.
+- Prepared region grouping and sequence selection for multiple sequences in
+  the same target plane. The approved pilot still contains 14 variants.
+- Improved walkthrough keyboard focus, Tab containment, Escape dismissal,
+  optional storage fallback, accessible icon labels, and coarse-pointer controls.
+- Added sticky active-plane coverage on tablet/mobile. Browser checks at
+  820 x 1180 verified scrolling guidance and active-plane updates; keyboard
+  nudging and parameter edits clear Scan feedback. No browser console errors
+  were observed. Real-device touch testing remains for Wes.
+- Preserved pipeline/, public/images/, and src/data/exams.json byte-for-byte
+  relative to the committed baseline (git diff is empty for these paths).
+
+## Expansion review
+
+`review/expansion/index.html` contains the source inventory and first Body
+candidate batch: 39 slides, 117 localizers, 10 contact sheets. Originals remain
+available separately at full resolution, including all corners. Region labels
+are organizational proposals; Soft Tissue Neck and Brachial Plexus are under
+Body, TMJ under MSK. Source text is unchanged.
+
+All candidates need human QA. White overlays remain and are flagged; saturation
+bands remain by prior instruction. Automated geometry is provisional, with
+known incorrect directions visible in some views (for example slide 25 sagittal).
+The other regions are inventoried only. Slides with missing images, additional
+images, non-square dimensions, or crop/transform metadata are held for mapping.
+No PHI clearance is claimed for this new batch.
+
+The staging script writes only ignored review/expansion output. It imports the
+existing pipeline functions read-only, with Python bytecode writing disabled.
+Run `pipeline/.venv/bin/python -B scripts/stage-expansion.py` for the inventory.
+Candidate generation additionally needs the five-slide visual order evidence
+in review/expansion/order-check.json, then `--candidates`. That record currently
+covers Body only. Do not run the old assembly script on approved Brain assets.
+
+## Local commands
+
+```sh
+npm install
+npm test
+npm run check:content
+npm run build
+npm run dev -- --host 127.0.0.1 --port 5174 --strictPort
+# Separate terminal for review material:
+python3 -m http.server 5175 --bind 127.0.0.1 --directory review/expansion
+```
+
+App: http://127.0.0.1:5174/ . Review: http://127.0.0.1:5175/ .
+No push, remote changes, or deployment performed in this checkpoint.
+
+## Review next
+
+1. Review all ten Body contact sheets and original corners.
+2. Flag mismatched green geometry and white overlays for correction.
+3. Confirm or revise the proposed region assignments.
+4. Trial sticky guidance on a physical tablet while dragging each view.
+5. Check coarse-pointer steppers and walkthrough keyboard focus.
+6. Approve corrected images before content assembly; then advance to the next region.
+
+README screenshots remain open; this checkpoint prioritizes functional checks
+and source expansion review. Scale calibration and classroom feedback thresholds
+still require instructor judgment.
+
+---
+
 # Handoff — v1 revisions, Brain image swap, and first deploy
 
 All eight revision items are implemented, type-checked (`npm run build`

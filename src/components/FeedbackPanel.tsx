@@ -13,7 +13,7 @@ interface Props {
 export default function FeedbackPanel({ views }: Props) {
   return (
     <section className="feedback-panel">
-      <p className="feedback-lead">Green shows the reference placement.</p>
+      <p className="feedback-lead">Green shows the available reference placements.</p>
       <div className="feedback-views">
         {views.map((v) => (
           <div key={v.plane} className="feedback-view">

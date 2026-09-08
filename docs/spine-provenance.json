@@ -1,0 +1,467 @@
+[
+  {
+    "slide": 29,
+    "plane": "sagittal",
+    "source": "ppt/media/image80.jpg",
+    "sourceSha256": "628c453055e6cdf2bcf3b0e9af14607a989f549f5b5dd72dc87662f19f1b068c",
+    "reviewedCandidate": "29-sagittal-clean.png",
+    "candidateSha256": "c25e848d340f96b0483e68eac23205d4784f89c0137445c751a39945fc5305e2",
+    "output": "images/cervical-spine-sagittal/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 640
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 29,
+    "plane": "coronal",
+    "source": "ppt/media/image81.jpg",
+    "sourceSha256": "eb365b9b9703378d2a136de1e56103ab10e00dc28473c7bd9809c96c50074c76",
+    "reviewedCandidate": "29-coronal-clean.png",
+    "candidateSha256": "c322701232a74d295fa8825de132a7641cb4e46975c7e947fd5c31d775c48a80",
+    "output": "images/cervical-spine-sagittal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 30,
+    "plane": "sagittal",
+    "source": "ppt/media/image83.jpg",
+    "sourceSha256": "f93b4941ea21aaa93d89f8b53465a8da33413d26585bec00c4f78954b168edc5",
+    "reviewedCandidate": "30-sagittal-clean.png",
+    "candidateSha256": "a47cf9e85fafd9cee010179f1ba6103fce59f8c411a89220aaebcb4d9cf713c6",
+    "output": "images/cervical-spine-coronal/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 30,
+    "plane": "coronal",
+    "source": "ppt/media/image82.jpg",
+    "sourceSha256": "91c4495eea92259217807913ada2fbfb3d60b6a4b635bf773f21d515301764f5",
+    "reviewedCandidate": "30-coronal-clean.png",
+    "candidateSha256": "2821fc8a45f5a3a5ddbc759ebe34010cd7b8b6d5afc7c1799cac043dc34848c3",
+    "output": "images/cervical-spine-coronal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 30,
+    "plane": "axial",
+    "source": "ppt/media/image84.jpg",
+    "sourceSha256": "e9460e17f350938ccbc207d61deeb2d130cc02f0dc603fb69621569e2c8cbe61",
+    "reviewedCandidate": "30-axial-clean.png",
+    "candidateSha256": "c5fafe881d15662ffaa85bb14426a85ea89cd2de5102537b2ffb7fe3091d445a",
+    "output": "images/cervical-spine-coronal/axial.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 31,
+    "plane": "sagittal",
+    "source": "ppt/media/image85.jpg",
+    "sourceSha256": "b04b30d7bde9d6c90864e23c440b890a6eed8a68f18bb15ce5207922f90d18b3",
+    "reviewedCandidate": "31-sagittal-clean.png",
+    "candidateSha256": "e28d4a3c93b263a2af51ceeeb0e641aba820f5b6b75bfda763e784be5b85295d",
+    "output": "images/cervical-spine-axial/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 640
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 31,
+    "plane": "coronal",
+    "source": "ppt/media/image86.jpg",
+    "sourceSha256": "f4f977a78d86a17d6eaebef0cf8ae22587ad0d468bc9e0f29ae1bcf33fd716aa",
+    "reviewedCandidate": "31-coronal-clean.png",
+    "candidateSha256": "a73589f0251e05d63d9eb876c5839c15fbd62569d7ff1cd696ebfabb58aa28c6",
+    "output": "images/cervical-spine-axial/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 31,
+    "plane": "axial",
+    "source": "ppt/media/image70.jpg",
+    "sourceSha256": "91b9b0d1bcdee09bbe38914e46e6f185b3e731f282827878a1d4341759f9ab2c",
+    "reviewedCandidate": "31-axial-clean.png",
+    "candidateSha256": "a07ffcdc29818dfa7edd725257fd6fa9109e8725225d3032ecb2426cd30ba54e",
+    "output": "images/cervical-spine-axial/axial.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 32,
+    "plane": "sagittal",
+    "source": "ppt/media/image88.jpg",
+    "sourceSha256": "1f74a20c9c9f98a970d888c9184862ab8c76148bce8e4dbd1ffcaa81684e0054",
+    "reviewedCandidate": "32-sagittal-clean.png",
+    "candidateSha256": "1c134fa0ae9e4d2facd347bbae65f48971ba4e9cf1a104334f23fe1b836446ad",
+    "output": "images/thoracic-spine-sagittal/sagittal.png",
+    "padding": {
+      "left": 119,
+      "top": 0,
+      "squareSize": 430
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 32,
+    "plane": "coronal",
+    "source": "ppt/media/image87.jpg",
+    "sourceSha256": "2a824f8dda0a54c9e49703d8cdeb5d9afbb8ed77f8c2aa7494082c9d0a1e627c",
+    "reviewedCandidate": "32-coronal-clean.png",
+    "candidateSha256": "15a73c16d4d4232b5991c1a805ffa53f90cb470346bd72955d3700136ae1a4d4",
+    "output": "images/thoracic-spine-sagittal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 320
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 33,
+    "plane": "sagittal",
+    "source": "ppt/media/image90.jpg",
+    "sourceSha256": "dc72eab14870868a472fda7c4089772401389d965b51b2208d96515be02d3683",
+    "reviewedCandidate": "33-sagittal-clean.png",
+    "candidateSha256": "25c89db78ffef1dffcd73e6e6eb3d05518ecfd75edea0c5db576e822d091344e",
+    "output": "images/thoracic-spine-coronal/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 384
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 33,
+    "plane": "coronal",
+    "source": "ppt/media/image91.jpg",
+    "sourceSha256": "7186f5858c611d624c207a9643ddc87e47fd8553ea879c7c262e5a6d0df45646",
+    "reviewedCandidate": "33-coronal-clean.png",
+    "candidateSha256": "0b8fe5465dcf7e7b29350d18038a32ebab7dc97f06f696017c38eef0a379b534",
+    "output": "images/thoracic-spine-coronal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 256
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 33,
+    "plane": "axial",
+    "source": "ppt/media/image89.jpg",
+    "sourceSha256": "3e9e56ad62decdf5e02f7ea2dd4e17534961b8d4a2ef66c6ec4a6288357978ef",
+    "reviewedCandidate": "33-axial-clean.png",
+    "candidateSha256": "1bad53f6f8ffbb91a0802c0d3be336e6b37f2e988c149b958a06d3cc7fe90a7a",
+    "output": "images/thoracic-spine-coronal/axial.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 34,
+    "plane": "sagittal",
+    "source": "ppt/media/image92.jpg",
+    "sourceSha256": "5a77db000c6133773ac70d165e0bd97e0013b2d89f36941e4c4cca73523a461d",
+    "reviewedCandidate": "34-sagittal-clean.png",
+    "candidateSha256": "74e59dbe821cf1c2499a020de1a5357741c2dd54f812c19580940183cbc196f9",
+    "output": "images/thoracic-spine-axial/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 384
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 34,
+    "plane": "coronal",
+    "source": "ppt/media/image93.jpg",
+    "sourceSha256": "a551eda7322aa44a82ff4d38778dc10bbb513731c46867158bc1d30bc5794ba9",
+    "reviewedCandidate": "34-coronal-clean.png",
+    "candidateSha256": "b91de5f845b7c212a92a4fe1543ecc7ac61bf9dc595e50c7a7faf185bb33fe74",
+    "output": "images/thoracic-spine-axial/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 320
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 35,
+    "plane": "sagittal",
+    "source": "ppt/media/image94.jpg",
+    "sourceSha256": "e59126cebc1280c26663295b02454b505936b370883cdd0e0e74d76a3807bfe1",
+    "reviewedCandidate": "35-sagittal-clean.png",
+    "candidateSha256": "f7f2e346652f816b71388eccafd94f682027eb46c695a58f70a95c2d76adc667",
+    "output": "images/lumbar-spine-sagittal/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 256
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 35,
+    "plane": "coronal",
+    "source": "ppt/media/image95.jpg",
+    "sourceSha256": "31955997c5820c9a8d573f951534479539a1ffbd370fca9f16eab6afad990d19",
+    "reviewedCandidate": "35-coronal-clean.png",
+    "candidateSha256": "c9b6a32a5161d3a959647f1ebec038ab5077a1d60b75571c15360d170e1b6340",
+    "output": "images/lumbar-spine-sagittal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 256
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 36,
+    "plane": "sagittal",
+    "source": "ppt/media/image96.jpg",
+    "sourceSha256": "45c87cc4798b9587de09b8cf029f18522ab4013b184f8e219b68a6995f23e420",
+    "reviewedCandidate": "36-sagittal-clean.png",
+    "candidateSha256": "1382c8fb75b0f07c818b48f589350aa5028620c823807ffa871ddadf5b6dc53c",
+    "output": "images/lumbar-spine-coronal/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 320
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 36,
+    "plane": "coronal",
+    "source": "ppt/media/image97.png",
+    "sourceSha256": "b7c290ed40748d91d239e0ebdf224a1390806b8f07e0139fd0664ee5daf59ff6",
+    "reviewedCandidate": "36-coronal-clean.png",
+    "candidateSha256": "2a2d8489aa60ee702ff9e36e9f6ae173c67c713c683479a49e3ac49f15d8ea33",
+    "output": "images/lumbar-spine-coronal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 36,
+    "plane": "axial",
+    "source": "ppt/media/image98.jpg",
+    "sourceSha256": "2c8c7d6b70b3e72591277bc525d5c7396f85beb699db58660941e02177459662",
+    "reviewedCandidate": "36-axial-clean.png",
+    "candidateSha256": "9a35f25daf928094126cccd2aaf5b8be9c25e533d9e5c4530b5e37b4b00a3816",
+    "output": "images/lumbar-spine-coronal/axial.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 256
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 37,
+    "plane": "sagittal",
+    "source": "ppt/media/image99.jpg",
+    "sourceSha256": "0c1f5061ce4da283386bb32904464d14f112d5648d2b6acf9ab3b53966472116",
+    "reviewedCandidate": "37-sagittal-clean.png",
+    "candidateSha256": "c315a897cae7bc46163dc2c3a54437a77e61cfa49afb1cc2efcf72f3a1e4137d",
+    "output": "images/lumbar-spine-axial/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 320
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 37,
+    "plane": "coronal",
+    "source": "ppt/media/image100.jpg",
+    "sourceSha256": "16f5db8c3722caf386ca9ba7ea05c855da1041fbbc101669390b0af61cee65ba",
+    "reviewedCandidate": "37-coronal-clean.png",
+    "candidateSha256": "1e2d0d5fb207a1368b54fc12a8e3a5a60c6255985b3e47ee77d0be83a9f99daa",
+    "output": "images/lumbar-spine-axial/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 410
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 38,
+    "plane": "sagittal",
+    "source": "ppt/media/image101.jpg",
+    "sourceSha256": "804fbc64cb1162c654a9dce33abc4b5ac86cdada37bd85b380744dd736d0a54c",
+    "reviewedCandidate": "38-sagittal-clean.png",
+    "candidateSha256": "0f76094a86a47d7ef098c97bbf74f237bb4c8e4847bdbfac1ec21dbe783ed4dd",
+    "output": "images/sacrum-sagittal/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 38,
+    "plane": "coronal",
+    "source": "ppt/media/image102.png",
+    "sourceSha256": "661b1243a1feddec006aa764fbafaa44956c6289b9fe7b7b5631d8e61bad5140",
+    "reviewedCandidate": "38-coronal-clean.png",
+    "candidateSha256": "d05c2cf47afd51aea4f4784f890e442f38beda14253b8f48d1d668d2334b3eeb",
+    "output": "images/sacrum-sagittal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": false
+  },
+  {
+    "slide": 38,
+    "plane": "axial",
+    "source": "ppt/media/image103.jpg",
+    "sourceSha256": "70f9f459a0e698f798a4c31659fbc62657ad62f3ce66d5b012eb4777ad19e33d",
+    "reviewedCandidate": "38-axial-clean.png",
+    "candidateSha256": "38b82ca44044b494e5de9969187f5b39ee53d5c2d14893ac74615cb5be3e0810",
+    "output": "images/sacrum-sagittal/axial.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 39,
+    "plane": "sagittal",
+    "source": "ppt/media/image104.png",
+    "sourceSha256": "f499b411bd76b6d0eb672d906440b0011b0ddc0b525dfd1d99c9aa0016a3e30f",
+    "reviewedCandidate": "39-sagittal-clean.png",
+    "candidateSha256": "0e535d0777bf327db253335f2a5595615ee9dc062af4a86a8c16c104e0113446",
+    "output": "images/sacrum-coronal/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 39,
+    "plane": "coronal",
+    "source": "ppt/media/image106.png",
+    "sourceSha256": "3da915e15439c59e774de6f3c4f4e8516aee0c3c85800f04cc11973a87de73e1",
+    "reviewedCandidate": "39-coronal-clean.png",
+    "candidateSha256": "3c543f296c1d90a51b474911c0590e245e73519ec066f077dd118355eb5cebac",
+    "output": "images/sacrum-coronal/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 39,
+    "plane": "axial",
+    "source": "ppt/media/image105.png",
+    "sourceSha256": "74eac8153c14059ec1c49e1ef14481444a05b8530ae05b2d54b703554b9c88b2",
+    "reviewedCandidate": "39-axial-clean.png",
+    "candidateSha256": "40cfebeb549a0c4c24b05bf46d5bbcec95390873d4c39e7440fa7903ebc23a32",
+    "output": "images/sacrum-coronal/axial.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 40,
+    "plane": "sagittal",
+    "source": "ppt/media/image107.png",
+    "sourceSha256": "3c873fd373619af7c5b4de9871359f08c57f3c9399d97f65235386f199595a8e",
+    "reviewedCandidate": "40-sagittal-clean.png",
+    "candidateSha256": "7db55a6338b9a4207887480ad92f67f33d87ced201eb16f6f28a890abc5cac70",
+    "output": "images/sacrum-axial/sagittal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 40,
+    "plane": "coronal",
+    "source": "ppt/media/image108.png",
+    "sourceSha256": "95e5662a7a0ef2165f8a9bb295bc39a56a367e27abefcdd292e5ea8bdc93d248",
+    "reviewedCandidate": "40-coronal-clean.png",
+    "candidateSha256": "c65fa54bbb73eb666550aeff8dfbd5195b1bbc57f24ba0a294c11e4227a855d2",
+    "output": "images/sacrum-axial/coronal.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  },
+  {
+    "slide": 40,
+    "plane": "axial",
+    "source": "ppt/media/image109.png",
+    "sourceSha256": "cdc2e77e3c73d520116759618f499df78249de5ca2a4327210e87c8bab07fc2d",
+    "reviewedCandidate": "40-axial-clean.png",
+    "candidateSha256": "88be7b330dd17053c37082d822d29e85a8b3819a394711f8af629dfdf8d62118",
+    "output": "images/sacrum-axial/axial.png",
+    "padding": {
+      "left": 0,
+      "top": 0,
+      "squareSize": 512
+    },
+    "usedInExercise": true
+  }
+]

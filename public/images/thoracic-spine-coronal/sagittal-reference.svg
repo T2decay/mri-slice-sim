@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<title>Thoracic coronal planning reference on sagittal localizer</title>
+<desc>Visual tracing of slide 33; simplified planning geometry pending instructor review.</desc>
+<g fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(235 257) rotate(90)">
+<line x1="-232.0" x2="232.0" y1="-83.0" y2="-83.0"/>
+<line x1="-232.0" x2="232.0" y1="-41.5" y2="-41.5"/>
+<line x1="-232.0" x2="232.0" y1="0.0" y2="0.0"/>
+<line x1="-232.0" x2="232.0" y1="41.5" y2="41.5"/>
+<line x1="-232.0" x2="232.0" y1="83.0" y2="83.0"/>
+</g>
+</svg>

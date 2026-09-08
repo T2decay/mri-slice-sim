@@ -45,6 +45,7 @@ export default function InstructionsPanel({
                   {plane === exam.targetPlane ? ' · FOV' : ' · slice lines'}
                 </strong>
                 <span>{exam.coverage[plane]}</span>
+                {exam.views[plane].substitution && <small>Practice image from the same region; use the written coverage instructions.</small>}
               </li>
             ))}
           </ul>
@@ -57,6 +58,8 @@ export default function InstructionsPanel({
                 key={plane}
                 plane={plane}
                 image={exam.views[plane].image}
+                unavailableReason={exam.views[plane].unavailableReason}
+                referenceImage={exam.views[plane].referenceImage}
                 ghost={ghostRender(exam, plane, rx, imageWidthMm)}
                 mini
               />

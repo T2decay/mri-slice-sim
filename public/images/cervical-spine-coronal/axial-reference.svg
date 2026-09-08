@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<title>Cervical coronal planning reference on axial localizer</title>
+<desc>Visual tracing of slide 30; simplified planning geometry pending instructor review.</desc>
+<g fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(261.5 250.5) rotate(0)">
+<line x1="-153.5" x2="153.5" y1="-40.5" y2="-40.5"/>
+<line x1="-153.5" x2="153.5" y1="-20.25" y2="-20.25"/>
+<line x1="-153.5" x2="153.5" y1="0.0" y2="0.0"/>
+<line x1="-153.5" x2="153.5" y1="20.25" y2="20.25"/>
+<line x1="-153.5" x2="153.5" y1="40.5" y2="40.5"/>
+</g>
+</svg>

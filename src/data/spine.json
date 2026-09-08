@@ -1,0 +1,410 @@
+[
+  {
+    "id": "cervical-spine-sagittal",
+    "exam": "Cervical Spine",
+    "region": "Spine",
+    "landmark": "Center at C4",
+    "targetPlane": "sagittal",
+    "sequenceNote": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover from the foramen magnum to second thoracic vertebrae",
+      "coronal": "align parallel to cervical spine and cover through the neural foramen of each disc space L to R",
+      "axial": "align orthogonally"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/cervical-spine-sagittal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-sagittal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/cervical-spine-sagittal/coronal.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-sagittal/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/cervical-spine-axial/axial.png",
+        "answer": null,
+        "substitution": {
+          "donorExamId": "cervical-spine-axial",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 29
+  },
+  {
+    "id": "cervical-spine-coronal",
+    "exam": "Cervical Spine",
+    "region": "Spine",
+    "landmark": "Center at C4",
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to cervical spine",
+      "coronal": "The FOV will cover from the foramen magnum to second thoracic vertebrae",
+      "axial": "align perpendicular to spinous process of the cervical spine"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/cervical-spine-coronal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-coronal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/cervical-spine-coronal/coronal.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-coronal/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/cervical-spine-coronal/axial.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-coronal/axial-reference.svg"
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 30
+  },
+  {
+    "id": "cervical-spine-axial",
+    "exam": "Cervical Spine",
+    "region": "Spine",
+    "landmark": "Center at C4",
+    "targetPlane": "axial",
+    "sequenceNote": "Axial",
+    "coverage": {
+      "sagittal": "align perpendicular to the cervical spine",
+      "coronal": "align perpendicular to the cervical spine",
+      "axial": "The FOV will cover the cervical spine and nerve roots"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/cervical-spine-axial/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-axial/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/cervical-spine-axial/coronal.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-axial/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/cervical-spine-axial/axial.png",
+        "answer": null,
+        "referenceImage": "images/cervical-spine-axial/axial-reference.svg"
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 31
+  },
+  {
+    "id": "thoracic-spine-sagittal",
+    "exam": "Thoracic Spine",
+    "region": "Spine",
+    "landmark": null,
+    "targetPlane": "sagittal",
+    "sequenceNote": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover from the body of C7 to the body of L1",
+      "coronal": "align parallel to thoracic spine and cover through the neural foramen of each disc space L to R",
+      "axial": "align orthogonally"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/thoracic-spine-sagittal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/thoracic-spine-sagittal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/thoracic-spine-sagittal/coronal.png",
+        "answer": null,
+        "referenceImage": "images/thoracic-spine-sagittal/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/thoracic-spine-coronal/axial.png",
+        "answer": null,
+        "substitution": {
+          "donorExamId": "thoracic-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 32
+  },
+  {
+    "id": "thoracic-spine-coronal",
+    "exam": "Thoracic Spine",
+    "region": "Spine",
+    "landmark": null,
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to thoracic spine",
+      "coronal": "The FOV will cover from the body of C7 to the body of L1",
+      "axial": "align perpendicular to spinous process of the thoracic spine"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/thoracic-spine-coronal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/thoracic-spine-coronal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/thoracic-spine-coronal/coronal.png",
+        "answer": null,
+        "referenceImage": "images/thoracic-spine-coronal/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/thoracic-spine-coronal/axial.png",
+        "answer": null,
+        "referenceImage": "images/thoracic-spine-coronal/axial-reference.svg"
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 33
+  },
+  {
+    "id": "thoracic-spine-axial",
+    "exam": "Thoracic Spine",
+    "region": "Spine",
+    "landmark": null,
+    "targetPlane": "axial",
+    "sequenceNote": "Axial",
+    "coverage": {
+      "sagittal": "align perpendicular to the thoracic spine",
+      "coronal": "align perpendicular to the thoracic spine",
+      "axial": "The FOV will cover the thoracic spine and nerve roots"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/thoracic-spine-axial/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/thoracic-spine-axial/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/thoracic-spine-axial/coronal.png",
+        "answer": null,
+        "referenceImage": "images/thoracic-spine-axial/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/thoracic-spine-coronal/axial.png",
+        "answer": null,
+        "substitution": {
+          "donorExamId": "thoracic-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 34
+  },
+  {
+    "id": "lumbar-spine-sagittal",
+    "exam": "Lumbar Spine",
+    "region": "Spine",
+    "landmark": "Center at L3",
+    "targetPlane": "sagittal",
+    "sequenceNote": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover from the body of T12 to the body S2",
+      "coronal": "align parallel to lumbar spine and cover through the neural foramen of each disc space L to R",
+      "axial": "align orthogonally"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/lumbar-spine-sagittal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/lumbar-spine-sagittal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/lumbar-spine-sagittal/coronal.png",
+        "answer": null,
+        "referenceImage": "images/lumbar-spine-sagittal/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/lumbar-spine-coronal/axial.png",
+        "answer": null,
+        "substitution": {
+          "donorExamId": "lumbar-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 35
+  },
+  {
+    "id": "lumbar-spine-coronal",
+    "exam": "Lumbar Spine",
+    "region": "Spine",
+    "landmark": "Center at L3",
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to lumbar spine",
+      "coronal": "The FOV will cover from the body of C7 to the body of L1",
+      "axial": "align perpendicular to spinous process of the lumbar spine"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/lumbar-spine-coronal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/lumbar-spine-coronal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/lumbar-spine-coronal/coronal.png",
+        "answer": null,
+        "referenceImage": "images/lumbar-spine-coronal/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/lumbar-spine-coronal/axial.png",
+        "answer": null,
+        "referenceImage": "images/lumbar-spine-coronal/axial-reference.svg"
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 36
+  },
+  {
+    "id": "lumbar-spine-axial",
+    "exam": "Lumbar Spine",
+    "region": "Spine",
+    "landmark": "Center at L3",
+    "targetPlane": "axial",
+    "sequenceNote": "Axial",
+    "coverage": {
+      "sagittal": "align perpendicular to the lumbar spine",
+      "coronal": "align perpendicular to the lumbar spine",
+      "axial": "The FOV will cover the lumbar spine and nerve roots"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/lumbar-spine-axial/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/lumbar-spine-axial/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/lumbar-spine-axial/coronal.png",
+        "answer": null,
+        "referenceImage": "images/lumbar-spine-axial/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/lumbar-spine-coronal/axial.png",
+        "answer": null,
+        "substitution": {
+          "donorExamId": "lumbar-spine-coronal",
+          "plane": "axial"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 37
+  },
+  {
+    "id": "sacrum-sagittal",
+    "exam": "Sacrum",
+    "region": "Spine",
+    "landmark": "Center at ASIS",
+    "targetPlane": "sagittal",
+    "sequenceNote": "Sagittal",
+    "coverage": {
+      "sagittal": "The FOV will cover from the body of L5 to coccyx",
+      "coronal": "align parallel to SI joints to cover through entire sacrum from L to R",
+      "axial": "align parallel to SI joints"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/sacrum-sagittal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-sagittal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/sacrum-coronal/coronal.png",
+        "answer": null,
+        "substitution": {
+          "donorExamId": "sacrum-coronal",
+          "plane": "coronal"
+        },
+        "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
+      },
+      "axial": {
+        "image": "images/sacrum-sagittal/axial.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-sagittal/axial-reference.svg"
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 38
+  },
+  {
+    "id": "sacrum-coronal",
+    "exam": "Sacrum",
+    "region": "Spine",
+    "landmark": "Center at ASIS",
+    "targetPlane": "coronal",
+    "sequenceNote": "Coronal",
+    "coverage": {
+      "sagittal": "align parallel to sacrum",
+      "coronal": "The FOV will cover from the body of L5 to coccyx",
+      "axial": "align perpendicular to the sacrum"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/sacrum-coronal/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-coronal/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/sacrum-coronal/coronal.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-coronal/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/sacrum-coronal/axial.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-coronal/axial-reference.svg"
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 39
+  },
+  {
+    "id": "sacrum-axial",
+    "exam": "Sacrum",
+    "region": "Spine",
+    "landmark": "Center at ASIS",
+    "targetPlane": "axial",
+    "sequenceNote": "Axial",
+    "coverage": {
+      "sagittal": "align perpendicular to the sacrum to cover from the body of L5 to coccyx",
+      "coronal": "align perpendicular to the sacrum",
+      "axial": "The FOV will cover the SI joints to cover through entire sacrum"
+    },
+    "views": {
+      "sagittal": {
+        "image": "images/sacrum-axial/sagittal.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-axial/sagittal-reference.svg"
+      },
+      "coronal": {
+        "image": "images/sacrum-axial/coronal.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-axial/coronal-reference.svg"
+      },
+      "axial": {
+        "image": "images/sacrum-axial/axial.png",
+        "answer": null,
+        "referenceImage": "images/sacrum-axial/axial-reference.svg"
+      }
+    },
+    "referenceMode": "source",
+    "sourceSlide": 40
+  }
+]
