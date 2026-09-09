@@ -7,10 +7,10 @@ import { defaultPlane, examForPlane, groupFamilies } from './lib/exams'
 import { defaultPrescription, type Prescription } from './lib/prescription'
 import ConsoleShell from './components/ConsoleShell'
 
-// RadBun publishes the standard Brain exercises; the full build retains all exams.
+// RadBun publishes the approved Brain and IAC image sets; the full build retains all exams.
 const allExams = [...examsJson, ...spineJson] as unknown as Exam[]
 const exams = import.meta.env.MODE === 'radbun'
-  ? allExams.filter((exam) => exam.exam === 'Brain')
+  ? allExams.filter((exam) => ['Brain', "Brain & IAC's"].includes(exam.exam))
   : allExams
 const families = groupFamilies(exams)
 
