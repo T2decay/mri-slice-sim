@@ -1,0 +1,55 @@
+{
+  "approved": "2026-09-09",
+  "description": "User-approved synthetic T1 teaching images generated from the existing Brain localizers. Same three source images were shared across all three Brain target-plane exercises; all nine matching copies updated. Keys unchanged.",
+  "chat": "https://chatgpt.com/c/6aa15b05-e8e0-83e9-a5ed-c6152551ddf2",
+  "model": "ChatGPT browser image tool; exact model version unverified",
+  "images": [
+    {
+      "path": "public/images/brain-sagittal/sagittal.png",
+      "previousSha256": "36f3adb5bf268d02d40b991faeaea0e189a94a2640be77354dfe074e4601c725",
+      "approvedSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    },
+    {
+      "path": "public/images/brain-coronal/sagittal.png",
+      "previousSha256": "36f3adb5bf268d02d40b991faeaea0e189a94a2640be77354dfe074e4601c725",
+      "approvedSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    },
+    {
+      "path": "public/images/brain-axial/sagittal.png",
+      "previousSha256": "36f3adb5bf268d02d40b991faeaea0e189a94a2640be77354dfe074e4601c725",
+      "approvedSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    },
+    {
+      "path": "public/images/brain-sagittal/coronal.png",
+      "previousSha256": "671fae0233a72352a45e55c4cf70aa2d941c693c06555689198ffa72d3bb214d",
+      "approvedSha256": "09e9f184f48fd0b349894d8353d9c83e4a61502517af599ca9dc5fad90de9552"
+    },
+    {
+      "path": "public/images/brain-coronal/coronal.png",
+      "previousSha256": "671fae0233a72352a45e55c4cf70aa2d941c693c06555689198ffa72d3bb214d",
+      "approvedSha256": "09e9f184f48fd0b349894d8353d9c83e4a61502517af599ca9dc5fad90de9552"
+    },
+    {
+      "path": "public/images/brain-axial/coronal.png",
+      "previousSha256": "671fae0233a72352a45e55c4cf70aa2d941c693c06555689198ffa72d3bb214d",
+      "approvedSha256": "09e9f184f48fd0b349894d8353d9c83e4a61502517af599ca9dc5fad90de9552"
+    },
+    {
+      "path": "public/images/brain-sagittal/axial.png",
+      "previousSha256": "6201350c1ac342df3858933e8cac099ff23b283b8bbadbfe5bd729645207909f",
+      "approvedSha256": "7738fe5189dac766117cd3d4a2d63c52b7185e7327284cf21e05b51c214a4aff"
+    },
+    {
+      "path": "public/images/brain-coronal/axial.png",
+      "previousSha256": "6201350c1ac342df3858933e8cac099ff23b283b8bbadbfe5bd729645207909f",
+      "approvedSha256": "7738fe5189dac766117cd3d4a2d63c52b7185e7327284cf21e05b51c214a4aff"
+    },
+    {
+      "path": "public/images/brain-axial/axial.png",
+      "previousSha256": "6201350c1ac342df3858933e8cac099ff23b283b8bbadbfe5bd729645207909f",
+      "approvedSha256": "7738fe5189dac766117cd3d4a2d63c52b7185e7327284cf21e05b51c214a4aff"
+    }
+  ],
+  "limitation": "Synthetic teaching images; internal anatomy and slice equivalence are approximate, not a diagnostic reconstruction.",
+  "preservation": "Do not rerun pipeline/05_assemble.py without restoring these approved assets from Git."
+}
