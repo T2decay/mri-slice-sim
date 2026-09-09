@@ -1,0 +1,45 @@
+{
+  "approved": "2026-09-09",
+  "scope": "Both Brain & IAC target-plane exercises: reuse approved Brain sagittal and install user-supplied coronal and axial candidates.",
+  "images": [
+    {
+      "path": "public/images/brain-iacs-axial/coronal.png",
+      "source": "ChatGPT Image Sep 9, 2026, 09_43_44 AM.png",
+      "previousSha256": "f9963305963778981155ecef219d8dab6f95329c9fc4a022e4d4e22f5fb21b88",
+      "approvedSha256": "e1721d1b78c2492fd2e3f3a15fb56ec861c6c65978cd1e583bd3497eaea3f730"
+    },
+    {
+      "path": "public/images/brain-iacs-axial/axial.png",
+      "source": "ChatGPT Image Sep 9, 2026, 09_46_16 AM.png",
+      "previousSha256": "d06d90d740fc63d14f7fd3326c87d409a06d4c0a1265bfadf6daffcec0f56b20",
+      "approvedSha256": "cd131902d24b41f685e7632aee085c9e96b84952c371fb11c7166c2389076472"
+    },
+    {
+      "path": "public/images/brain-iacs-axial/sagittal.png",
+      "source": "sagittal.png",
+      "previousSha256": "394dde20fa6cdee14cba6a04e9181a38bca649bc4945202f225b4300bdc730d5",
+      "approvedSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    },
+    {
+      "path": "public/images/brain-iacs-coronal/coronal.png",
+      "source": "ChatGPT Image Sep 9, 2026, 09_43_44 AM.png",
+      "previousSha256": "40f9285eb97f97e5401d8dceca7a458e20a4981213fe99898b4186c4647d5d98",
+      "approvedSha256": "e1721d1b78c2492fd2e3f3a15fb56ec861c6c65978cd1e583bd3497eaea3f730"
+    },
+    {
+      "path": "public/images/brain-iacs-coronal/axial.png",
+      "source": "ChatGPT Image Sep 9, 2026, 09_46_16 AM.png",
+      "previousSha256": "3396e12fdf274b0bed0761152649dcacdf8ce20bd3f3b1cf7f3677e6ca1728c6",
+      "approvedSha256": "cd131902d24b41f685e7632aee085c9e96b84952c371fb11c7166c2389076472"
+    },
+    {
+      "path": "public/images/brain-iacs-coronal/sagittal.png",
+      "source": "sagittal.png",
+      "previousSha256": "cacd17cafac6da1d2cf6599761ed478332a40ca4caa85ac297173675a85d54e2",
+      "approvedSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    }
+  ],
+  "geometryReview": "Compared against both original IAC exercise views: same broad head orientation, scale and framing; retained existing normalized answer geometry. Internal anatomy and precise slice correspondence are approximate; not clinically validated.",
+  "limitations": "Synthetic teaching images. Sharper appearance does not establish accurate canal or nerve detail.",
+  "preservation": "Do not rerun pipeline/05_assemble.py without restoring these approved files from Git."
+}
