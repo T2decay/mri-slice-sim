@@ -1,0 +1,39 @@
+{
+  "updated": "2026-09-13",
+  "scope": "Both Brain & Pituitary exercises; approved Brain sagittal reused, user-supplied coronal and axial installed without image processing.",
+  "images": [
+    {
+      "path": "public/images/brain-pituitary-sagittal/coronal.png",
+      "source": "review/pituitary-t1-trial/outputs/ChatGPT Image Sep 13, 2026, 02_07_03 PM.png",
+      "approvedSha256": "a3c716bb92ce1beed65580e254814ac412128e8a3e5abde287a96e0ae91ea767"
+    },
+    {
+      "path": "public/images/brain-pituitary-sagittal/axial.png",
+      "source": "review/pituitary-t1-trial/outputs/ChatGPT Image Sep 13, 2026, 02_09_10 PM.png",
+      "approvedSha256": "b39010dbd70356dfb18d99a1285bd2d33f78bfef23688469068525f670760bb6"
+    },
+    {
+      "path": "public/images/brain-pituitary-sagittal/sagittal.png",
+      "source": "public/images/brain-sagittal/sagittal.png",
+      "approvedSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    },
+    {
+      "path": "public/images/brain-pituitary-coronal/coronal.png",
+      "source": "review/pituitary-t1-trial/outputs/ChatGPT Image Sep 13, 2026, 02_07_03 PM.png",
+      "approvedSha256": "a3c716bb92ce1beed65580e254814ac412128e8a3e5abde287a96e0ae91ea767"
+    },
+    {
+      "path": "public/images/brain-pituitary-coronal/axial.png",
+      "source": "review/pituitary-t1-trial/outputs/ChatGPT Image Sep 13, 2026, 02_09_10 PM.png",
+      "approvedSha256": "b39010dbd70356dfb18d99a1285bd2d33f78bfef23688469068525f670760bb6"
+    },
+    {
+      "path": "public/images/brain-pituitary-coronal/sagittal.png",
+      "source": "public/images/brain-sagittal/sagittal.png",
+      "approvedSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    }
+  ],
+  "geometry": "Existing answer geometry retained. Instructor authorized publishing after local review.",
+  "preservation": "Do not rerun pipeline/05_assemble.py without restoring approved images from Git.",
+  "publicationApproved": "2026-09-13"
+}
