@@ -1,5 +1,5 @@
 {
-  "status": "All six image slots updated; instructor authorized student GitHub Pages release on 2026-09-13",
+  "status": "Instructor-approved image release; content-versioned filenames prevent stale browser image caching",
   "sagittalReplacements": [
     {
       "path": "public/images/brain-pituitary-sagittal/sagittal.png",
@@ -13,7 +13,5 @@
     }
   ],
   "reviewFolder": "review/pituitary-t1-trial",
-  "remaining": [
-    "Verify GitHub Pages deployment"
-  ]
+  "remaining": []
 }

@@ -243,7 +243,7 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/brain-pituitary-sagittal/sagittal.png",
+        "image": "images/brain-pituitary-sagittal/sagittal-t1-06e3a35f.png",
         "answer": {
           "type": "fov",
           "cx": 0.4504,
@@ -254,7 +254,7 @@
         }
       },
       "coronal": {
-        "image": "images/brain-pituitary-sagittal/coronal.png",
+        "image": "images/brain-pituitary-sagittal/coronal-t1-a3c716bb.png",
         "answer": {
           "type": "lines",
           "cx": 0.498,
@@ -264,7 +264,7 @@
         }
       },
       "axial": {
-        "image": "images/brain-pituitary-sagittal/axial.png",
+        "image": "images/brain-pituitary-sagittal/axial-t1-b39010db.png",
         "answer": {
           "type": "lines",
           "cx": 0.5049,
@@ -289,7 +289,7 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/brain-pituitary-coronal/sagittal.png",
+        "image": "images/brain-pituitary-coronal/sagittal-t1-06e3a35f.png",
         "answer": {
           "type": "lines",
           "cx": 0.4336,
@@ -299,7 +299,7 @@
         }
       },
       "coronal": {
-        "image": "images/brain-pituitary-coronal/coronal.png",
+        "image": "images/brain-pituitary-coronal/coronal-t1-a3c716bb.png",
         "answer": {
           "type": "fov",
           "cx": 0.466,
@@ -310,7 +310,7 @@
         }
       },
       "axial": {
-        "image": "images/brain-pituitary-coronal/axial.png",
+        "image": "images/brain-pituitary-coronal/axial-t1-b39010db.png",
         "answer": {
           "type": "lines",
           "cx": 0.4985,
