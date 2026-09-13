@@ -1,0 +1,19 @@
+{
+  "status": "All six image slots updated; instructor authorized student GitHub Pages release on 2026-09-13",
+  "sagittalReplacements": [
+    {
+      "path": "public/images/brain-pituitary-sagittal/sagittal.png",
+      "previousSha256": "ab50a8108618fca967683a7ff1cae99abf1000ae50ca7713f66a6dce2b6872ef",
+      "replacementSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    },
+    {
+      "path": "public/images/brain-pituitary-coronal/sagittal.png",
+      "previousSha256": "2760208017c5efbcfcbbbd165d0c3ce1677b357f3f7a9dfcf4759b2ae1e83973",
+      "replacementSha256": "06e3a35fdbf19f6a6022fd1734e061f83e93ca5e55d764264987a7e5c13c8792"
+    }
+  ],
+  "reviewFolder": "review/pituitary-t1-trial",
+  "remaining": [
+    "Verify GitHub Pages deployment"
+  ]
+}
