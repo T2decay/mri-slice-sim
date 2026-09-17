@@ -1,0 +1,79 @@
+{
+  "approved": "2026-09-17",
+  "scope": "All nine lumbar image slots, using four instructor-selected images.",
+  "images": [
+    {
+      "role": "sagittal",
+      "source": "ChatGPT Image Sep 17, 2026, 04_53_54 PM.png",
+      "path": "public/images/lumbar-t1/sagittal-529a0be1.png",
+      "approvedSha256": "529a0be10c2d2ddf64c355633e1140f9593d3962315e49ffbe89f7c3d128e3b9"
+    },
+    {
+      "role": "coronal",
+      "source": "ChatGPT Image Sep 17, 2026, 04_58_48 PM.png",
+      "path": "public/images/lumbar-t1/coronal-e17e35f2.png",
+      "approvedSha256": "e17e35f29c4e08858b9b88190617c811b6ede450c097e92d4f49bce8c3634605"
+    },
+    {
+      "role": "axial",
+      "source": "ChatGPT Image Sep 17, 2026, 05_07_44 PM.png",
+      "path": "public/images/lumbar-t1/axial-5a09d25b.png",
+      "approvedSha256": "5a09d25bfc5dea00f122880ab136a32a10962a9b33a4366060d81507d7bebbf1"
+    },
+    {
+      "role": "sagittal-axial-exercise",
+      "source": "ChatGPT Image Sep 17, 2026, 05_08_59 PM.png",
+      "path": "public/images/lumbar-t1/sagittal-axial-exercise-4d5508e9.png",
+      "approvedSha256": "4d5508e94741b0545214abe7102fb34ce8c0ad2dcbb637c308315231136397be"
+    }
+  ],
+  "mapping": [
+    {
+      "exercise": "lumbar-spine-sagittal",
+      "plane": "sagittal",
+      "image": "images/lumbar-t1/sagittal-529a0be1.png"
+    },
+    {
+      "exercise": "lumbar-spine-sagittal",
+      "plane": "coronal",
+      "image": "images/lumbar-t1/coronal-e17e35f2.png"
+    },
+    {
+      "exercise": "lumbar-spine-sagittal",
+      "plane": "axial",
+      "image": "images/lumbar-t1/axial-5a09d25b.png"
+    },
+    {
+      "exercise": "lumbar-spine-coronal",
+      "plane": "sagittal",
+      "image": "images/lumbar-t1/sagittal-529a0be1.png"
+    },
+    {
+      "exercise": "lumbar-spine-coronal",
+      "plane": "coronal",
+      "image": "images/lumbar-t1/coronal-e17e35f2.png"
+    },
+    {
+      "exercise": "lumbar-spine-coronal",
+      "plane": "axial",
+      "image": "images/lumbar-t1/axial-5a09d25b.png"
+    },
+    {
+      "exercise": "lumbar-spine-axial",
+      "plane": "sagittal",
+      "image": "images/lumbar-t1/sagittal-axial-exercise-4d5508e9.png"
+    },
+    {
+      "exercise": "lumbar-spine-axial",
+      "plane": "coronal",
+      "image": "images/lumbar-t1/coronal-e17e35f2.png"
+    },
+    {
+      "exercise": "lumbar-spine-axial",
+      "plane": "axial",
+      "image": "images/lumbar-t1/axial-5a09d25b.png"
+    }
+  ],
+  "referenceGeometry": "Existing source-deck SVG keys retained; these were not recalibrated against the replacement anatomy. No numerical scoring is enabled for Spine.",
+  "preservation": "Do not rerun assembly without restoring instructor-approved image references."
+}
