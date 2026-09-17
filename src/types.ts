@@ -52,6 +52,7 @@ export interface RenderView {
 export interface ExamView {
   image: string | null
   answer: Placement | null
+  alternateImage?: string
   referenceImage?: string
   unavailableReason?: string
   substitution?: { donorExamId: string; plane: Plane }

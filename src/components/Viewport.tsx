@@ -1,14 +1,17 @@
-import { useId, useRef } from 'react'
+import { useId, useRef, useState } from 'react'
 import type { Placement, Plane, RenderView } from '../types'
 import type { Deltas } from '../lib/scoring'
 import { TOLERANCES, band } from '../lib/scoring'
 import { VIEW, clamp } from '../lib/svg'
 import FovBox from './FovBox'
 import SliceLines from './SliceLines'
+import SaturationBand from './SaturationBand'
 
 interface Props {
   plane: Plane
   image: string | null
+  saturationSide?: 'superior' | 'inferior'
+  alternateImage?: string
   referenceImage?: string
   unavailableReason?: string
   sourceReference?: boolean
@@ -73,6 +76,8 @@ function renderView(
 export default function Viewport({
   plane,
   image,
+  alternateImage,
+  saturationSide,
   referenceImage,
   unavailableReason,
   sourceReference,
@@ -89,9 +94,11 @@ export default function Viewport({
 }: Props) {
   const svgRef = useRef<SVGSVGElement | null>(null)
   const clipId = useId()
+  const [showAlternate, setShowAlternate] = useState(false)
+  const vascular = Boolean(alternateImage && showAlternate)
 
   const onKeyDown = (e: React.KeyboardEvent) => {
-    if (!student || !interactive || !onChange) return
+    if (vascular || !student || !interactive || !onChange) return
     const placement = student.placement
     let dx = 0
     let dy = 0
@@ -138,9 +145,9 @@ export default function Viewport({
         onFocus={onActivate}
         aria-label={`${plane} localizer`}
       >
-        <img src={import.meta.env.BASE_URL + image} alt={`${plane} localizer`} draggable={false} />
-        {referenceImage && <img className="source-reference" src={import.meta.env.BASE_URL + referenceImage} alt="Source planning reference" draggable={false} />}
-        <svg
+        <img src={import.meta.env.BASE_URL + (vascular ? alternateImage! : image)} alt={vascular ? "Sagittal vascular reference" : `${plane} localizer`} draggable={false} />
+        {!vascular && referenceImage && <img className="source-reference" src={import.meta.env.BASE_URL + referenceImage} alt="Source planning reference" draggable={false} />}
+        {!vascular && <svg
           ref={svgRef}
           viewBox={`0 0 ${VIEW} ${VIEW}`}
           style={{ overflow: 'visible', touchAction: 'none' }}
@@ -150,6 +157,7 @@ export default function Viewport({
               <rect x={0} y={0} width={VIEW} height={VIEW} />
             </clipPath>
           </defs>
+          {student && saturationSide && <SaturationBand view={student} side={saturationSide} />}
           {ghost && renderView(ghost, { ghost: true, clipId })}
           {student &&
             renderView(student, {
@@ -159,12 +167,21 @@ export default function Viewport({
               onChange,
               onInteract,
             })}
-        </svg>
-        <span className="plane-label">{plane}</span>
+        </svg>}
+        {alternateImage && !mini && <button
+          type="button" className="view-dogear"
+          aria-label={vascular ? "Show anatomical sagittal view" : "Show vascular sagittal reference"}
+          aria-pressed={vascular}
+          title={vascular ? "Switch to anatomy" : "Switch to vascular reference"}
+          onPointerDown={(e) => e.stopPropagation()}
+          onKeyDown={(e) => e.stopPropagation()}
+          onClick={(e) => { e.stopPropagation(); setShowAlternate((value) => !value) }}
+        ><span>{vascular ? "Anatomy" : "Vessels"}</span><span aria-hidden="true">↔</span></button>}
+        <span className="plane-label">{vascular ? "Vascular reference" : plane}</span>
       </div>
       {!mini && (
         <div className="readout" aria-live="off">
-          {deltas ? (
+          {vascular ? <span className="idle">Vascular reference · switch to anatomy to plan</span> : deltas ? (
             <>
               <span className={band(deltas.offsetFrac, TOLERANCES.center)}>
                 offset {(deltas.offsetFrac * 100).toFixed(1)}%

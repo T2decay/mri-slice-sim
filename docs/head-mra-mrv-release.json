@@ -1,0 +1,37 @@
+{
+  "images": [
+    {
+      "role": "axial",
+      "path": "public/images/head-mra-mrv/axial-b408586b.png",
+      "sha256": "b408586bebe3b16f90384261cd6d3ff0d6a1cb1f7407e5df5ba25e2c4f5443ed",
+      "source": "ChatGPT Image Sep 17, 2026, 06_16_42 PM.png"
+    },
+    {
+      "role": "coronal",
+      "path": "public/images/head-mra-mrv/coronal-c6f1eec5.png",
+      "sha256": "c6f1eec57864d3dff2fe39e8f904bcb9c100db5b384cd6ae04f5dc16f1e1ae57",
+      "source": "ChatGPT Image Sep 17, 2026, 06_16_58 PM.png"
+    },
+    {
+      "role": "sagittal",
+      "path": "public/images/head-mra-mrv/sagittal-7b30908e.png",
+      "sha256": "7b30908efb2be4593e0cf92c16dac823c8eee22209bf636b57327940862b3391",
+      "source": "ChatGPT Image Sep 17, 2026, 06_17_10 PM.png"
+    },
+    {
+      "role": "vascular",
+      "path": "public/images/head-mra-mrv/vascular-5a4a97e1.png",
+      "sha256": "5a4a97e12c9ad32814e15ee82b869b2a53dc495c5ca640e36d4d3c440a51fed9",
+      "source": "ChatGPT Image Sep 17, 2026, 06_17_23 PM.png"
+    }
+  ],
+  "exercises": [
+    "mra-head-axial-3dtof",
+    "mrv-head-axial-2dtof",
+    "mrv-head-coronal-2dtof",
+    "mrv-head-sagittal-pc"
+  ],
+  "vascular": "Shared reference-only projection; anatomical overlays hidden while viewing it.",
+  "saturationBands": "Illustrative superior MRV / inferior MRA markers on sagittal and coronal views; not scored or a simulated suppression acquisition.",
+  "geometry": "Existing answer geometry retained; generated-image registration not validated."
+}
