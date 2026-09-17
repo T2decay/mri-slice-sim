@@ -1,0 +1,81 @@
+{
+  "publicationRequested": "2026-09-17",
+  "images": [
+    {
+      "role": "axial",
+      "source": "ChatGPT Image Sep 17, 2026, 05_29_05 PM.png",
+      "path": "public/images/thoracic-refresh/axial-718943ac.png",
+      "approvedSha256": "718943ac939b16d204b43ad476d6dd3e98aabf4a554a01a1919322b0e594d055"
+    },
+    {
+      "role": "coronal",
+      "source": "ChatGPT Image Sep 17, 2026, 05_29_35 PM.png",
+      "path": "public/images/thoracic-refresh/coronal-601cf698.png",
+      "approvedSha256": "601cf6984950e94977290dc4bb0827fa5dabb63883b7518a30eb1c018283266d"
+    },
+    {
+      "role": "sagittal",
+      "source": "ChatGPT Image Sep 17, 2026, 05_29_55 PM.png",
+      "path": "public/images/thoracic-refresh/sagittal-4a2d08f7.png",
+      "approvedSha256": "4a2d08f7277b9d98f316229c34ba7ccdcdf3dcf692d1d1354bb0f2e218edacba"
+    },
+    {
+      "role": "sagittal-axial-series",
+      "source": "ChatGPT Image Sep 17, 2026, 05_30_18 PM.png",
+      "path": "public/images/thoracic-refresh/sagittal-axial-series-22324d8a.png",
+      "approvedSha256": "22324d8aac3cf6b8a5ee39fa0fd11d1259d625706740863ed065e33a3817a392"
+    }
+  ],
+  "mapping": [
+    {
+      "exercise": "thoracic-spine-sagittal",
+      "plane": "sagittal",
+      "image": "images/thoracic-refresh/sagittal-4a2d08f7.png"
+    },
+    {
+      "exercise": "thoracic-spine-sagittal",
+      "plane": "coronal",
+      "image": "images/thoracic-refresh/coronal-601cf698.png"
+    },
+    {
+      "exercise": "thoracic-spine-sagittal",
+      "plane": "axial",
+      "image": "images/thoracic-refresh/axial-718943ac.png"
+    },
+    {
+      "exercise": "thoracic-spine-coronal",
+      "plane": "sagittal",
+      "image": "images/thoracic-refresh/sagittal-4a2d08f7.png"
+    },
+    {
+      "exercise": "thoracic-spine-coronal",
+      "plane": "coronal",
+      "image": "images/thoracic-refresh/coronal-601cf698.png"
+    },
+    {
+      "exercise": "thoracic-spine-coronal",
+      "plane": "axial",
+      "image": "images/thoracic-refresh/axial-718943ac.png"
+    },
+    {
+      "exercise": "thoracic-spine-axial",
+      "plane": "sagittal",
+      "image": "images/thoracic-refresh/sagittal-axial-series-22324d8a.png"
+    },
+    {
+      "exercise": "thoracic-spine-axial",
+      "plane": "coronal",
+      "image": "images/thoracic-refresh/coronal-601cf698.png"
+    },
+    {
+      "exercise": "thoracic-spine-axial",
+      "plane": "axial",
+      "image": "images/thoracic-refresh/axial-718943ac.png"
+    }
+  ],
+  "limitations": [
+    "Sagittal images show bright fluid around the cord; requested T1 appearance is not confirmed.",
+    "Source SVG planning keys retained without recalibration to generated anatomy."
+  ],
+  "preservation": "Preserve these image references when running any future assembly."
+}

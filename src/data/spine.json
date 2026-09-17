@@ -113,17 +113,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/thoracic-spine-sagittal/sagittal.png",
+        "image": "images/thoracic-refresh/sagittal-4a2d08f7.png",
         "answer": null,
         "referenceImage": "images/thoracic-spine-sagittal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/thoracic-spine-sagittal/coronal.png",
+        "image": "images/thoracic-refresh/coronal-601cf698.png",
         "answer": null,
         "referenceImage": "images/thoracic-spine-sagittal/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/thoracic-spine-coronal/axial.png",
+        "image": "images/thoracic-refresh/axial-718943ac.png",
         "answer": null,
         "substitution": {
           "donorExamId": "thoracic-spine-coronal",
@@ -149,17 +149,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/thoracic-spine-coronal/sagittal.png",
+        "image": "images/thoracic-refresh/sagittal-4a2d08f7.png",
         "answer": null,
         "referenceImage": "images/thoracic-spine-coronal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/thoracic-spine-coronal/coronal.png",
+        "image": "images/thoracic-refresh/coronal-601cf698.png",
         "answer": null,
         "referenceImage": "images/thoracic-spine-coronal/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/thoracic-spine-coronal/axial.png",
+        "image": "images/thoracic-refresh/axial-718943ac.png",
         "answer": null,
         "referenceImage": "images/thoracic-spine-coronal/axial-reference.svg"
       }
@@ -181,17 +181,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/thoracic-spine-axial/sagittal.png",
+        "image": "images/thoracic-refresh/sagittal-axial-series-22324d8a.png",
         "answer": null,
         "referenceImage": "images/thoracic-spine-axial/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/thoracic-spine-axial/coronal.png",
+        "image": "images/thoracic-refresh/coronal-601cf698.png",
         "answer": null,
         "referenceImage": "images/thoracic-spine-axial/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/thoracic-spine-coronal/axial.png",
+        "image": "images/thoracic-refresh/axial-718943ac.png",
         "answer": null,
         "substitution": {
           "donorExamId": "thoracic-spine-coronal",
