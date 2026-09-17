@@ -32,6 +32,6 @@
     "mrv-head-sagittal-pc"
   ],
   "vascular": "Shared reference-only projection; anatomical overlays hidden while viewing it.",
-  "saturationBands": "Illustrative superior MRV / inferior MRA markers on sagittal and coronal views; not scored or a simulated suppression acquisition.",
+  "saturationBands": "Illustrative inferior MRV / superior MRA markers on sagittal and coronal views; not scored or a simulated suppression acquisition.",
   "geometry": "Existing answer geometry retained; generated-image registration not validated."
 }

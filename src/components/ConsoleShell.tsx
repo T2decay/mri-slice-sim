@@ -210,7 +210,7 @@ export default function ConsoleShell({
                 plane={p}
                 image={exam.views[p].image}
                 alternateImage={exam.views[p].alternateImage}
-                saturationSide={p === 'axial' ? undefined : exam.exam === 'MRV Head' ? 'superior' : exam.exam === 'MRA Head' ? 'inferior' : undefined}
+                saturationSide={p === 'axial' ? undefined : exam.exam === 'MRV Head' ? 'inferior' : exam.exam === 'MRA Head' ? 'superior' : undefined}
                 unavailableReason={exam.views[p].unavailableReason}
                 sourceReference={exam.referenceMode === 'source'}
                 referenceUnavailableReason={exam.views[p].referenceUnavailableReason}
