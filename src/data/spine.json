@@ -217,17 +217,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/lumbar-spine-sagittal/sagittal.png",
+        "image": "images/lumbar-t1/sagittal-529a0be1.png",
         "answer": null,
         "referenceImage": "images/lumbar-spine-sagittal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/lumbar-spine-sagittal/coronal.png",
+        "image": "images/lumbar-t1/coronal-e17e35f2.png",
         "answer": null,
         "referenceImage": "images/lumbar-spine-sagittal/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/lumbar-spine-coronal/axial.png",
+        "image": "images/lumbar-t1/axial-5a09d25b.png",
         "answer": null,
         "substitution": {
           "donorExamId": "lumbar-spine-coronal",
@@ -253,17 +253,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/lumbar-spine-coronal/sagittal.png",
+        "image": "images/lumbar-t1/sagittal-529a0be1.png",
         "answer": null,
         "referenceImage": "images/lumbar-spine-coronal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/lumbar-spine-coronal/coronal.png",
+        "image": "images/lumbar-t1/coronal-e17e35f2.png",
         "answer": null,
         "referenceImage": "images/lumbar-spine-coronal/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/lumbar-spine-coronal/axial.png",
+        "image": "images/lumbar-t1/axial-5a09d25b.png",
         "answer": null,
         "referenceImage": "images/lumbar-spine-coronal/axial-reference.svg"
       }
@@ -285,17 +285,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/lumbar-spine-axial/sagittal.png",
+        "image": "images/lumbar-t1/sagittal-axial-exercise-4d5508e9.png",
         "answer": null,
         "referenceImage": "images/lumbar-spine-axial/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/lumbar-spine-axial/coronal.png",
+        "image": "images/lumbar-t1/coronal-e17e35f2.png",
         "answer": null,
         "referenceImage": "images/lumbar-spine-axial/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/lumbar-spine-coronal/axial.png",
+        "image": "images/lumbar-t1/axial-5a09d25b.png",
         "answer": null,
         "substitution": {
           "donorExamId": "lumbar-spine-coronal",
