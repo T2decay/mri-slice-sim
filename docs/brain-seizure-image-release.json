@@ -1,0 +1,25 @@
+{
+  "publicationApproved": "2026-09-17",
+  "exercise": "brain-seizure-coronal",
+  "images": [
+    {
+      "plane": "sagittal",
+      "source": "ChatGPT Image Sep 17, 2026, 05_54_47 PM.png",
+      "path": "public/images/brain-seizure-refresh/sagittal-f7d157d2.png",
+      "sha256": "f7d157d28922d5060847c609a9dbe62fd44d9c99156afbf318e72b7d2db2f219"
+    },
+    {
+      "plane": "coronal",
+      "source": "ChatGPT Image Sep 17, 2026, 05_54_31 PM.png",
+      "path": "public/images/brain-seizure-refresh/coronal-3bae2684.png",
+      "sha256": "3bae26844064de2cf74bf07f484aa69876a61cbfef9745e3f2e272492623361d"
+    },
+    {
+      "plane": "axial",
+      "source": "ChatGPT Image Sep 17, 2026, 05_54_19 PM.png",
+      "path": "public/images/brain-seizure-refresh/axial-03473d7c.png",
+      "sha256": "03473d7ca7ad152c9af464cd3815759b8c12d9e061f0d715b38c1ea24dfd82e5"
+    }
+  ],
+  "limitations": "Synthetic teaching images; existing planning geometry retained without recalibration."
+}
