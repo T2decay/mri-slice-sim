@@ -7,10 +7,10 @@ import { defaultPlane, examForPlane, groupFamilies } from './lib/exams'
 import { defaultPrescription, type Prescription } from './lib/prescription'
 import ConsoleShell from './components/ConsoleShell'
 
-// RadBun publishes the approved Brain and IAC image sets; the full build retains all exams.
+// RadBun publishes families with refreshed images; the full student build retains all exams.
 const allExams = [...examsJson, ...spineJson] as unknown as Exam[]
 const exams = import.meta.env.MODE === 'radbun'
-  ? allExams.filter((exam) => ['Brain', "Brain & IAC's"].includes(exam.exam))
+  ? allExams.filter((exam) => ['Brain', "Brain & IAC's", 'Brain & Pituitary', 'Brain for Seizure', 'MRA Head', 'MRV Head', 'Cervical Spine', 'Thoracic Spine', 'Lumbar Spine', 'Sacrum'].includes(exam.exam))
   : allExams
 const families = groupFamilies(exams)
 
