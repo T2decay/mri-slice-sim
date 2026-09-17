@@ -13,17 +13,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/cervical-spine-sagittal/sagittal.png",
+        "image": "images/cervical-refresh/sagittal-735c4769.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-sagittal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/cervical-spine-sagittal/coronal.png",
+        "image": "images/cervical-refresh/coronal-d771225b.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-sagittal/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/cervical-spine-axial/axial.png",
+        "image": "images/cervical-refresh/axial-89e9e70d.png",
         "answer": null,
         "substitution": {
           "donorExamId": "cervical-spine-axial",
@@ -49,17 +49,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/cervical-spine-coronal/sagittal.png",
+        "image": "images/cervical-refresh/sagittal-735c4769.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-coronal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/cervical-spine-coronal/coronal.png",
+        "image": "images/cervical-refresh/coronal-d771225b.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-coronal/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/cervical-spine-coronal/axial.png",
+        "image": "images/cervical-refresh/axial-89e9e70d.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-coronal/axial-reference.svg"
       }
@@ -81,17 +81,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/cervical-spine-axial/sagittal.png",
+        "image": "images/cervical-refresh/sagittal-735c4769.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-axial/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/cervical-spine-axial/coronal.png",
+        "image": "images/cervical-refresh/coronal-d771225b.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-axial/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/cervical-spine-axial/axial.png",
+        "image": "images/cervical-refresh/axial-89e9e70d.png",
         "answer": null,
         "referenceImage": "images/cervical-spine-axial/axial-reference.svg"
       }
