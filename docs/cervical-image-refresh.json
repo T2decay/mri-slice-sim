@@ -1,0 +1,76 @@
+{
+  "status": "Instructor authorized student GitHub Pages release",
+  "images": [
+    {
+      "plane": "sagittal",
+      "source": "review/cervical-t1-trial/outputs/ChatGPT Image Sep 17, 2026, 05_22_09 PM.png",
+      "path": "public/images/cervical-refresh/sagittal-735c4769.png",
+      "sha256": "735c476974fea91e9d28ddd498347baa99bdbd7541f6cffd7d480c150b0e8ace"
+    },
+    {
+      "plane": "coronal",
+      "source": "review/cervical-t1-trial/outputs/ChatGPT Image Sep 17, 2026, 05_21_55 PM.png",
+      "path": "public/images/cervical-refresh/coronal-d771225b.png",
+      "sha256": "d771225bf2bd25123357937996360c5ebcc6b42642ad1498979e261edaf9cad2"
+    },
+    {
+      "plane": "axial",
+      "source": "review/cervical-t1-trial/outputs/ChatGPT Image Sep 17, 2026, 05_21_35 PM.png",
+      "path": "public/images/cervical-refresh/axial-89e9e70d.png",
+      "sha256": "89e9e70d7ecc628a2cf0589c37e62b131e16afe3101d6d9876b90b0fe099d555"
+    }
+  ],
+  "mapping": [
+    {
+      "exercise": "cervical-spine-sagittal",
+      "plane": "sagittal",
+      "image": "images/cervical-refresh/sagittal-735c4769.png"
+    },
+    {
+      "exercise": "cervical-spine-sagittal",
+      "plane": "coronal",
+      "image": "images/cervical-refresh/coronal-d771225b.png"
+    },
+    {
+      "exercise": "cervical-spine-sagittal",
+      "plane": "axial",
+      "image": "images/cervical-refresh/axial-89e9e70d.png"
+    },
+    {
+      "exercise": "cervical-spine-coronal",
+      "plane": "sagittal",
+      "image": "images/cervical-refresh/sagittal-735c4769.png"
+    },
+    {
+      "exercise": "cervical-spine-coronal",
+      "plane": "coronal",
+      "image": "images/cervical-refresh/coronal-d771225b.png"
+    },
+    {
+      "exercise": "cervical-spine-coronal",
+      "plane": "axial",
+      "image": "images/cervical-refresh/axial-89e9e70d.png"
+    },
+    {
+      "exercise": "cervical-spine-axial",
+      "plane": "sagittal",
+      "image": "images/cervical-refresh/sagittal-735c4769.png"
+    },
+    {
+      "exercise": "cervical-spine-axial",
+      "plane": "coronal",
+      "image": "images/cervical-refresh/coronal-d771225b.png"
+    },
+    {
+      "exercise": "cervical-spine-axial",
+      "plane": "axial",
+      "image": "images/cervical-refresh/axial-89e9e70d.png"
+    }
+  ],
+  "reviewNotes": [
+    "Sagittal fluid around cord appears bright; requested T1 contrast is not established by this output.",
+    "Existing SVG planning keys retained without recalibration to generated anatomy."
+  ],
+  "preservation": "Do not rerun assembly without restoring these image references.",
+  "publicationApproved": "2026-09-17"
+}
