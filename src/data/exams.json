@@ -473,17 +473,18 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/mra-head-axial-3dtof/sagittal.png",
+        "image": "images/head-mra-mrv/sagittal-7b30908e.png",
         "answer": {
           "type": "lines",
           "cx": 0.5081,
           "cy": 0.5539,
           "angleDeg": -7.46,
           "extent": 0.5593
-        }
+        },
+        "alternateImage": "images/head-mra-mrv/vascular-5a4a97e1.png"
       },
       "coronal": {
-        "image": "images/mra-head-axial-3dtof/coronal.png",
+        "image": "images/head-mra-mrv/coronal-c6f1eec5.png",
         "answer": {
           "type": "lines",
           "cx": 0.498,
@@ -493,7 +494,7 @@
         }
       },
       "axial": {
-        "image": "images/mra-head-axial-3dtof/axial.png",
+        "image": "images/head-mra-mrv/axial-b408586b.png",
         "answer": {
           "type": "fov",
           "cx": 0.498,
@@ -519,17 +520,18 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/mrv-head-axial-2dtof/sagittal.png",
+        "image": "images/head-mra-mrv/sagittal-7b30908e.png",
         "answer": {
           "type": "lines",
           "cx": 0.4969,
           "cy": 0.4475,
           "angleDeg": -1.44,
           "extent": 0.7963
-        }
+        },
+        "alternateImage": "images/head-mra-mrv/vascular-5a4a97e1.png"
       },
       "coronal": {
-        "image": "images/mrv-head-axial-2dtof/coronal.png",
+        "image": "images/head-mra-mrv/coronal-c6f1eec5.png",
         "answer": {
           "type": "lines",
           "cx": 0.5093,
@@ -539,7 +541,7 @@
         }
       },
       "axial": {
-        "image": "images/mrv-head-axial-2dtof/axial.png",
+        "image": "images/head-mra-mrv/axial-b408586b.png",
         "answer": {
           "type": "fov",
           "cx": 0.5,
@@ -565,17 +567,18 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/mrv-head-coronal-2dtof/sagittal.png",
+        "image": "images/head-mra-mrv/sagittal-7b30908e.png",
         "answer": {
           "type": "lines",
           "cx": 0.7581,
           "cy": 0.4201,
           "angleDeg": -85.75,
           "extent": 0.445
-        }
+        },
+        "alternateImage": "images/head-mra-mrv/vascular-5a4a97e1.png"
       },
       "coronal": {
-        "image": "images/mrv-head-coronal-2dtof/coronal.png",
+        "image": "images/head-mra-mrv/coronal-c6f1eec5.png",
         "answer": {
           "type": "fov",
           "cx": 0.494,
@@ -586,7 +589,7 @@
         }
       },
       "axial": {
-        "image": "images/mrv-head-coronal-2dtof/axial.png",
+        "image": "images/head-mra-mrv/axial-b408586b.png",
         "answer": {
           "type": "lines",
           "cx": 0.4722,
@@ -611,7 +614,7 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/mrv-head-sagittal-pc/sagittal.png",
+        "image": "images/head-mra-mrv/sagittal-7b30908e.png",
         "answer": {
           "type": "fov",
           "cx": 0.4969,
@@ -619,10 +622,11 @@
           "w": 0.9938,
           "h": 0.9938,
           "angleDeg": -90.0
-        }
+        },
+        "alternateImage": "images/head-mra-mrv/vascular-5a4a97e1.png"
       },
       "coronal": {
-        "image": "images/mrv-head-sagittal-pc/coronal.png",
+        "image": "images/head-mra-mrv/coronal-c6f1eec5.png",
         "answer": {
           "type": "lines",
           "cx": 0.537,
@@ -632,7 +636,7 @@
         }
       },
       "axial": {
-        "image": "images/mrv-head-sagittal-pc/axial.png",
+        "image": "images/head-mra-mrv/axial-b408586b.png",
         "answer": {
           "type": "lines",
           "cx": 0.537,
