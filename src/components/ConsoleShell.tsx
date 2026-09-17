@@ -206,9 +206,11 @@ export default function ConsoleShell({
           <div className="viewports">
             {PLANES.map((p) => (
               <Viewport
-                key={p}
+                key={`${exam.id}-${p}`}
                 plane={p}
                 image={exam.views[p].image}
+                alternateImage={exam.views[p].alternateImage}
+                saturationSide={p === 'axial' ? undefined : exam.exam === 'MRV Head' ? 'superior' : exam.exam === 'MRA Head' ? 'inferior' : undefined}
                 unavailableReason={exam.views[p].unavailableReason}
                 sourceReference={exam.referenceMode === 'source'}
                 referenceUnavailableReason={exam.views[p].referenceUnavailableReason}

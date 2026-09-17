@@ -387,3 +387,9 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .unavailable strong { text-transform: capitalize; }
 .viewport.mini .unavailable { font-size: 9px; padding: 4px; }
 .viewport.mini .unavailable p { display: none; }
+
+/* Folded corner indicates a second sagittal image. */
+.view-dogear { position: absolute; top: 0; right: 0; z-index: 4; min-width: 88px; min-height: 48px; padding: 8px 22px 8px 10px; border: 1px solid var(--accent); border-radius: 0 5px 0 8px; background: #273441; color: #fff; display: flex; gap: 6px; align-items: center; cursor: pointer; touch-action: manipulation; }
+.view-dogear::after { content: ''; position: absolute; top: 0; right: 0; width: 20px; height: 20px; background: linear-gradient(45deg, var(--accent) 50%, #10151d 51%); pointer-events: none; }
+.view-dogear:hover { background: #3b4e60; }
+.view-dogear:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }

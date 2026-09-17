@@ -25,6 +25,12 @@ for (const exam of exams) {
     const label = `${id}/${plane}`
     requireValue(nonempty(exam?.coverage?.[plane]), `${label}: missing coverage`)
     const view = exam?.views?.[plane]
+    if (view?.alternateImage) {
+      const alternate = view.alternateImage
+      requireValue(plane === 'sagittal', `${label}: alternate is sagittal only`)
+      if (!alternate.startsWith('images/') || alternate.split('/').includes('..')) errors.push(`${label}: invalid alternateImage`)
+      else { try { await access(path.join(root, 'public', alternate)) } catch { errors.push(`${label}: missing alternateImage`) } }
+    }
     if (exam.referenceMode === 'source') {
       requireValue(view?.answer === null, `${label}: source-reference exercise must not carry an unverified numeric key`)
       if (view?.image === null) {
