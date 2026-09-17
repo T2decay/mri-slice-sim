@@ -99,7 +99,7 @@
     "targetPlane": "coronal",
     "sequenceNote": "Coronal",
     "coverage": {
-      "sagittal": "align parallel to the midbrain and cover entire brain P to A",
+      "sagittal": "align parallel to the midbrain or perpendicular to the corpus callosum and cover entire brain P to A",
       "coronal": "The FOV will cover from just above the head to the second vertebral body and entire brain from L to R",
       "axial": "align perpendicular to longitudinal fissure"
     },
@@ -427,7 +427,7 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/brain-seizure-coronal/sagittal.png",
+        "image": "images/brain-seizure-refresh/sagittal-f7d157d2.png",
         "answer": {
           "type": "lines",
           "cx": 0.5148,
@@ -437,7 +437,7 @@
         }
       },
       "coronal": {
-        "image": "images/brain-seizure-coronal/coronal.png",
+        "image": "images/brain-seizure-refresh/coronal-3bae2684.png",
         "answer": {
           "type": "fov",
           "cx": 0.498,
@@ -448,7 +448,7 @@
         }
       },
       "axial": {
-        "image": "images/brain-seizure-coronal/axial.png",
+        "image": "images/brain-seizure-refresh/axial-03473d7c.png",
         "answer": {
           "type": "lines",
           "cx": 0.498,
