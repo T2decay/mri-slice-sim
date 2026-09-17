@@ -321,12 +321,12 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/sacrum-sagittal/sagittal.png",
+        "image": "images/sacrum-refresh/sagittal-f171aa0a.png",
         "answer": null,
         "referenceImage": "images/sacrum-sagittal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/sacrum-coronal/coronal.png",
+        "image": "images/sacrum-refresh/coronal-df2096a0.png",
         "answer": null,
         "substitution": {
           "donorExamId": "sacrum-coronal",
@@ -335,7 +335,7 @@
         "referenceUnavailableReason": "Practice image from the same region. Follow the coverage instructions; reference lines are not available for this view."
       },
       "axial": {
-        "image": "images/sacrum-sagittal/axial.png",
+        "image": "images/sacrum-refresh/axial-b1573f51.png",
         "answer": null,
         "referenceImage": "images/sacrum-sagittal/axial-reference.svg"
       }
@@ -357,17 +357,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/sacrum-coronal/sagittal.png",
+        "image": "images/sacrum-refresh/sagittal-f171aa0a.png",
         "answer": null,
         "referenceImage": "images/sacrum-coronal/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/sacrum-coronal/coronal.png",
+        "image": "images/sacrum-refresh/coronal-df2096a0.png",
         "answer": null,
         "referenceImage": "images/sacrum-coronal/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/sacrum-coronal/axial.png",
+        "image": "images/sacrum-refresh/axial-b1573f51.png",
         "answer": null,
         "referenceImage": "images/sacrum-coronal/axial-reference.svg"
       }
@@ -389,17 +389,17 @@
     },
     "views": {
       "sagittal": {
-        "image": "images/sacrum-axial/sagittal.png",
+        "image": "images/sacrum-refresh/sagittal-f171aa0a.png",
         "answer": null,
         "referenceImage": "images/sacrum-axial/sagittal-reference.svg"
       },
       "coronal": {
-        "image": "images/sacrum-axial/coronal.png",
+        "image": "images/sacrum-refresh/coronal-df2096a0.png",
         "answer": null,
         "referenceImage": "images/sacrum-axial/coronal-reference.svg"
       },
       "axial": {
-        "image": "images/sacrum-axial/axial.png",
+        "image": "images/sacrum-refresh/axial-b1573f51.png",
         "answer": null,
         "referenceImage": "images/sacrum-axial/axial-reference.svg"
       }

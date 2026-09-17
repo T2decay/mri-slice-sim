@@ -1,0 +1,72 @@
+{
+  "publicationApproved": "2026-09-17",
+  "images": [
+    {
+      "plane": "sagittal",
+      "source": "ChatGPT Image Sep 17, 2026, 05_41_30 PM.png",
+      "path": "public/images/sacrum-refresh/sagittal-f171aa0a.png",
+      "sha256": "f171aa0a061b27911c4afe97ae486346b39900c30b1c263ca42a22009b48ee40"
+    },
+    {
+      "plane": "coronal",
+      "source": "ChatGPT Image Sep 17, 2026, 05_41_05 PM.png",
+      "path": "public/images/sacrum-refresh/coronal-df2096a0.png",
+      "sha256": "df2096a081cc301092912ca4dff20ec3808e6f967f8ba6c9ea64744d123eacf7"
+    },
+    {
+      "plane": "axial",
+      "source": "ChatGPT Image Sep 17, 2026, 05_44_23 PM.png",
+      "path": "public/images/sacrum-refresh/axial-b1573f51.png",
+      "sha256": "b1573f51eb9160299ae47883fbecf5453f86177d343907fe1c6165187c1df242"
+    }
+  ],
+  "mapping": [
+    {
+      "exercise": "sacrum-sagittal",
+      "plane": "sagittal",
+      "image": "images/sacrum-refresh/sagittal-f171aa0a.png"
+    },
+    {
+      "exercise": "sacrum-sagittal",
+      "plane": "coronal",
+      "image": "images/sacrum-refresh/coronal-df2096a0.png"
+    },
+    {
+      "exercise": "sacrum-sagittal",
+      "plane": "axial",
+      "image": "images/sacrum-refresh/axial-b1573f51.png"
+    },
+    {
+      "exercise": "sacrum-coronal",
+      "plane": "sagittal",
+      "image": "images/sacrum-refresh/sagittal-f171aa0a.png"
+    },
+    {
+      "exercise": "sacrum-coronal",
+      "plane": "coronal",
+      "image": "images/sacrum-refresh/coronal-df2096a0.png"
+    },
+    {
+      "exercise": "sacrum-coronal",
+      "plane": "axial",
+      "image": "images/sacrum-refresh/axial-b1573f51.png"
+    },
+    {
+      "exercise": "sacrum-axial",
+      "plane": "sagittal",
+      "image": "images/sacrum-refresh/sagittal-f171aa0a.png"
+    },
+    {
+      "exercise": "sacrum-axial",
+      "plane": "coronal",
+      "image": "images/sacrum-refresh/coronal-df2096a0.png"
+    },
+    {
+      "exercise": "sacrum-axial",
+      "plane": "axial",
+      "image": "images/sacrum-refresh/axial-b1573f51.png"
+    }
+  ],
+  "axialSelection": "Second generated axial image, 05_44_23 PM; revised T2 prompt focused on sacrum and SI joints. First axial excluded.",
+  "limitations": "Synthetic teaching images; original source SVG keys retained without recalibration for changed anatomy, slice location or framing."
+}
